@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folklore Society — Tri-Cities, WA</title>
+  <meta name="description" content="Folklore Society is a literary nonprofit bringing licensed bar service to events across the Tri-Cities, Washington. Find us wherever good books and good people gather." />
+  <meta property="og:title" content="Folklore Society" />
+  <meta property="og:description" content="Books, community, and a glass of something good. Find us at literary events across the Tri-Cities, WA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://folkloresocietywa.org" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    @font-face {
+      font-family: 'Take Me To Tuscany';
+      src: url('fonts/takemetotuscany-regular-webfont.woff2') format('woff2'),
+           url('fonts/takemetotuscany-regular-webfont.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Take Me To Tuscany';
+      src: url('fonts/takemetotuscany-weight1-webfont.woff2') format('woff2'),
+           url('fonts/takemetotuscany-weight1-webfont.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    :root {
+      --ink:       #2a1f3d;
+      --ink-soft:  #5a4f6e;
+      --ink-mute:  #9a90aa;
+      --cream:     #faf8f5;
+      --warm:      #ede8f0;
+      --copper:    #c17b4a;
+      --copper-dk: #965c32;
+      --copper-lt: #f5ebe0;
+      --rule:      rgba(42,31,61,0.12);
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'Jost', system-ui, sans-serif;
+      --script:    'Take Me To Tuscany', 'Cormorant Garamond', cursive;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); font-weight: 400; background: var(--cream); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--cream); border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; height: 64px; }
+    .nav-logo { font-family: var(--script); font-size: 34px; font-weight: 400; color: var(--ink); line-height: 1; padding: 4px 0 0; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-right { display: flex; align-items: center; gap: 1.25rem; }
+    .nav-social { display: flex; gap: 0.75rem; align-items: center; }
+    .nav-social a { color: var(--ink-mute); display: flex; align-items: center; transition: color 0.18s; }
+    .nav-social a:hover { color: var(--copper); }
+    .nav-cta { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 18px; border: 1px solid var(--ink); border-radius: 2px; transition: background 0.18s, color 0.18s; }
+    .nav-cta:hover { background: var(--ink); color: var(--cream); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.25s; }
+    .nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+    .mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; background: var(--cream); border-bottom: 1px solid var(--rule); padding: 1.5rem 2rem 2rem; z-index: 99; flex-direction: column; gap: 1.25rem; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); border-bottom: 0.5px solid var(--rule); padding-bottom: 1.25rem; }
+    .mobile-menu a:last-child { border-bottom: none; padding-bottom: 0; }
+    .mobile-menu a:hover { color: var(--copper); }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 82vh; border-bottom: 1px solid var(--rule); }
+    .hero-left { padding: 5rem 3rem 5rem 2.5rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--rule); }
+    .hero-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.5rem; }
+    .hero-title { font-family: var(--script); font-size: clamp(56px, 7vw, 108px); font-weight: 400; line-height: 1.12; margin-bottom: 1.75rem; }
+    .hero-title em { font-style: normal; font-weight: 700; color: var(--copper); }
+    .hero-body { font-size: 16px; color: var(--ink-soft); max-width: 420px; margin-bottom: 2.5rem; line-height: 1.75; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    .btn { display: inline-block; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; padding: 12px 24px; border-radius: 2px; border: 1px solid var(--ink); transition: background 0.18s, color 0.18s; cursor: pointer; }
+    .btn:hover { background: var(--ink); color: var(--cream); }
+    .btn-copper { background: var(--copper); color: #fff; border-color: var(--copper); }
+    .btn-copper:hover { background: var(--copper-dk); border-color: var(--copper-dk); }
+    .btn-sm { font-size: 12px; padding: 9px 18px; letter-spacing: 0.07em; }
+    .hero-right { background: var(--warm); display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem 2.5rem; position: relative; overflow: hidden; }
+    .hero-deco { position: absolute; top: -40px; right: -30px; width: 280px; height: 280px; border-radius: 50%; background: rgba(193,123,74,0.08); pointer-events: none; }
+    .hero-pull { font-family: var(--serif); font-size: clamp(26px, 3.2vw, 44px); font-weight: 400; font-style: italic; line-height: 1.25; color: var(--ink-soft); margin-bottom: 2rem; position: relative; z-index: 1; }
+    .hero-pull::before { content: '\201C'; font-size: 120px; font-family: var(--serif); color: rgba(193,123,74,0.15); position: absolute; top: -30px; left: -20px; line-height: 1; z-index: 0; }
+    .hero-meta { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); border-top: 1px solid var(--rule); padding-top: 1.25rem; position: relative; z-index: 1; }
+    section { border-bottom: 1px solid var(--rule); }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
+    .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+    .pillars { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .pillar { padding: 2.5rem 2rem 2.5rem 0; border-right: 1px solid var(--rule); }
+    .pillar:last-child { border-right: none; padding-right: 0; }
+    .pillar:not(:first-child) { padding-left: 2rem; }
+    .pillar-num { font-family: var(--serif); font-size: 48px; font-weight: 400; color: rgba(193,123,74,0.22); line-height: 1; margin-bottom: 1rem; }
+    .pillar h3 { font-family: var(--serif); font-size: 22px; font-weight: 500; margin-bottom: 0.75rem; }
+    .pillar p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; }
+    .events-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start; }
+    .event-list { display: flex; flex-direction: column; }
+    .event-item { border-bottom: 1px solid var(--rule); }
+    .event-item:first-child { border-top: 1px solid var(--rule); }
+    .event-header { display: grid; grid-template-columns: 60px 1fr auto; gap: 1.5rem; padding: 1.75rem 0; align-items: center; cursor: pointer; user-select: none; }
+    .event-header:hover .event-title { color: var(--copper); }
+    .event-date { text-align: center; }
+    .event-date .mo { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); display: block; }
+    .event-date .dy { font-family: var(--serif); font-size: 32px; font-weight: 500; line-height: 1; display: block; }
+    .event-title { font-family: var(--serif); font-size: 20px; font-weight: 500; transition: color 0.18s; }
+    .event-chevron { width: 18px; height: 18px; color: var(--ink-mute); transition: transform 0.3s ease; flex-shrink: 0; }
+    .event-item.open .event-chevron { transform: rotate(180deg); }
+    .event-item.open .event-title { color: var(--copper); }
+    .event-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.35s ease; }
+    .event-item.open .event-body { grid-template-rows: 1fr; }
+    .event-body-inner { overflow: hidden; padding: 0 0 0 76px; }
+    .event-body-content { padding-bottom: 1.75rem; }
+    .event-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1rem; }
+    .event-details { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 13px; color: var(--ink-soft); margin-bottom: 1.25rem; }
+    .event-details span { display: flex; align-items: center; gap: 6px; }
+    .event-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .tag { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border: 1px solid var(--rule); border-radius: 2px; color: var(--ink-soft); }
+    .event-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .events-aside { position: sticky; top: 80px; }
+    .aside-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 2px; padding: 2rem; margin-bottom: 1.5rem; }
+    .aside-card h3 { font-family: var(--serif); font-size: 20px; font-weight: 500; margin-bottom: 0.75rem; }
+    .aside-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 1.5rem; }
+    .aside-social { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .aside-social a { display: flex; align-items: center; gap: 6px; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); padding: 7px 14px; border: 1px solid var(--rule); border-radius: 2px; transition: border-color 0.18s, color 0.18s; }
+    .aside-social a:hover { color: var(--copper); border-color: var(--copper); }
+    .mission-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+    .mission-quote { font-family: var(--serif); font-size: clamp(24px, 3vw, 38px); font-weight: 400; font-style: italic; line-height: 1.3; color: var(--ink); }
+    .mission-body p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
+    .mission-body p:last-child { margin-bottom: 0; }
+    .join-section { background: var(--ink); color: var(--cream); border-bottom: none; }
+    .join-inner { max-width: 700px; margin: 0 auto; padding: 6rem 2.5rem; text-align: center; }
+    .join-inner h2 { font-family: var(--script); font-size: clamp(44px, 5.5vw, 72px); font-weight: 400; line-height: 1.15; margin-bottom: 1rem; }
+    .join-inner p { font-size: 15px; color: rgba(250,248,245,0.6); margin-bottom: 2.5rem; line-height: 1.75; }
+    .signup-row { display: flex; max-width: 440px; margin: 0 auto; border: 1px solid rgba(250,248,245,0.2); border-radius: 2px; overflow: hidden; }
+    .signup-row input { flex: 1; min-width: 0; padding: 14px 18px; background: transparent; border: none; color: var(--cream); font-family: var(--sans); font-size: 14px; outline: none; }
+    .signup-row input::placeholder { color: rgba(250,248,245,0.35); }
+    .signup-row button { background: var(--copper); color: #fff; border: none; padding: 14px 22px; font-family: var(--sans); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: background 0.18s; white-space: nowrap; }
+    .signup-row button:hover { background: var(--copper-dk); }
+    .join-note { font-size: 12px; color: rgba(250,248,245,0.3); margin-top: 1rem; }
+    .join-social { display: flex; justify-content: center; gap: 1rem; margin-top: 2.5rem; flex-wrap: wrap; }
+    .join-social a { display: flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,248,245,0.5); padding: 9px 18px; border: 1px solid rgba(250,248,245,0.15); border-radius: 2px; transition: color 0.18s, border-color 0.18s; }
+    .join-social a:hover { color: var(--copper); border-color: var(--copper); }
+    footer { background: var(--cream); border-top: 1px solid var(--rule); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: var(--script); font-size: 28px; font-weight: 400; color: var(--ink); line-height: 1; }
+    .footer-links { display: flex; gap: 1.5rem; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-mute); list-style: none; flex-wrap: wrap; }
+    .footer-links a:hover { color: var(--ink); }
+    .footer-social { display: flex; gap: 1rem; align-items: center; }
+    .footer-social a { color: var(--ink-mute); display: flex; align-items: center; transition: color 0.18s; }
+    .footer-social a:hover { color: var(--copper); }
+    .footer-legal { width: 100%; font-size: 11px; color: var(--ink-mute); border-top: 0.5px solid var(--rule); padding-top: 1rem; margin-top: 0.25rem; }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      .events-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .events-aside { position: static; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-hamburger { display: flex; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 3rem 1.25rem; border-right: none; border-bottom: 1px solid var(--rule); }
+      .hero-right { padding: 2.5rem 1.25rem; min-height: 240px; }
+      .section-inner { padding: 3rem 1.25rem; }
+      .pillars { grid-template-columns: 1fr; }
+      .pillar { border-right: none; border-bottom: 1px solid var(--rule); padding: 0 0 2rem 0 !important; }
+      .pillar:last-child { border-bottom: none; padding-bottom: 0 !important; }
+      .event-header { grid-template-columns: 52px 1fr auto; gap: 1rem; }
+      .event-body-inner { padding-left: 0; }
+      .mission-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 400px) {
+      .signup-row { flex-direction: column; }
+      .signup-row input { border-bottom: 1px solid rgba(250,248,245,0.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Folklore Society</a>
+    <ul class="nav-links">
+      <li><a href="#what-we-do">What we do</a></li>
+      <li><a href="#events">Find us</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#join">Stay in touch</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://instagram.com/folkloresocietywa" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://facebook.com/folkloresocietywa" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <a href="mailto:hello@folkloresocietywa.org" class="nav-cta">Contact us</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#what-we-do">What we do</a>
+    <a href="#events">Find us</a>
+    <a href="#about">About</a>
+    <a href="#join">Stay in touch</a>
+    <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Tri-Cities, Washington</p>
+      <h1 class="hero-title">Books,<br>community,<br>and <em>a glass of<br>something good.</em></h1>
+      <p class="hero-body">Folklore Society is a nonprofit that brings the bar to the bookshelf. Find us at literary events across the Tri-Cities — pouring drinks and adding that extra touch that makes a great event truly memorable.</p>
+      <div class="hero-actions">
+        <a href="#events" class="btn btn-copper">Find us at an event</a>
+        <a href="#about" class="btn">Our mission</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-deco"></div>
+      <p class="hero-pull">The best conversations start with a book and end with another round.</p>
+      <p class="hero-meta">A Washington nonprofit corporation &nbsp;·&nbsp; Est. 2026</p>
+    </div>
+  </section>
+
+  <section id="what-we-do">
+    <div class="section-inner">
+      <p class="section-label">What we do</p>
+      <div class="pillars">
+        <div class="pillar fade-up">
+          <div class="pillar-num">01</div>
+          <h3>Licensed bar service</h3>
+          <p>We hold WSLCB Special Occasion Licenses so we can legally serve beer, wine, and cocktails at literary events. When the community gathers, we make sure there's something in your glass.</p>
+        </div>
+        <div class="pillar fade-up" style="transition-delay:0.12s;">
+          <div class="pillar-num">02</div>
+          <h3>Find us at events</h3>
+          <p>We show up at book releases, readings, and community gatherings across the Tri-Cities. We're not the organizers — we're the ones who bring the drinks and add that extra touch that turns a great event into a memorable one.</p>
+        </div>
+        <div class="pillar fade-up" style="transition-delay:0.24s;">
+          <div class="pillar-num">03</div>
+          <h3>Supporting local</h3>
+          <p>Our proceeds support the local literary community — the authors, independent bookstores, and organizations putting books in the hands of Tri-Cities readers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="section-inner">
+      <p class="section-label">Where to find us</p>
+      <div class="events-grid">
+        <div class="event-list" id="eventList">
+
+          <div class="event-item fade-up">
+            <div class="event-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="event-date"><span class="mo">May</span><span class="dy">10</span></div>
+              <p class="event-title">Spring book release party</p>
+              <svg class="event-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="event-body">
+              <div class="event-body-inner"><div class="event-body-content">
+                <p class="event-desc">We'll be on hand pouring beer and wine at this spring release event in the Tri-Cities. Come celebrate local authors and pick up something new to read.</p>
+                <div class="event-details">
+                  <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Saturday, May 10, 2026</span>
+                  <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>Venue TBD — Tri-Cities area</span>
+                </div>
+                <div class="event-tags"><span class="tag">Beer &amp; wine</span><span class="tag">21+</span></div>
+                <div class="event-actions"><a href="#join" class="btn btn-copper btn-sm">Get notified</a></div>
+              </div></div>
+            </div>
+          </div>
+
+          <div class="event-item fade-up" style="transition-delay:0.1s;">
+            <div class="event-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="event-date"><span class="mo">Jun</span><span class="dy">TBD</span></div>
+              <p class="event-title">Summer reading kickoff</p>
+              <svg class="event-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <div class="event-body">
+              <div class="event-body-inner"><div class="event-body-content">
+                <p class="event-desc">A community reading event we're proud to support. We'll be there with drinks while the Tri-Cities kicks off summer with books, authors, and good company.</p>
+                <div class="event-details">
+                  <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>June 2026 — date TBD</span>
+                </div>
+                <div class="event-tags"><span class="tag">All ages</span><span class="tag">Non-alcohol options</span></div>
+                <div class="event-actions"><a href="#join" class="btn btn-copper btn-sm">Get notified</a></div>
+              </div></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="events-aside fade-up">
+          <div class="aside-card">
+            <h3>More events ahead</h3>
+            <p>We'll be at events all year. Sign up and we'll let you know when and where to find us next.</p>
+            <a href="#join" class="btn btn-copper btn-sm" style="display:inline-block;">Get notified</a>
+          </div>
+          <div class="aside-card">
+            <h3>Follow along</h3>
+            <p>We post event updates and announcements on social.</p>
+            <div class="aside-social">
+              <a href="https://instagram.com/folkloresocietywa" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>Instagram
+              </a>
+              <a href="https://facebook.com/folkloresocietywa" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label">About us</p>
+      <div class="mission-wrap">
+        <p class="mission-quote fade-up">"We're not the event planners — we're the ones who make sure there's something worth drinking while you celebrate a great book."</p>
+        <div class="mission-body fade-up">
+          <p>Folklore Society was founded in 2026 to fill a specific and important role in the Tri-Cities literary community: licensed, responsible beverage service at the events that bring readers and writers together.</p>
+          <p>We partner with local bookstores and event organizers to show up where the community gathers — pouring drinks and adding that extra touch that makes every literary event one worth staying late for.</p>
+          <p>We're organized as a Washington nonprofit corporation and are pursuing federal 501(c)(3) tax-exempt status. Our proceeds go back into supporting the local literary community.</p>
+          <p>Questions? Reach us at <a href="mailto:hello@folkloresocietywa.org" style="color:var(--copper);border-bottom:1px solid currentColor;">hello@folkloresocietywa.org</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="join-section" id="join">
+    <div class="join-inner">
+      <h2>Stay in the loop.</h2>
+      <p>Get notified about upcoming events, new programs, and ways to support the Tri-Cities literary community.</p>
+      <div class="signup-row">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" id="emailInput" />
+        <button type="button" id="signupBtn">Sign up</button>
+      </div>
+      <p class="join-note">No spam. Just events and updates.</p>
+      <div class="join-social">
+        <a href="https://instagram.com/folkloresocietywa" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>Instagram
+        </a>
+        <a href="https://facebook.com/folkloresocietywa" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-logo">Folklore Society</span>
+    <ul class="footer-links">
+      <li><a href="#what-we-do">What we do</a></li>
+      <li><a href="#events">Find us</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="mailto:hello@folkloresocietywa.org">Contact</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://instagram.com/folkloresocietywa" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://facebook.com/folkloresocietywa" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+    </div>
+    <p class="footer-legal">© 2026 Folklore Society · A Washington nonprofit corporation · Tri-Cities, WA</p>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+    document.querySelectorAll('.event-header').forEach(header => {
+      function toggle() {
+        const item = header.closest('.event-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.event-item.open').forEach(el => {
+          el.classList.remove('open');
+          el.querySelector('.event-header').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) { item.classList.add('open'); header.setAttribute('aria-expanded', 'true'); }
+      }
+      header.addEventListener('click', toggle);
+      header.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+    });
+
+    const burger = document.querySelector('.nav-hamburger');
+    const menu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false');
+    }));
+
+    document.getElementById('signupBtn').addEventListener('click', function() {
+      const input = document.getElementById('emailInput');
+      if (input.value && input.value.includes('@')) {
+        input.value = ''; input.placeholder = 'You\u2019re on the list \u2014 thank you!';
+        this.textContent = 'Done'; this.style.background = '#4a7a3a';
+      }
+    });
+  </script>
+</body>
+</html>
