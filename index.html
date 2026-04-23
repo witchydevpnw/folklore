@@ -147,6 +147,12 @@
       margin: 0.08em 0.12em 0 0;
       color: var(--copper);
     }
+    .campaigns-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .campaign-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 2px; padding: 2.5rem 2rem; display: flex; flex-direction: column; transition: border-color 0.2s; }
+    .campaign-card:hover { border-color: var(--copper); }
+    .campaign-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 0.75rem; color: var(--ink); }
+    .campaign-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 2rem; flex: 1; }
+    .campaign-card .btn { width: 100%; text-align: center; justify-content: center; }
     .join-section { background: var(--ink); color: var(--cream); border-bottom: none; position: relative; overflow: hidden; }
     .join-stars { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
     .join-stars .star-twinkle { animation: twinkle 9s ease-in-out infinite; }
@@ -191,6 +197,7 @@
       .event-header { grid-template-columns: 52px 1fr auto; gap: 1rem; }
       .event-body-inner { padding-left: 0; }
       .mission-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
+      .campaigns-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; align-items: flex-start; }
     }
     @media (max-width: 400px) {
@@ -205,6 +212,7 @@
     <a href="/" class="nav-logo">Folklore Society</a>
     <ul class="nav-links">
       <li><a href="#what-we-do">What we do</a></li>
+      <li><a href="#support">Support</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#join">Stay in touch</a></li>
     </ul>
@@ -226,6 +234,7 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="#what-we-do">What we do</a>
+    <a href="#support">Support</a>
     <a href="#about">About</a>
     <a href="#join">Stay in touch</a>
     <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" target="_blank" rel="noopener">Support us</a>
@@ -278,6 +287,29 @@
           <div class="pillar-num">03</div>
           <h3>Backing the people already doing the work.</h3>
           <p>The Tri-Cities already has book clubs, reading series, and people building literary community. What's missing is the fundraising and nonprofit structure to help it all grow. That's where we come in. We underwrite, we partner, we show up where we're useful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="section-inner">
+      <p class="section-label">Support our work<span class="section-star" aria-hidden="true">&#10022;</span></p>
+      <div class="campaigns-grid">
+        <div class="campaign-card fade-up">
+          <h3>Author Fund</h3>
+          <p>Bring writers to the Tri-Cities. Your donations fund author visits, readings, and literary events that connect our community with the voices shaping contemporary literature.</p>
+          <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Support the Author Fund</a>
+        </div>
+        <div class="campaign-card fade-up" style="transition-delay:0.1s;">
+          <h3>General Fund</h3>
+          <p>Give where it's needed most. Unrestricted donations let us respond to opportunities as they arise and keep our operations running smoothly.</p>
+          <a href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" class="btn btn-copper" target="_blank" rel="noopener">Give to General Fund</a>
+        </div>
+        <div class="campaign-card fade-up" style="transition-delay:0.2s;">
+          <h3>Dedication</h3>
+          <p>Sponsor a bottle at our literary events. Your dedication appears on our menu, honoring someone special while supporting the Tri-Cities reading community.</p>
+          <a href="https://www.zeffy.com/en-US/donation-form/dedication" class="btn btn-copper" target="_blank" rel="noopener">Sponsor a Bottle</a>
         </div>
       </div>
     </div>
@@ -344,8 +376,8 @@
     <span class="footer-logo">Folklore Society</span>
     <ul class="footer-links">
       <li><a href="#what-we-do">What we do</a></li>
+      <li><a href="#support">Support</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" target="_blank" rel="noopener">Support</a></li>
       <li><a href="mailto:hello@folkloresocietywa.org">Contact</a></li>
     </ul>
     <div class="footer-social">
