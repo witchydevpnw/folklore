@@ -147,9 +147,11 @@
       margin: 0.08em 0.12em 0 0;
       color: var(--copper);
     }
+    #support { background: linear-gradient(135deg, var(--copper-lt) 0%, var(--warm) 50%, var(--cream) 100%); }
     .campaigns-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto; }
-    .campaign-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 2px; padding: 2.5rem 2rem; display: flex; flex-direction: column; transition: border-color 0.2s; }
-    .campaign-card:hover { border-color: var(--copper); }
+    .campaign-card { background: var(--cream); border: 1px solid rgba(42,31,61,0.08); border-radius: 14px; padding: 2.5rem 2rem; display: flex; flex-direction: column; position: relative; box-shadow: 0 1px 2px rgba(42,31,61,0.04), 0 8px 24px -8px rgba(42,31,61,0.10); transition: box-shadow 0.25s ease, transform 0.25s ease; }
+    .campaign-card:hover { box-shadow: 0 2px 4px rgba(42,31,61,0.05), 0 16px 32px -10px rgba(42,31,61,0.14); transform: translateY(-2px); }
+    .campaign-card .card-sparkle { position: absolute; top: 14px; right: 18px; color: var(--copper); font-size: 13px; opacity: 0.55; line-height: 1; pointer-events: none; }
     .campaign-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 0.75rem; color: var(--ink); }
     .campaign-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 2rem; flex: 1; }
     .campaign-card .btn { width: 100%; text-align: center; justify-content: center; }
@@ -297,21 +299,25 @@
       <p class="section-label">Support our work<span class="section-star" aria-hidden="true">&#10022;</span></p>
       <div class="campaigns-grid">
         <div class="campaign-card fade-up">
+          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
           <h3>Author Fund</h3>
           <p>Bring writers to the Tri-Cities. Your donations fund author visits, readings, and literary events that connect our community with the voices shaping contemporary literature.</p>
           <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Support the Author Fund</a>
         </div>
         <div class="campaign-card fade-up" style="transition-delay:0.1s;">
+          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
           <h3>Give where it's needed most</h3>
           <p>Unrestricted donations let us respond to opportunities as they arise and keep operations running smoothly.</p>
           <a href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" class="btn btn-copper" target="_blank" rel="noopener">Give to General Fund</a>
         </div>
         <div class="campaign-card fade-up" style="transition-delay:0.2s;">
+          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
           <h3>Dedication</h3>
           <p>Sponsor a bottle at our literary events. Your dedication appears on our menu, honoring someone special while supporting the Tri-Cities reading community.</p>
           <a href="https://www.zeffy.com/en-US/donation-form/dedication" class="btn btn-copper" target="_blank" rel="noopener">Sponsor a Bottle</a>
         </div>
         <div class="campaign-card fade-up" style="transition-delay:0.3s;">
+          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
           <h3>Shelf Life</h3>
           <p>Help us build a lending library for the Tri-Cities literary community. Your support stocks our shelves with books that readers can borrow and share.</p>
           <a href="https://www.zeffy.com/en-US/donation-form/shelf-life" class="btn btn-copper" target="_blank" rel="noopener">Support Shelf Life</a>
