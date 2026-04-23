@@ -9,6 +9,7 @@
   <meta property="og:description" content="A reading life, closer to home. A literary nonprofit for the Tri-Cities." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://folkloresocietywa.org" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -43,6 +44,10 @@
       --serif:     'Cormorant Garamond', Georgia, serif;
       --sans:      'Jost', system-ui, sans-serif;
       --script:    'Take Me To Tuscany', 'Cormorant Garamond', cursive;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.5; }
+      50%      { opacity: 0.12; }
     }
     html { scroll-behavior: smooth; }
     body { font-family: var(--sans); font-weight: 400; background: var(--cream); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
@@ -80,14 +85,17 @@
     .btn-copper:hover { background: var(--copper-dk); border-color: var(--copper-dk); }
     .btn-sm { font-size: 12px; padding: 9px 18px; letter-spacing: 0.07em; }
     .hero-right { background: var(--warm); display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem 2.5rem; position: relative; overflow: hidden; }
-    .hero-deco { position: absolute; top: -40px; right: -30px; width: 280px; height: 280px; border-radius: 50%; background: rgba(193,123,74,0.08); pointer-events: none; }
+    .hero-deco { position: absolute; top: 0; right: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+    .hero-deco .star-twinkle { animation: twinkle 8s ease-in-out infinite; }
+    .hero-deco .star-twinkle.delayed { animation-delay: 3.5s; }
     .hero-pull { font-family: var(--serif); font-size: clamp(26px, 3.2vw, 44px); font-weight: 400; font-style: italic; line-height: 1.25; color: var(--ink-soft); margin-bottom: 2rem; position: relative; z-index: 1; }
     .hero-pull::before { content: '\201C'; font-size: 120px; font-family: var(--serif); color: rgba(193,123,74,0.15); position: absolute; top: -30px; left: -20px; line-height: 1; z-index: 0; }
     .hero-meta { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); border-top: 1px solid var(--rule); padding-top: 1.25rem; position: relative; z-index: 1; }
     section { border-bottom: 1px solid var(--rule); }
     .section-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
     .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
-    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+    .section-label::after { content: ''; order: 1; flex: 1; height: 1px; background: var(--rule); }
+    .section-star { order: 2; color: var(--copper); opacity: 0.6; font-size: 14px; letter-spacing: 0; line-height: 1; }
     .pillars { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); }
     .pillar { padding: 2.5rem 2rem 2.5rem 0; border-right: 1px solid var(--rule); }
     .pillar:last-child { border-right: none; padding-right: 0; }
@@ -129,8 +137,21 @@
     .mission-quote { font-family: var(--serif); font-size: clamp(24px, 3vw, 38px); font-weight: 400; font-style: italic; line-height: 1.3; color: var(--ink); }
     .mission-body p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
     .mission-body p:last-child { margin-bottom: 0; }
-    .join-section { background: var(--ink); color: var(--cream); border-bottom: none; }
-    .join-inner { max-width: 700px; margin: 0 auto; padding: 6rem 2.5rem; text-align: center; }
+    .mission-body p:first-of-type::first-letter {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 500;
+      font-size: 4.2em;
+      float: left;
+      line-height: 0.82;
+      margin: 0.08em 0.12em 0 0;
+      color: var(--copper);
+    }
+    .join-section { background: var(--ink); color: var(--cream); border-bottom: none; position: relative; overflow: hidden; }
+    .join-stars { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+    .join-stars .star-twinkle { animation: twinkle 9s ease-in-out infinite; }
+    .join-stars .star-twinkle.delayed { animation-delay: 4s; }
+    .join-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; padding: 6rem 2.5rem; text-align: center; }
     .join-inner h2 { font-family: var(--script); font-size: clamp(44px, 5.5vw, 72px); font-weight: 400; line-height: 1.15; margin-bottom: 1rem; }
     .join-inner p { font-size: 15px; color: rgba(250,248,245,0.6); margin-bottom: 2.5rem; line-height: 1.75; }
     .signup-row { display: flex; max-width: 440px; margin: 0 auto; border: 1px solid rgba(250,248,245,0.2); border-radius: 2px; overflow: hidden; }
@@ -222,7 +243,18 @@
       </div>
     </div>
     <div class="hero-right">
-      <div class="hero-deco"></div>
+      <svg class="hero-deco" viewBox="0 0 400 400" preserveAspectRatio="xMaxYMin slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M350 90 A 52 52 0 1 1 298 38 A 40 40 0 0 0 350 90 Z" fill="#c17b4a" opacity="0.13"/>
+        <g fill="#c17b4a">
+          <circle class="star-twinkle" cx="95" cy="58" r="1.6" opacity="0.5"/>
+          <circle cx="160" cy="118" r="1" opacity="0.35"/>
+          <circle class="star-twinkle delayed" cx="232" cy="42" r="1.9" opacity="0.45"/>
+          <circle cx="72" cy="200" r="1.2" opacity="0.3"/>
+          <circle cx="182" cy="268" r="0.9" opacity="0.3"/>
+          <circle cx="348" cy="198" r="1.3" opacity="0.35"/>
+          <circle cx="265" cy="148" r="0.8" opacity="0.25"/>
+        </g>
+      </svg>
       <p class="hero-pull">Reading is a solitary act. A reading life is a shared one.</p>
       <p class="hero-meta">A Washington nonprofit corporation &nbsp;·&nbsp; Est. 2026</p>
     </div>
@@ -230,7 +262,7 @@
 
   <section id="what-we-do">
     <div class="section-inner">
-      <p class="section-label">What we do</p>
+      <p class="section-label">What we do<span class="section-star" aria-hidden="true">&#10022;</span></p>
       <div class="pillars">
         <div class="pillar fade-up">
           <div class="pillar-num">01</div>
@@ -253,7 +285,7 @@
 
   <section id="about">
     <div class="section-inner">
-      <p class="section-label">About us</p>
+      <p class="section-label">About us<span class="section-star" aria-hidden="true">&#10022;</span></p>
       <div class="mission-wrap">
         <p class="mission-quote fade-up">The Tri-Cities has readers, writers, bookstores, and people who care about all of it. It didn't have a nonprofit set up to support them. Now it does.</p>
         <div class="mission-body fade-up">
@@ -267,6 +299,28 @@
   </section>
 
   <section class="join-section" id="join">
+    <svg class="join-stars" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#faf8f5">
+        <circle cx="80" cy="70" r="1.2" opacity="0.35"/>
+        <circle class="star-twinkle" cx="165" cy="130" r="1" opacity="0.4"/>
+        <circle cx="248" cy="52" r="1.4" opacity="0.3"/>
+        <circle cx="310" cy="180" r="0.9" opacity="0.28"/>
+        <circle class="star-twinkle delayed" cx="395" cy="95" r="1.1" opacity="0.4"/>
+        <circle cx="475" cy="230" r="1.3" opacity="0.25"/>
+        <circle cx="560" cy="60" r="0.9" opacity="0.3"/>
+        <circle class="star-twinkle" cx="640" cy="160" r="1.2" opacity="0.38"/>
+        <circle cx="720" cy="110" r="0.8" opacity="0.25"/>
+        <circle cx="800" cy="250" r="1" opacity="0.3"/>
+        <circle class="star-twinkle delayed" cx="880" cy="80" r="1.3" opacity="0.42"/>
+        <circle cx="965" cy="185" r="0.9" opacity="0.28"/>
+        <circle cx="1050" cy="115" r="1.1" opacity="0.3"/>
+        <circle cx="1125" cy="230" r="0.8" opacity="0.25"/>
+        <circle cx="200" cy="310" r="0.9" opacity="0.22"/>
+        <circle cx="540" cy="370" r="1" opacity="0.25"/>
+        <circle class="star-twinkle" cx="850" cy="395" r="1.1" opacity="0.3"/>
+        <circle cx="1080" cy="340" r="0.8" opacity="0.22"/>
+      </g>
+    </svg>
     <div class="join-inner">
       <h2>Stay in the loop.</h2>
       <p>Get notified about upcoming events, new programs, and ways to support the Tri-Cities literary community.</p>
