@@ -149,6 +149,26 @@
     }
     #support { background: linear-gradient(135deg, var(--copper-lt) 0%, var(--warm) 50%, var(--cream) 100%); }
     .campaigns-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto; }
+    .donor-wall { background: var(--cream); padding: 4rem 0 4.5rem; overflow: hidden; position: relative; }
+    .donor-wall-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); text-align: center; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+    .donor-wall-label::before, .donor-wall-label::after { content: ''; width: 40px; height: 1px; background: var(--rule); }
+    .donor-wall-title { font-family: var(--serif); font-style: italic; font-size: clamp(22px, 2.8vw, 30px); font-weight: 400; color: var(--ink-soft); text-align: center; margin-bottom: 2.5rem; }
+    .ticker { position: relative; width: 100%; overflow: hidden; mask-image: linear-gradient(to right, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%); }
+    .ticker-track { display: flex; width: max-content; animation: ticker-scroll 60s linear infinite; }
+    .ticker:hover .ticker-track { animation-play-state: paused; }
+    .ticker-group { display: flex; flex-shrink: 0; padding-right: 2.5rem; }
+    .ticker-item { font-family: var(--serif); font-size: 18px; color: var(--ink); padding: 0 2.5rem; white-space: nowrap; position: relative; }
+    .ticker-item + .ticker-item::before { content: '\2726'; position: absolute; left: -6px; top: 50%; transform: translateY(-50%); color: var(--copper); opacity: 0.55; font-size: 10px; }
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ticker { mask-image: none; -webkit-mask-image: none; }
+      .ticker-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 900px; margin: 0 auto; }
+      .ticker-group { padding: 0; flex-wrap: wrap; justify-content: center; }
+      .ticker-item { padding: 0.5rem 1.25rem; }
+    }
     .campaign-card { background: var(--cream); border: 1px solid rgba(42,31,61,0.08); border-radius: 14px; padding: 2.5rem 2rem; display: flex; flex-direction: column; position: relative; box-shadow: 0 1px 2px rgba(42,31,61,0.04), 0 8px 24px -8px rgba(42,31,61,0.10); transition: box-shadow 0.25s ease, transform 0.25s ease; }
     .campaign-card:hover { box-shadow: 0 2px 4px rgba(42,31,61,0.05), 0 16px 32px -10px rgba(42,31,61,0.14); transform: translateY(-2px); }
     .campaign-card .card-sparkle { position: absolute; top: 14px; right: 18px; color: var(--copper); font-size: 13px; opacity: 0.55; line-height: 1; pointer-events: none; }
@@ -322,6 +342,66 @@
           <p>Help us build a lending library for the Tri-Cities literary community. Your support stocks our shelves with books that readers can borrow and share.</p>
           <a href="https://www.zeffy.com/en-US/donation-form/shelf-life" class="btn btn-copper" target="_blank" rel="noopener">Support Shelf Life</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- DONOR WALL                                                   -->
+  <!-- Sample names below are placeholders. Replace the contents of -->
+  <!-- BOTH .ticker-group divs with the real donor list (keep them  -->
+  <!-- identical to each other for the seamless loop to work).      -->
+  <!-- ============================================================ -->
+  <section class="donor-wall" aria-label="Our supporters">
+    <p class="donor-wall-label">With gratitude</p>
+    <p class="donor-wall-title">To the readers who make this work possible</p>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+
+        <!-- Group 1 - real list goes here -->
+        <div class="ticker-group">
+          <span class="ticker-item">Margaret Ashworth</span>
+          <span class="ticker-item">The Harlow Family</span>
+          <span class="ticker-item">Dr. Ellison Park</span>
+          <span class="ticker-item">Juno &amp; Rafael Mendez</span>
+          <span class="ticker-item">Beatrice Calder</span>
+          <span class="ticker-item">The Winslow Foundation</span>
+          <span class="ticker-item">Sam Okafor</span>
+          <span class="ticker-item">Anonymous</span>
+          <span class="ticker-item">Lily Whitford</span>
+          <span class="ticker-item">The Radich Household</span>
+          <span class="ticker-item">Teddy &amp; Fran Bellweather</span>
+          <span class="ticker-item">Priya Nair</span>
+          <span class="ticker-item">August Kemper</span>
+          <span class="ticker-item">The Sagemoor Book Club</span>
+          <span class="ticker-item">Wren Dalloway</span>
+          <span class="ticker-item">Marcus &amp; Elena Shore</span>
+          <span class="ticker-item">Anonymous</span>
+          <span class="ticker-item">Joanna Finch</span>
+        </div>
+
+        <!-- Group 2 - MUST be identical to Group 1 for seamless loop -->
+        <div class="ticker-group" aria-hidden="true">
+          <span class="ticker-item">Margaret Ashworth</span>
+          <span class="ticker-item">The Harlow Family</span>
+          <span class="ticker-item">Dr. Ellison Park</span>
+          <span class="ticker-item">Juno &amp; Rafael Mendez</span>
+          <span class="ticker-item">Beatrice Calder</span>
+          <span class="ticker-item">The Winslow Foundation</span>
+          <span class="ticker-item">Sam Okafor</span>
+          <span class="ticker-item">Anonymous</span>
+          <span class="ticker-item">Lily Whitford</span>
+          <span class="ticker-item">The Radich Household</span>
+          <span class="ticker-item">Teddy &amp; Fran Bellweather</span>
+          <span class="ticker-item">Priya Nair</span>
+          <span class="ticker-item">August Kemper</span>
+          <span class="ticker-item">The Sagemoor Book Club</span>
+          <span class="ticker-item">Wren Dalloway</span>
+          <span class="ticker-item">Marcus &amp; Elena Shore</span>
+          <span class="ticker-item">Anonymous</span>
+          <span class="ticker-item">Joanna Finch</span>
+        </div>
+
       </div>
     </div>
   </section>
