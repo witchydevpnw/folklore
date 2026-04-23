@@ -321,12 +321,12 @@
       <!-- The JS reads these values and fills in the rest.                 -->
       <!-- ================================================================ -->
       <div class="featured-campaign fade-up"
-           data-author="Brynne Weaver"
-           data-raised="325"
+           data-author=""
+           data-raised="0"
            data-target="1500"
            data-url="https://www.zeffy.com/en-US/donation-form/support-literacy-events">
         <p class="featured-campaign-eyebrow"><span data-eyebrow>Currently fundraising</span></p>
-        <p class="featured-campaign-title" data-title>Bringing <em>Brynne Weaver</em> to the Tri-Cities</p>
+        <p class="featured-campaign-title" data-title>Bringing our <em>next author</em> to the Tri-Cities</p>
         <p class="featured-campaign-subtext" data-subtext>Sign up below to be the first to hear about our next author event.</p>
         <div class="progress-rail" aria-hidden="true"><div class="progress-fill" data-fill></div></div>
         <div class="progress-meta">
@@ -475,7 +475,7 @@
     (function initFeaturedCampaign() {
       const el = document.querySelector('.featured-campaign');
       if (!el) return;
-      const author = el.dataset.author || '';
+      const author = (el.dataset.author || '').trim();
       const raised = parseFloat(el.dataset.raised) || 0;
       const target = parseFloat(el.dataset.target) || 0;
       const url    = el.dataset.url || '#';
@@ -485,7 +485,11 @@
         const pct = Math.max(0, Math.min(100, (raised / target) * 100));
         el.style.setProperty('--progress-width', pct.toFixed(1) + '%');
         el.querySelector('[data-eyebrow]').textContent = 'Currently fundraising';
-        el.querySelector('[data-title]').innerHTML = 'Bringing <em>' + author + '</em> to the Tri-Cities';
+        if (author) {
+          el.querySelector('[data-title]').innerHTML = 'Bringing <em>' + author + '</em> to the Tri-Cities';
+        } else {
+          el.querySelector('[data-title]').innerHTML = 'Bringing our <em>next author</em> to the Tri-Cities';
+        }
         el.querySelector('[data-raised-display]').textContent = fmt(raised);
         el.querySelector('[data-target-display]').textContent = fmt(target);
         const cta = el.querySelector('[data-cta]');
