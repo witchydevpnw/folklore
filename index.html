@@ -147,7 +147,7 @@
       margin: 0.08em 0.12em 0 0;
       color: var(--copper);
     }
-    .campaigns-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .campaigns-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto; }
     .campaign-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 2px; padding: 2.5rem 2rem; display: flex; flex-direction: column; transition: border-color 0.2s; }
     .campaign-card:hover { border-color: var(--copper); }
     .campaign-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 0.75rem; color: var(--ink); }
@@ -310,6 +310,11 @@
           <h3>Dedication</h3>
           <p>Sponsor a bottle at our literary events. Your dedication appears on our menu, honoring someone special while supporting the Tri-Cities reading community.</p>
           <a href="https://www.zeffy.com/en-US/donation-form/dedication" class="btn btn-copper" target="_blank" rel="noopener">Sponsor a Bottle</a>
+        </div>
+        <div class="campaign-card fade-up" style="transition-delay:0.3s;">
+          <h3>Shelf Life</h3>
+          <p>Help us build a lending library for the Tri-Cities literary community. Your support stocks our shelves with books that readers can borrow and share.</p>
+          <a href="https://www.zeffy.com/en-US/donation-form/shelf-life" class="btn btn-copper" target="_blank" rel="noopener">Support Shelf Life</a>
         </div>
       </div>
     </div>
