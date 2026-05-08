@@ -1,3 +1,4 @@
 *.zip
 *.png
 !images/folklore.png
+!images/wordmark.png
