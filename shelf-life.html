@@ -86,6 +86,12 @@
     .page-header h1 { font-family: var(--script); font-size: clamp(44px, 6vw, 80px); font-weight: 400; line-height: 1.12; margin-bottom: 1.25rem; }
     .page-header .lead { font-size: 17px; color: var(--ink-soft); max-width: 600px; line-height: 1.75; }
 
+    /* --- Cycle Banner --- */
+    .cycle-banner { background: var(--ink); color: var(--cream); border-bottom: 1px solid var(--rule); }
+    .cycle-banner-inner { max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem; display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+    .cycle-banner-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); white-space: nowrap; flex-shrink: 0; }
+    .cycle-banner-text { font-size: 15px; color: rgba(250,248,245,0.75); line-height: 1.6; }
+
     /* --- Prose --- */
     .prose { max-width: 700px; }
     .prose p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
@@ -158,6 +164,7 @@
       .nav-links, .nav-cta, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
       .page-header { padding: 3rem 1.25rem 2.5rem; }
+      .cycle-banner-inner { padding: 1.5rem 1.25rem; flex-direction: column; gap: 0.75rem; }
       .section-inner { padding: 3rem 1.25rem; }
       .steps { grid-template-columns: 1fr; }
       .step { border-right: none; padding: 0 0 1.5rem 0 !important; border-bottom: 1px solid var(--rule); }
@@ -211,6 +218,14 @@
       <p class="hero-eyebrow">Quarterly program</p>
       <h1>Shelf Life</h1>
       <p class="lead">Every quarter, readers in the Tri-Cities vote on a book by a local or regional author. We buy the winner from a local indie bookstore and place copies in free libraries and book exchanges across the metro.</p>
+    </div>
+  </div>
+
+  <!-- Current Cycle Banner -->
+  <div class="cycle-banner">
+    <div class="cycle-banner-inner">
+      <span class="cycle-banner-label">Now open · Summer 2026</span>
+      <p class="cycle-banner-text">Our first Shelf Life shortlist celebrates Pride month. We're looking for books by LGBTQ authors or featuring LGBTQ main characters, available through a Tri-Cities indie bookstore. Submissions and nominations are open now.</p>
     </div>
   </div>
 
