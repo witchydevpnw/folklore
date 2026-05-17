@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&amp;display=swap');
+      .fs-letter {
+        font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+        font-style: italic;
+        font-weight: 400;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#2a1f3d"/>
+
+  <!-- Outer ring -->
+  <circle cx="540" cy="540" r="448" stroke="#c17b4a" stroke-width="5" fill="none"/>
+
+  <!-- Diamond ornaments at cardinal points -->
+  <!-- Top -->
+  <rect x="513" y="66" width="27" height="27" fill="#c17b4a" transform="rotate(45, 540, 86)"/>
+  <!-- Right -->
+  <rect x="981" y="513" width="27" height="27" fill="#c17b4a" transform="rotate(45, 994, 540)"/>
+  <!-- Bottom -->
+  <rect x="513" y="967" width="27" height="27" fill="#c17b4a" transform="rotate(45, 540, 994)"/>
+  <!-- Left -->
+  <rect x="59" y="513" width="27" height="27" fill="#c17b4a" transform="rotate(45, 86, 540)"/>
+
+  <!-- FS lettermark -->
+  <text
+    x="540"
+    y="678"
+    text-anchor="middle"
+    class="fs-letter"
+    font-size="418"
+    fill="#faf8f5"
+    letter-spacing="-18">FS</text>
+
+</svg>

@@ -1,2 +1,5 @@
 *.zip
 *.png
+!images/folklore.png
+!images/wordmark.png
+.DS_Store
