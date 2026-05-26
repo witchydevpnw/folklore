@@ -413,10 +413,24 @@
 
     document.getElementById('signupBtn').addEventListener('click', function() {
       const input = document.getElementById('emailInput');
-      if (input.value && input.value.includes('@')) {
-        input.value = ''; input.placeholder = 'You\u2019re on the list \u2014 thank you!';
-        this.textContent = 'Done'; this.style.background = '#4a7a3a';
-      }
+      const email = input.value.trim();
+      if (!email || !email.includes('@')) return;
+      const btn = this;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      fetch('https://a052d22f.sibforms.com/serve/MUIFAFxrLg9QDgAOPv6tvI8ZbXBAUNCkd9JgWNodRL0KPzu9YsclbTMaKB_zQC4zUU4ZQyFl38u62vRP8IeMRq01dMHtrNsEvUH94gIiH03gNsxlOxCzgcJyqeTvBkAOZ2eOe_p8zxDbCEWB9SSNGmAw3LMue2wi3WwbwJi43ZNPPxcvbMvDh8C_T0sFPgru5ngDleFYqzw0yy_UVA==', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'EMAIL=' + encodeURIComponent(email) + '&email_address_check=&locale=en'
+      }).then(function() {
+        input.value = '';
+        input.placeholder = 'Check your inbox to confirm.';
+        btn.textContent = 'Done';
+        btn.style.background = '#4a7a3a';
+      }).catch(function() {
+        btn.textContent = 'Sign up';
+        btn.disabled = false;
+      });
     });
   </script>
 </body>

@@ -291,11 +291,22 @@
     const emailInput = document.getElementById('emailInput');
     signupBtn.addEventListener('click', () => {
       const email = emailInput.value.trim();
-      if (email && email.includes('@')) {
-        signupBtn.textContent = 'Thanks!';
-        signupBtn.disabled = true;
+      if (!email || !email.includes('@')) return;
+      signupBtn.textContent = 'Sending...';
+      signupBtn.disabled = true;
+      fetch('https://a052d22f.sibforms.com/serve/MUIFAFxrLg9QDgAOPv6tvI8ZbXBAUNCkd9JgWNodRL0KPzu9YsclbTMaKB_zQC4zUU4ZQyFl38u62vRP8IeMRq01dMHtrNsEvUH94gIiH03gNsxlOxCzgcJyqeTvBkAOZ2eOe_p8zxDbCEWB9SSNGmAw3LMue2wi3WwbwJi43ZNPPxcvbMvDh8C_T0sFPgru5ngDleFYqzw0yy_UVA==', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'EMAIL=' + encodeURIComponent(email) + '&email_address_check=&locale=en'
+      }).then(() => {
         emailInput.value = '';
-      }
+        emailInput.placeholder = 'Check your inbox to confirm.';
+        signupBtn.textContent = 'Done';
+        signupBtn.style.background = '#4a7a3a';
+      }).catch(() => {
+        signupBtn.textContent = 'Sign up';
+        signupBtn.disabled = false;
+      });
     });
   </script>
 
