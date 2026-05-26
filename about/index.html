@@ -16,14 +16,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     @font-face {
       font-family: 'Take Me To Tuscany';
-      src: url('fonts/takemetotuscany-regular-webfont.woff2') format('woff2'),
-           url('fonts/takemetotuscany-regular-webfont.woff') format('woff');
+      src: url('../fonts/takemetotuscany-regular-webfont.woff2') format('woff2'),
+           url('../fonts/takemetotuscany-regular-webfont.woff') format('woff');
       font-weight: 400; font-style: normal; font-display: swap;
     }
     @font-face {
       font-family: 'Take Me To Tuscany';
-      src: url('fonts/takemetotuscany-weight1-webfont.woff2') format('woff2'),
-           url('fonts/takemetotuscany-weight1-webfont.woff') format('woff');
+      src: url('../fonts/takemetotuscany-weight1-webfont.woff2') format('woff2'),
+           url('../fonts/takemetotuscany-weight1-webfont.woff') format('woff');
       font-weight: 700; font-style: normal; font-display: swap;
     }
     :root {
@@ -82,9 +82,9 @@
     .letter-wrap { max-width: 660px; }
 
     .letter-salutation {
-      font-family: var(--serif);
-      font-size: 22px;
-      font-weight: 500;
+      font-family: var(--script);
+      font-size: clamp(32px, 4vw, 46px);
+      font-weight: 400;
       color: var(--ink);
       margin-bottom: 2rem;
     }
