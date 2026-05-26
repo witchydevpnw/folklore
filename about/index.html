@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support · Folklore Society</title>
-  <meta name="description" content="Support Folklore Society's literary programs in the Tri-Cities. Give to the Author Fund, vote in Shelf Life, sponsor a Dedication bottle, or give where it's needed most." />
-  <meta property="og:title" content="Support Folklore Society" />
-  <meta property="og:description" content="Every dollar stays in the Tri-Cities literary community." />
+  <title>About · Folklore Society</title>
+  <meta name="description" content="Folklore Society is a literary nonprofit for the Tri-Cities. We fundraise to bring authors out east, champion independent bookstores, and back the local reading community." />
+  <meta property="og:title" content="About · Folklore Society" />
+  <meta property="og:description" content="We're the ones at the bookstore, at the book club, at the event. The Tri-Cities has the readers for something better, and we built Folklore to help get it there." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://folkloresocietywa.org/support" />
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <meta property="og:url" content="https://folkloresocietywa.org/about" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -45,7 +44,7 @@
     body { font-family: var(--sans); font-weight: 400; background: var(--cream); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
     a { color: inherit; text-decoration: none; }
 
-    /* --- Nav (shared) --- */
+    /* --- Nav --- */
     nav { position: sticky; top: 0; z-index: 100; background: var(--cream); border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; height: 64px; }
     .nav-logo { font-family: var(--script); font-size: 34px; font-weight: 400; color: var(--ink); line-height: 1; padding: 4px 0 0; }
     .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
@@ -57,7 +56,6 @@
     .nav-social a:hover { color: var(--copper); }
     .nav-cta { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 18px; border: 1px solid var(--ink); border-radius: 2px; transition: background 0.18s, color 0.18s; }
     .nav-cta:hover { background: var(--ink); color: var(--cream); }
-    .nav-cta.active { background: var(--ink); color: var(--cream); }
     .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
     .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.25s; }
     .nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
@@ -69,38 +67,65 @@
     .mobile-menu a:last-child { border-bottom: none; padding-bottom: 0; }
     .mobile-menu a:hover { color: var(--copper); }
 
-    /* --- Shared --- */
-    .btn { display: inline-block; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; padding: 12px 24px; border-radius: 2px; border: 1px solid var(--ink); transition: background 0.18s, color 0.18s; cursor: pointer; }
-    .btn:hover { background: var(--ink); color: var(--cream); }
-    .btn-copper { background: var(--copper); color: #fff; border-color: var(--copper); }
-    .btn-copper:hover { background: var(--copper-dk); border-color: var(--copper-dk); }
+    /* --- Page Header --- */
+    .page-header { background: var(--warm); border-bottom: 1px solid var(--rule); padding: 4rem 2.5rem 3.5rem; }
+    .page-header-inner { max-width: 1100px; margin: 0 auto; }
+    .page-header .eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.25rem; }
+    .page-header h1 { font-family: var(--script); font-size: clamp(44px, 6vw, 80px); font-weight: 400; line-height: 1.12; }
+
+    /* --- Letter Section --- */
     section { border-bottom: 1px solid var(--rule); }
     .section-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
     .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
     .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+
+    .letter-wrap { max-width: 660px; }
+
+    .letter-salutation {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 2rem;
+    }
+
+    .letter-body p {
+      font-size: 16px;
+      color: var(--ink-soft);
+      line-height: 1.85;
+      margin-bottom: 1.6rem;
+    }
+    .letter-body p:last-of-type { margin-bottom: 0; }
+
+    .letter-close {
+      margin-top: 2.75rem;
+      padding-top: 2.75rem;
+      border-top: 1px solid var(--rule);
+    }
+    .letter-close-line {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 17px;
+      color: var(--ink-soft);
+      margin-bottom: 1.25rem;
+    }
+    .letter-sig {
+      font-family: var(--script);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+    .letter-title {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+
     .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-    /* --- Page Header --- */
-    .page-header { background: var(--warm); border-bottom: 1px solid var(--rule); padding: 4rem 2.5rem 3.5rem; }
-    .page-header-inner { max-width: 1100px; margin: 0 auto; }
-    .page-header .hero-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.25rem; }
-    .page-header h1 { font-family: var(--script); font-size: clamp(44px, 6vw, 80px); font-weight: 400; line-height: 1.12; margin-bottom: 1.25rem; }
-    .page-header .lead { font-size: 17px; color: var(--ink-soft); max-width: 600px; line-height: 1.75; }
-
-    /* --- Give Cards --- */
-    .give-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-    .give-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; transition: border-color 0.18s; }
-    .give-card:hover { border-color: var(--copper); }
-    .give-card-eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); margin-bottom: 0.75rem; }
-    .give-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 0.75rem; }
-    .give-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1.75rem; flex: 1; }
-    .give-card .btn { align-self: flex-start; }
-
-    /* --- Tax Note --- */
-    .tax-note { max-width: 700px; }
-    .tax-note p { font-size: 14px; color: var(--ink-soft); line-height: 1.8; }
-    .tax-note a { color: var(--copper); border-bottom: 1px solid currentColor; }
 
     /* --- Join (shared) --- */
     .join-section { background: var(--ink); color: var(--cream); border-bottom: none; }
@@ -113,6 +138,9 @@
     .signup-row button { background: var(--copper); color: #fff; border: none; padding: 14px 22px; font-family: var(--sans); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: background 0.18s; white-space: nowrap; }
     .signup-row button:hover { background: var(--copper-dk); }
     .join-note { font-size: 12px; color: rgba(250,248,245,0.3); margin-top: 1rem; }
+    .join-social { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; }
+    .join-social a { color: rgba(250,248,245,0.4); display: flex; align-items: center; gap: 0.5rem; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.18s; }
+    .join-social a:hover { color: var(--cream); }
 
     /* --- Footer (shared) --- */
     footer { background: var(--cream); border-top: 1px solid var(--rule); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
@@ -131,12 +159,7 @@
       .nav-hamburger { display: flex; }
       .page-header { padding: 3rem 1.25rem 2.5rem; }
       .section-inner { padding: 3rem 1.25rem; }
-      .give-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; align-items: flex-start; }
-    }
-    @media (max-width: 400px) {
-      .signup-row { flex-direction: column; }
-      .signup-row input { border-bottom: 1px solid rgba(250,248,245,0.2); }
     }
   </style>
 </head>
@@ -147,7 +170,7 @@
     <ul class="nav-links">
       <li><a href="/#what-we-do">Our work</a></li>
       <li><a href="/shelf-life">Shelf Life</a></li>
-      <li><a href="/about">About</a></li>
+      <li><a href="/about" class="active">About</a></li>
       <li><a href="/#join">Stay in touch</a></li>
     </ul>
     <div class="nav-right">
@@ -155,10 +178,13 @@
         <a href="https://instagram.com/folkloresocietywa" aria-label="Instagram" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
         </a>
+        <a href="https://facebook.com/folkloresocietywa" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
       </div>
-      <a href="/support" class="nav-cta active">Support us</a>
+      <a href="/support" class="nav-cta">Support us</a>
     </div>
-    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -172,64 +198,42 @@
     <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a>
   </div>
 
-  <!-- Page Header -->
   <div class="page-header">
     <div class="page-header-inner">
-      <p class="hero-eyebrow">Give</p>
-      <h1>Support Folklore.</h1>
-      <p class="lead">Every dollar stays in the Tri-Cities literary community. Pick the program that resonates, or give where it's needed most.</p>
+      <p class="eyebrow">Folklore Society</p>
+      <h1>About us</h1>
     </div>
   </div>
 
-  <!-- Give Options -->
   <section>
     <div class="section-inner">
-      <p class="section-label">Choose where to give</p>
-      <div class="give-grid">
+      <p class="section-label">A letter from the board</p>
+      <div class="letter-wrap fade-up">
 
-        <div class="give-card fade-up">
-          <p class="give-card-eyebrow">Author Fund</p>
-          <h3>Bring writers to readers.</h3>
-          <p>Your gift underwrites author visits to the Tri-Cities: honoraria, travel, lodging, and the small things that make a good author experience into a great one. $25 gets a visiting author a warm welcome. $500 brings a debut indie author out to read.</p>
-          <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund</a>
+        <p class="letter-salutation">Dear Reader,</p>
+
+        <div class="letter-body">
+          <p>We're the ones at the bookstore, at the book club, at the event with the drink in our hand (more on that later). We've been close enough to this community long enough to see exactly what was missing. The energy was here. The nonprofit infrastructure wasn't.</p>
+
+          <p>The big literary events happen hours away. Seattle, Portland — worth the drive sometimes, but not every time, and not for everyone. The Tri-Cities has the readers for something better. Author readings, book fairs, bookish balls, grants for indie authors working outside the big publishing houses. We think this place can be a real literary hub in the Pacific Northwest, and we built Folklore to help get it there.</p>
+
+          <p>Folklore fundraises to bring authors out to the Tri-Cities. We buy books from local stores for every event we run, underwrite author visits, and back the people already doing the work here. The other things we do still exist and still do what they do. Folklore is what sits underneath: the fundraising structure, the money that goes back in. None of us draws a salary from it.</p>
+
+          <p>Folklore Society is Washington-incorporated and pursuing 501(c)(3) status. Every dollar that comes through Folklore goes back into the literary community it came from.</p>
+
+          <p>We also operate as a licensed pop-up bar at a small number of literary events each year. That work underwrites some of what we do, and it's one of the ways we show up for partners whose events we believe in. But it isn't what we are. What we are is a nonprofit that exists so the Tri-Cities can have the reading life it deserves.</p>
         </div>
 
-        <div class="give-card fade-up" style="transition-delay:0.08s;">
-          <p class="give-card-eyebrow">Shelf Life</p>
-          <h3>Put books on shelves.</h3>
-          <p>Every quarter, readers vote on a book by a local or regional author. We buy the winner from a Tri-Cities indie bookstore and place copies in free libraries across the metro. Your $5 vote funds the whole thing. Voting opens quarterly, follow along so you don't miss the next one.</p>
-          <a href="/shelf-life" class="btn">How Shelf Life works</a>
-        </div>
-
-        <div class="give-card fade-up" style="transition-delay:0.16s;">
-          <p class="give-card-eyebrow">Dedication</p>
-          <h3>Sponsor a bottle.</h3>
-          <p>A $25 gift. Folklore applies a custom label with your name, an optional dedicatee, and a short message. The bottle appears in the bar lineup at the next Folklore event. A small public tribute, a warm way to give.</p>
-          <a href="https://www.zeffy.com/en-US/donation-form/dedication" class="btn btn-copper" target="_blank" rel="noopener">Dedicate a bottle</a>
-        </div>
-
-        <div class="give-card fade-up" style="transition-delay:0.24s;">
-          <p class="give-card-eyebrow">General Fund</p>
-          <h3>Give where it's needed most.</h3>
-          <p>Folklore also runs on the less-visible work: bar supplies, licensing fees, insurance, venue rentals, and the dozen small things that keep our events running. A gift here lets us put your support wherever it's most useful.</p>
-          <a href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" class="btn btn-copper" target="_blank" rel="noopener">Give to general operations</a>
+        <div class="letter-close">
+          <p class="letter-close-line">For the reading life,</p>
+          <p class="letter-sig">Candace, Jessica, Katee &amp; Liv</p>
+          <p class="letter-title">Board of Directors, Folklore Society</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Tax Note -->
-  <section>
-    <div class="section-inner">
-      <div class="tax-note fade-up">
-        <p>Folklore Society is a Washington nonprofit corporation pursuing federal 501(c)(3) tax-exempt status. Once granted, donations may be tax-deductible retroactive to our date of incorporation. We process all donations through <a href="https://www.zeffy.com" target="_blank" rel="noopener">Zeffy</a>, a platform that charges no fees, so 100% of your gift reaches Folklore.</p>
-        <p style="margin-top: 1rem;">Questions about giving? Reach us at <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter -->
   <section class="join-section">
     <div class="join-inner">
       <h2>Stay in the loop.</h2>
@@ -239,17 +243,24 @@
         <button type="button" id="signupBtn">Sign up</button>
       </div>
       <p class="join-note">No spam. Just events and updates.</p>
+      <div class="join-social">
+        <a href="https://instagram.com/folkloresocietywa" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>Instagram
+        </a>
+        <a href="https://facebook.com/folkloresocietywa" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook
+        </a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <a href="/" class="footer-logo">Folklore Society</a>
+    <span class="footer-logo">Folklore Society</span>
     <ul class="footer-links">
       <li><a href="/#what-we-do">Our work</a></li>
       <li><a href="/shelf-life">Shelf Life</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/support">Support</a></li>
-      <li><a href="/general-fund">General Fund</a></li>
       <li><a href="mailto:hello@folkloresocietywa.org">Contact</a></li>
     </ul>
     <div class="footer-social">
@@ -260,33 +271,33 @@
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
       </a>
     </div>
-    <p class="footer-legal">&copy; 2026 Folklore Society &middot; A Washington nonprofit corporation &middot; Tri-Cities, WA</p>
+    <p class="footer-legal">© 2026 Folklore Society · A Washington nonprofit corporation · Tri-Cities, WA</p>
   </footer>
 
   <script>
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.08 });
+    }, { threshold: 0.1 });
     document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
-    const burger = document.querySelector('.nav-hamburger');
-    const menu = document.getElementById('mobileMenu');
-    burger.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      burger.classList.toggle('open', open);
-      burger.setAttribute('aria-expanded', open);
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
     });
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false');
-    }));
 
-    document.getElementById('signupBtn').addEventListener('click', function() {
-      const input = document.getElementById('emailInput');
-      if (input.value && input.value.includes('@')) {
-        input.value = ''; input.placeholder = 'You\u2019re on the list \u2014 thank you!';
-        this.textContent = 'Done'; this.style.background = '#4a7a3a';
+    const signupBtn = document.getElementById('signupBtn');
+    const emailInput = document.getElementById('emailInput');
+    signupBtn.addEventListener('click', () => {
+      const email = emailInput.value.trim();
+      if (email && email.includes('@')) {
+        signupBtn.textContent = 'Thanks!';
+        signupBtn.disabled = true;
+        emailInput.value = '';
       }
     });
   </script>
+
 </body>
 </html>
