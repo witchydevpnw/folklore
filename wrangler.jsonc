@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers config for the Folklore Society static site.
+  // This is a plain HTML site with no build step — Workers just serves
+  // the files in this repo as static assets. See .assetsignore for files
+  // that are kept out of the public site.
+  "name": "folklore",
+  "compatibility_date": "2026-06-16",
+  "assets": {
+    "directory": "."
+  }
+}

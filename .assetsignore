@@ -1,0 +1,9 @@
+# Files in this repo that should NOT be served on the public website.
+# (The HTML/CSS/font/image assets are served; planning docs and config are not.)
+*.md
+**/*.md
+wrangler.jsonc
+.assetsignore
+.DS_Store
+**/.DS_Store
+CNAME
