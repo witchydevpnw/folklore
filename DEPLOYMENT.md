@@ -23,15 +23,20 @@ deploy/
     └── logo-cream.svg                           (cream fill — for dark backgrounds)
 ```
 
-## Deployment steps (via Windsurf)
+## How deployment works
 
-1. In your `folklore` repo, create two new folders at the root level: `fonts/` and `images/`.
-2. Drop all six `.woff` and `.woff2` files into `fonts/`.
-3. Drop the two `.svg` files into `images/`.
-4. Replace the existing `index.html` with the version in this package.
-5. Commit and push.
+The site is hosted on **Cloudflare Workers** (Static Assets) and the domain
+`folkloresocietywa.org` is managed by Cloudflare DNS. It is a plain static
+site — there is no build step.
 
-That's it — GitHub Pages will pick it up automatically.
+1. Commit and push to GitHub.
+2. Cloudflare Workers Builds picks up the push and deploys automatically,
+   serving the repo's files as configured in [`wrangler.jsonc`](wrangler.jsonc).
+3. Files listed in [`.assetsignore`](.assetsignore) (planning docs, config)
+   are excluded from the public site.
+
+> Note: This site previously ran on GitHub Pages (June 2026). GitHub Pages has
+> been disabled — Cloudflare is now the single source of truth for hosting.
 
 ## What changed in the HTML
 
