@@ -56,9 +56,11 @@ Collective, guest authors/artists) — those live in the individual event pages.
 ## SEO
 
 - `sitemap.xml` + `robots.txt` are live at the repo root.
-- **Google Search Console — not yet set up.** Recommended next step: verify the
-  domain and submit `https://folkloresocietywa.org/sitemap.xml` to speed up
-  indexing of new pages/events.
+- **Google Search Console — set up (June 2026).** Domain property verified via a
+  Cloudflare DNS TXT record (keep that record in place — removing it un-verifies
+  the domain); `sitemap.xml` submitted. Use it to monitor indexing/coverage,
+  search performance, and structured-data (rich result) status. When you add a
+  new page, you can request faster indexing via URL Inspection → Request indexing.
 
 ## Fonts
 
