@@ -321,6 +321,13 @@
       margin: 0 0 0.5rem;
       color: var(--ink);
     }
+    .partner-links {
+      margin-top: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
     .partner-link {
       font-size: 12px;
       color: var(--ink-mute);
@@ -328,6 +335,11 @@
       letter-spacing: 0.03em;
     }
     .partner-link:hover { color: var(--copper); }
+    .partner-event {
+      color: var(--copper);
+      font-weight: 500;
+    }
+    .partner-event:hover { color: var(--copper-soft); }
 
     /* Footer */
     .event-footer {
@@ -440,17 +452,26 @@
         <div class="partner-card">
           <p class="partner-role">Presenting</p>
           <p class="partner-name">Obsidian Book Collective</p>
-          <a class="partner-link" href="https://obsidianbookcollective.com/" target="_blank" rel="noopener">obsidianbookcollective.com</a>
+          <div class="partner-links">
+            <a class="partner-link" href="https://obsidianbookcollective.com/" target="_blank" rel="noopener">obsidianbookcollective.com</a>
+            <a class="partner-link partner-event" href="https://www.instagram.com/p/DZbH4kovbhP/" target="_blank" rel="noopener">See it on Instagram</a>
+          </div>
         </div>
         <div class="partner-card">
           <p class="partner-role">Hosting</p>
           <p class="partner-name">BAGG Books</p>
-          <a class="partner-link" href="https://www.baggbooks.com/" target="_blank" rel="noopener">baggbooks.com</a>
+          <div class="partner-links">
+            <a class="partner-link" href="https://www.baggbooks.com/" target="_blank" rel="noopener">baggbooks.com</a>
+            <a class="partner-link partner-event" href="https://www.facebook.com/share/18v2zZ9xPn/" target="_blank" rel="noopener">RSVP on Facebook</a>
+          </div>
         </div>
         <div class="partner-card">
           <p class="partner-role">On the bar</p>
           <p class="partner-name">Folklore Society</p>
-          <a class="partner-link" href="/">folkloresocietywa.org</a>
+          <div class="partner-links">
+            <a class="partner-link" href="/">folkloresocietywa.org</a>
+            <a class="partner-link partner-event" href="https://www.facebook.com/share/1EPXfdXp5x/" target="_blank" rel="noopener">RSVP on Facebook</a>
+          </div>
         </div>
       </div>
     </div>
