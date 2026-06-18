@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bookstore Romance Day · August 15, 2026 · Kennewick, WA</title>
+  <meta name="description" content="Bookstore Romance Day at BAGG Books in downtown Kennewick — Saturday, August 15, 2026. A Folklore Society beer garden, flash tattoos by Carly Joy, a Blake Gallows book signing and meet & greet, and more to come. Free to attend." />
+
+  <meta property="og:type" content="event" />
+  <meta property="og:url" content="https://folkloresocietywa.org/bookstore-romance-day/" />
+  <meta property="og:title" content="Bookstore Romance Day · August 15, 2026 · Kennewick, WA" />
+  <meta property="og:description" content="A day for romance readers at BAGG Books in Kennewick. Folklore beer garden, flash tattoos by Carly Joy, a Blake Gallows signing, and more. Free to attend." />
+  <meta property="og:image" content="https://folkloresocietywa.org/images/bookstore-romance-day-flyer.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bookstore Romance Day · August 15, 2026 · Kennewick, WA" />
+  <meta name="twitter:description" content="A day for romance readers at BAGG Books in Kennewick. Free to attend." />
+  <meta name="twitter:image" content="https://folkloresocietywa.org/images/bookstore-romance-day-flyer.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Bookstore Romance Day",
+    "startDate": "2026-08-15T11:00:00-07:00",
+    "endDate": "2026-08-15T18:00:00-07:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "BAGG Books",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "318 W Kennewick Ave",
+        "addressLocality": "Kennewick",
+        "addressRegion": "WA",
+        "postalCode": "99336",
+        "addressCountry": "US"
+      }
+    },
+    "image": "https://folkloresocietywa.org/images/bookstore-romance-day-flyer.png",
+    "description": "A day for romance readers at BAGG Books in downtown Kennewick, marking national Bookstore Romance Day. A Folklore Society beer garden, flash tattoos by Carly Joy, a Blake Gallows book signing and meet & greet, and more. Free to attend.",
+    "organizer": [
+      { "@type": "Organization", "name": "BAGG Books", "url": "https://www.baggbooks.com/" },
+      { "@type": "Organization", "name": "Folklore Society", "url": "https://folkloresocietywa.org/" }
+    ],
+    "performer": [
+      { "@type": "Person", "name": "Blake Gallows" },
+      { "@type": "Person", "name": "Carly Joy" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://folkloresocietywa.org/bookstore-romance-day/"
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    @font-face {
+      font-family: 'Take Me To Tuscany';
+      src: url('../fonts/takemetotuscany-regular-webfont.woff2') format('woff2'),
+           url('../fonts/takemetotuscany-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --ink: #2a1f3d;
+      --ink-soft: #5a4f6e;
+      --ink-mute: #9a90aa;
+      --cream: #faf8f5;
+      --warm: #ede8f0;
+      --copper: #c17b4a;
+      --copper-lt: #f5ebe0;
+      --copper-soft: #d99060;
+      --rule: rgba(42,31,61,0.12);
+      --script: 'Take Me To Tuscany', cursive;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Jost', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    img { display: block; max-width: 100%; height: auto; }
+
+    /* Top nav */
+    .event-nav {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .back-link {
+      font-family: var(--script);
+      font-size: 22px;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .back-link:hover { color: var(--copper-soft); }
+    .event-eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(250,248,245,0.6);
+    }
+
+    /* Hero: flyer */
+    .event-hero {
+      background: #fff;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .event-flyer {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+    }
+
+    /* Quick-info strip */
+    .event-details {
+      background: linear-gradient(135deg, var(--copper-lt) 0%, var(--warm) 50%, var(--cream) 100%);
+      padding: 3rem 2rem;
+    }
+    .details-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+    .detail-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .detail-label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+    .detail-value {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+    .detail-value strong { font-weight: 500; }
+
+    /* General section */
+    section.copy-section {
+      padding: 5rem 2rem;
+    }
+    .copy-section.dark {
+      background: var(--ink);
+      color: var(--cream);
+    }
+    .section-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section-label::after {
+      content: '';
+      order: 1;
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+    .section-star {
+      order: 2;
+      color: var(--copper);
+      opacity: 0.6;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 1;
+    }
+    .copy-section.dark .section-label { color: rgba(250,248,245,0.55); }
+    .copy-section.dark .section-label::after { background: rgba(250,248,245,0.15); }
+    .copy-section.dark .section-star { color: var(--copper-soft); }
+
+    .lede {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(20px, 2.4vw, 26px);
+      line-height: 1.5;
+      color: var(--ink-soft);
+      margin: 0 0 2rem;
+    }
+    .copy-section.dark .lede { color: rgba(250,248,245,0.82); }
+
+    .event-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 1.25rem;
+    }
+    .event-list li {
+      padding-left: 2rem;
+      position: relative;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink-soft);
+    }
+    .event-list li::before {
+      content: '\2726';
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+      color: var(--copper);
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    .body-copy p {
+      font-size: 16px;
+      line-height: 1.75;
+      margin: 0 0 1.25rem;
+    }
+    .body-copy p:last-child { margin-bottom: 0; }
+    .copy-section.dark .body-copy p { color: rgba(250,248,245,0.85); }
+
+    /* CTAs */
+    .event-ctas {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 1.6rem;
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .btn-copper {
+      background: var(--copper);
+      color: #fff;
+      border: 1px solid var(--copper);
+    }
+    .btn-copper:hover { background: var(--copper-soft); border-color: var(--copper-soft); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--cream);
+      border: 1px solid rgba(250,248,245,0.4);
+    }
+    .btn-ghost:hover { border-color: var(--copper-soft); color: var(--copper-soft); }
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid rgba(42,31,61,0.35);
+    }
+    .btn-outline:hover { border-color: var(--copper); color: var(--copper); }
+    .event-ctas.center { justify-content: center; }
+
+    /* Partners */
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .partner-card {
+      background: var(--cream);
+      border: 1px solid rgba(42,31,61,0.08);
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 1px 2px rgba(42,31,61,0.04), 0 8px 24px -8px rgba(42,31,61,0.10);
+    }
+    .partner-role {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin: 0 0 0.75rem;
+    }
+    .partner-name {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0 0 0.5rem;
+      color: var(--ink);
+    }
+    .partner-links {
+      margin-top: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .partner-link {
+      font-size: 12px;
+      color: var(--ink-mute);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+    .partner-link:hover { color: var(--copper); }
+    .partner-event {
+      color: var(--copper);
+      font-weight: 500;
+    }
+    .partner-event:hover { color: var(--copper-soft); }
+
+    /* Footer */
+    .event-footer {
+      background: var(--ink);
+      color: rgba(250,248,245,0.7);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .footer-script {
+      font-family: var(--script);
+      font-size: 32px;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .footer-line {
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      margin: 0;
+    }
+    .footer-link {
+      color: var(--copper-soft);
+      text-decoration: none;
+    }
+    .footer-link:hover { color: var(--copper); }
+
+    /* Mobile */
+    @media (max-width: 720px) {
+      .details-grid { grid-template-columns: 1fr 1fr; gap: 2rem 1rem; }
+      .partners-grid { grid-template-columns: 1fr; gap: 1rem; }
+      section.copy-section { padding: 3.5rem 1.5rem; }
+      .event-details { padding: 2.5rem 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .details-grid { grid-template-columns: 1fr; }
+      .event-nav { padding: 0.85rem 1.25rem; }
+      .back-link { font-size: 20px; }
+      .event-eyebrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="event-nav">
+    <a href="/" class="back-link">Folklore Society</a>
+    <span class="event-eyebrow">Event</span>
+  </nav>
+
+  <section class="event-hero">
+    <img class="event-flyer" src="../images/bookstore-romance-day-flyer.png" alt="Bookstore Romance Day. Saturday, August 15 at BAGG Books, Kennewick. Folklore Society beer garden, flash tattoos by Carly Joy, and a Blake Gallows book signing." />
+  </section>
+
+  <section class="event-details">
+    <div class="details-grid">
+      <div class="detail-cell">
+        <span class="detail-label">Date</span>
+        <span class="detail-value"><strong>Saturday, August 15</strong></span>
+      </div>
+      <div class="detail-cell">
+        <span class="detail-label">Time</span>
+        <span class="detail-value"><strong>11 AM – 6 PM</strong></span>
+      </div>
+      <div class="detail-cell">
+        <span class="detail-label">Where</span>
+        <span class="detail-value"><strong>BAGG Books</strong><br>318 W Kennewick Ave<br>Kennewick, WA</span>
+      </div>
+      <div class="detail-cell">
+        <span class="detail-label">Cost</span>
+        <span class="detail-value"><strong>Free &amp; open to all</strong></span>
+      </div>
+    </div>
+    <div class="event-ctas center">
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Bookstore+Romance+Day&amp;dates=20260815T110000/20260815T180000&amp;ctz=America/Los_Angeles&amp;location=BAGG+Books,+318+W+Kennewick+Ave,+Kennewick,+WA+99336&amp;details=A+day+for+romance+readers+at+BAGG+Books.+Folklore+Society+beer+garden,+flash+tattoos+by+Carly+Joy,+a+Blake+Gallows+book+signing,+and+more.+Free+to+attend." class="btn btn-copper" target="_blank" rel="noopener">Add to calendar</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=BAGG+Books,+318+W+Kennewick+Ave,+Kennewick,+WA+99336" class="btn btn-outline" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </section>
+
+  <section class="copy-section">
+    <div class="section-inner">
+      <p class="section-label">What's happening<span class="section-star" aria-hidden="true">&#10022;</span></p>
+      <p class="lede">One day, all for the romance readers. BAGG Books is throwing open its doors for Bookstore Romance Day — joining indie bookshops across the country — and Folklore Society is pulling the taps out back. Expect ink, signings, cold drinks, and exactly zero shame about your to-be-read pile.</p>
+      <ul class="event-list">
+        <li><strong>A Folklore beer garden out back</strong> — cold pours, good company, and room to linger</li>
+        <li><strong>Flash tattoos by Carly Joy</strong> — wear your favorite trope on your sleeve, for real this time</li>
+        <li><strong>Blake Gallows, in person</strong> — book signing plus a meet &amp; greet with the author</li>
+        <li><strong>More still to come</strong> — we're adding to the lineup, so keep an eye out</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="copy-section dark">
+    <div class="section-inner">
+      <p class="section-label">Folklore on the bar<span class="section-star" aria-hidden="true">&#10022;</span></p>
+      <div class="body-copy">
+        <p>Pull up a chair — the beer garden is Folklore's corner of the day. Every pour goes straight back into our general fund, which keeps the lights on across all our programs. Buy a round, fund a reading.</p>
+        <p>Want your gift to go somewhere specific? Our Author Fund is raising money right now to bring real, working writers to the Tri-Cities. Cash gifts are always welcome, and every dollar adds up.</p>
+      </div>
+      <div class="event-ctas">
+        <a href="/#support" class="btn btn-copper">Support our work</a>
+        <a href="/general-fund.html" class="btn btn-ghost">Give to the general fund</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="copy-section">
+    <div class="section-inner">
+      <p class="section-label">Who you'll meet<span class="section-star" aria-hidden="true">&#10022;</span></p>
+      <p class="lede">A bookshop, an author, and a tattoo artist walk into a romance celebration. Here's who's making the day — give them a follow before you go.</p>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <p class="partner-role">Hosting</p>
+          <p class="partner-name">BAGG Books</p>
+          <div class="partner-links">
+            <a class="partner-link" href="https://www.baggbooks.com/" target="_blank" rel="noopener">baggbooks.com</a>
+            <a class="partner-link partner-event" href="https://www.instagram.com/p/DZnNgPiRXqd/" target="_blank" rel="noopener">See it on Instagram</a>
+          </div>
+        </div>
+        <div class="partner-card">
+          <p class="partner-role">Signing</p>
+          <p class="partner-name">Blake Gallows</p>
+          <div class="partner-links">
+            <a class="partner-link partner-event" href="https://www.instagram.com/blakegallows/" target="_blank" rel="noopener">@blakegallows</a>
+          </div>
+        </div>
+        <div class="partner-card">
+          <p class="partner-role">Flash tattoos</p>
+          <p class="partner-name">Carly Joy</p>
+          <div class="partner-links">
+            <a class="partner-link partner-event" href="https://www.instagram.com/carlyjoytattoo/" target="_blank" rel="noopener">@carlyjoytattoo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="copy-section dark">
+    <div class="section-inner" style="text-align: center;">
+      <p class="section-label" style="justify-content: center;">Be there<span class="section-star" aria-hidden="true">&#10022;</span></p>
+      <p class="lede" style="margin-bottom: 2.25rem;">Save the date and bring your book club, your crush, and your most unhinged TBR. Saturday, August 15 at BAGG Books, 11 to 6 — free, all day, and made for romance readers. We'll see you in the stacks.</p>
+      <div class="event-ctas center">
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Bookstore+Romance+Day&amp;dates=20260815T110000/20260815T180000&amp;ctz=America/Los_Angeles&amp;location=BAGG+Books,+318+W+Kennewick+Ave,+Kennewick,+WA+99336&amp;details=A+day+for+romance+readers+at+BAGG+Books.+Folklore+Society+beer+garden,+flash+tattoos+by+Carly+Joy,+a+Blake+Gallows+book+signing,+and+more.+Free+to+attend." class="btn btn-copper" target="_blank" rel="noopener">Add to calendar</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=BAGG+Books,+318+W+Kennewick+Ave,+Kennewick,+WA+99336" class="btn btn-ghost" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="event-footer">
+    <span class="footer-script">Folklore Society</span>
+    <p class="footer-line">A reading life, closer to home. · <a class="footer-link" href="/">Back to folkloresocietywa.org</a></p>
+  </footer>
+
+</body>
+</html>
