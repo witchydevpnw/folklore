@@ -80,3 +80,14 @@ The `logo.svg` is the plum version for light backgrounds; `logo-cream.svg` is th
 - The favicon (still a default) — worth addressing in a future pass.
 - Meta tags, Open Graph preview images — the OG description should still work, but you might want a custom OG image eventually.
 - Analytics, tracking, structured data — none present; add when ready.
+
+---
+
+## Update — June 2026: events, SEO, custom favicon
+
+Since the April notes above, the site has grown:
+
+- **Favicon:** now a custom SVG at `images/favicon.svg` (referenced site-wide) — the "default favicon" note is outdated.
+- **Structured data:** event pages now carry schema.org `Event` JSON-LD and the events hub carries an `ItemList` — the "no structured data" note is outdated.
+- **SEO files:** `sitemap.xml` + `robots.txt` were added at the repo root.
+- **Events section:** an events hub at `/events/` plus one folder per event (`freedom-to-read/`, `bookstore-romance-day/`). To add another, follow [`ADDING-AN-EVENT.md`](ADDING-AN-EVENT.md).
