@@ -2,6 +2,7 @@
 *.png
 !images/folklore.png
 !images/wordmark.png
+!images/freedom-to-read-flyer.png
 .DS_Store
 
 # wrangler / Cloudflare
