@@ -75,6 +75,10 @@
     .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 82vh; border-bottom: 1px solid var(--rule); }
     .hero-left { padding: 5rem 3rem 5rem 2.5rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--rule); }
     .hero-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.5rem; }
+    .hero-announce { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; margin-bottom: 1.75rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; transition: color 0.18s; }
+    .hero-announce:hover { color: var(--copper); }
+    .hero-announce .ha-arrow { color: var(--copper); }
+    .hero-announce .ha-label { color: var(--ink-mute); }
     .hero-title { font-family: var(--script); font-size: clamp(56px, 7vw, 108px); font-weight: 400; line-height: 1.12; margin-bottom: 1.75rem; }
     .hero-title em { font-style: normal; font-weight: 700; color: var(--copper); }
     .hero-body { font-size: 16px; color: var(--ink-soft); max-width: 420px; margin-bottom: 2.5rem; line-height: 1.75; }
@@ -245,6 +249,7 @@
   <section class="hero">
     <div class="hero-left">
       <p class="hero-eyebrow">Tri-Cities, Washington</p>
+      <a class="hero-announce" href="/freedom-to-read/"><span class="ha-arrow" aria-hidden="true">&#8594;</span><span class="ha-label">Next event:</span> The Freedom to Read &middot; July 4</a>
       <h1 class="hero-title">A reading life,<br><em>closer to home.</em></h1>
       <p class="hero-body">Folklore Society is a literary nonprofit for the Tri-Cities. We fundraise to bring authors out east, champion our independent bookstores, and support the readers and organizers already building a literary scene here.</p>
       <div class="hero-actions">
