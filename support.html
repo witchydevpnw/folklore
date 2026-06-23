@@ -89,7 +89,7 @@
     .page-header .lead { font-size: 17px; color: var(--ink-soft); max-width: 600px; line-height: 1.75; }
 
     /* --- Give Cards --- */
-    .give-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .give-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     .give-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; transition: border-color 0.18s; }
     .give-card:hover { border-color: var(--copper); }
     .give-card-eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); margin-bottom: 0.75rem; }
@@ -125,6 +125,9 @@
     .footer-legal { width: 100%; font-size: 11px; color: var(--ink-mute); border-top: 0.5px solid var(--rule); padding-top: 1rem; margin-top: 0.25rem; }
 
     /* --- Responsive --- */
+    @media (max-width: 1000px) {
+      .give-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 768px) {
       nav { padding: 0 1.25rem; }
       .nav-links, .nav-cta, .nav-social { display: none; }
@@ -211,6 +214,13 @@
         </div>
 
         <div class="give-card fade-up" style="transition-delay:0.24s;">
+          <p class="give-card-eyebrow">Round Table</p>
+          <h3>Books for a local book club.</h3>
+          <p>When a Tri-Cities book club is reading a regional author's book, Folklore buys the copies from a local indie bookstore. Year 1 supports four book clubs. Opens for requests this fall.</p>
+          <a href="/round-table" class="btn">How Round Table works</a>
+        </div>
+
+        <div class="give-card fade-up" style="transition-delay:0.32s;">
           <p class="give-card-eyebrow">General Fund</p>
           <h3>Give where it's needed most.</h3>
           <p>Folklore also runs on the less-visible work: bar supplies, licensing fees, insurance, venue rentals, and the dozen small things that keep our events running. A gift here lets us put your support wherever it's most useful.</p>
