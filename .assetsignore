@@ -8,4 +8,8 @@ wrangler.jsonc
 **/.DS_Store
 CNAME
 social-media
+# Reference copies for the Claude Desktop project. Tracked in git so they
+# follow between machines, but never served -- otherwise the .html copies
+# would appear as duplicate pages at /desktop-sync/.
+desktop-sync
 
