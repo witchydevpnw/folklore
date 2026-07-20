@@ -4,6 +4,9 @@
 !images/wordmark.png
 !images/freedom-to-read-flyer.png
 !images/bookstore-romance-day-flyer.png
+# Social graphics: tracked so they follow between machines, but kept off the
+# public site via .assetsignore.
+!social-media/**/*.png
 .DS_Store
 
 # wrangler / Cloudflare
