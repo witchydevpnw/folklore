@@ -16,7 +16,7 @@ A restricted giving category within Folklore's donation platform. Donors contrib
 - **First bar event:** targeted June 8, 2026 (pending WSLCB Special Occasion License approval)
 - **Tier structure:** locked (below)
 - **Bank account:** Crowded, awaiting funding
-- **Tax status:** pursuing 501(c)(3); donations may be retroactively tax-deductible once granted
+- **Tax status:** federally recognized 501(c)(3) (EIN: 42-1823147); donations tax-deductible retroactive to date of incorporation
 
 ## Tier structure (locked)
 

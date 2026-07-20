@@ -36,7 +36,7 @@ Two things to flag for next board meeting before this goes fully live:
 >
 > Fill in the label fields below. Your name is the only thing required. Everything else is up to you. Short messages read best on a bottle — about 100 characters is a good target.
 >
-> Folklore Society is a Washington nonprofit corporation. We're pursuing federal 501(c)(3) status; once granted, gifts may be tax-deductible retroactive to our date of incorporation.
+> Folklore Society is a federally recognized 501(c)(3) nonprofit (EIN: 42-1823147). Donations are tax-deductible, retroactive to our date of incorporation.
 
 **Form fields (donation page):**
 
@@ -334,5 +334,4 @@ Flagging for future sessions:
 - The label design itself (handed off to a Canva working session, brief above)
 - Business-sponsor variant of Dedication (a local business sponsoring a "house bottle" at a dedicated price tier, if demand emerges)
 - Bookkeeping flow in Wave for tying Dedication gifts to specific event nights
-- Post-501(c)(3) update to the Zeffy long description and thank-you email to reflect tax-deductibility
 - Dedication-specific metrics for the quarterly Author Fund Report (or a standalone Dedication mini-report if volume warrants)
