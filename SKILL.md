@@ -181,14 +181,14 @@ These phrases have been carefully worked and should be used as-is when the conte
 - **Tagline / hero:** "A reading life, closer to home."
 - **Hero body:** "The Tri-Cities is full of readers. We're the nonprofit that backs them, from the indie bookstores and local authors to the organizers who keep book clubs and reading nights going. We fundraise so this can be a place with a real literary life of its own, where seeing an author on tour or going to a bookish ball or convention doesn't mean a drive over the mountains."
 - **Hero pull quote:** "Reading is a solitary act. A reading life is a shared one."
-- **Mission opener:** "The Tri-Cities has readers, writers, bookstores, and people who care about all of it. It didn't have a nonprofit set up to support them. Now it does."
+- **Mission opener (not currently deployed):** "The Tri-Cities has readers, writers, bookstores, and people who care about all of it. It didn't have a nonprofit set up to support them. Now it does." Approved language, but there is no mission pull quote on the live site as of July 2026. Don't cite it as something the site says.
 - **Bar service acknowledgment:** "We also operate as a licensed pop-up bar at a small number of literary events each year. That work underwrites some of what we do, and it's one of the ways we show up for partners whose events we believe in. But it isn't what we are. What we are is a nonprofit that exists so the Tri-Cities can have the reading life it deserves."
 
 ### The three pillars
 
 1. **Bringing writers to readers.** We fundraise to bring authors out to the Tri-Cities for readings, signings, and conversations.
-2. **Championing local.** Independent bookstores, regional writers, and small presses east of the Cascades.
-3. **Backing the people already doing the work.** We underwrite, partner, and support the existing literary ecosystem.
+2. **Championing local.** Our money stays east of the Cascades, with the independent bookstores and regional writers who give this side of the state its literary life. We buy from local shelves at full retail, and when there's a stage to fill, we look close to home first.
+3. **Backing the people already doing the work.** The community was building itself long before Folklore existed and doesn't need us in charge. We underwrite the work and partner with the people already doing it.
 
 When writing new copy, these pillars set the structural frame. Don't introduce a fourth pillar without a real reason.
 
