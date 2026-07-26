@@ -72,8 +72,8 @@
     .mobile-menu a { font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); border-bottom: 0.5px solid var(--rule); padding-bottom: 1.25rem; }
     .mobile-menu a:last-child { border-bottom: none; padding-bottom: 0; }
     .mobile-menu a:hover { color: var(--copper); }
-    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 82vh; border-bottom: 1px solid var(--rule); }
-    .hero-left { padding: 5rem 3rem 5rem 2.5rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--rule); }
+    .hero { display: flex; justify-content: center; align-items: center; min-height: 72vh; border-bottom: 1px solid var(--rule); padding: 5rem 2.5rem; }
+    .hero-inner { width: 100%; max-width: 680px; display: flex; flex-direction: column; align-items: center; text-align: center; }
     .hero-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.5rem; }
     .hero-announce { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; margin-bottom: 1.75rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.4rem; transition: color 0.18s; }
     .hero-announce:hover { color: var(--copper); }
@@ -81,20 +81,14 @@
     .hero-announce .ha-label { color: var(--ink-mute); }
     .hero-title { font-family: var(--script); font-size: clamp(56px, 7vw, 108px); font-weight: 400; line-height: 1.12; margin-bottom: 1.75rem; }
     .hero-title em { font-style: normal; font-weight: 700; color: var(--copper); }
-    .hero-body { font-size: 16px; color: var(--ink-soft); max-width: 420px; margin-bottom: 2.5rem; line-height: 1.75; }
-    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    .hero-body { font-size: 16px; color: var(--ink-soft); max-width: 560px; margin-bottom: 2.5rem; line-height: 1.75; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: center; }
     .btn { display: inline-block; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; padding: 12px 24px; border-radius: 2px; border: 1px solid var(--ink); transition: background 0.18s, color 0.18s; cursor: pointer; }
     .btn:hover { background: var(--ink); color: var(--cream); }
     .btn-copper { background: var(--copper); color: #fff; border-color: var(--copper); }
     .btn-copper:hover { background: var(--copper-dk); border-color: var(--copper-dk); }
     .btn-sm { font-size: 12px; padding: 9px 18px; letter-spacing: 0.07em; }
-    .hero-right { background: var(--warm); display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem 2.5rem; position: relative; overflow: hidden; }
-    .hero-deco { position: absolute; top: 0; right: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
-    .hero-deco .star-twinkle { animation: twinkle 8s ease-in-out infinite; }
-    .hero-deco .star-twinkle.delayed { animation-delay: 3.5s; }
-    .hero-pull { font-family: var(--serif); font-size: clamp(26px, 3.2vw, 44px); font-weight: 400; font-style: italic; line-height: 1.25; color: var(--ink-soft); margin-bottom: 2rem; position: relative; z-index: 1; }
-    .hero-pull::before { content: '\201C'; font-size: 120px; font-family: var(--serif); color: rgba(193,123,74,0.15); position: absolute; top: -30px; left: -20px; line-height: 1; z-index: 0; }
-    .hero-meta { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); border-top: 1px solid var(--rule); padding-top: 1.25rem; position: relative; z-index: 1; }
+    .hero-meta { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-top: 2.75rem; }
     section { border-bottom: 1px solid var(--rule); }
     .section-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
     .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
@@ -152,15 +146,10 @@
       color: var(--copper);
     }
     #support { background: linear-gradient(135deg, var(--copper-lt) 0%, var(--warm) 50%, var(--cream) 100%); }
-    .campaigns-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto; }
-    .campaign-card { background: var(--cream); border: 1px solid rgba(42,31,61,0.08); border-radius: 14px; padding: 2.5rem 2rem; display: flex; flex-direction: column; position: relative; box-shadow: 0 1px 2px rgba(42,31,61,0.04), 0 8px 24px -8px rgba(42,31,61,0.10); transition: box-shadow 0.25s ease, transform 0.25s ease; }
-    .campaign-card:hover { box-shadow: 0 2px 4px rgba(42,31,61,0.05), 0 16px 32px -10px rgba(42,31,61,0.14); transform: translateY(-2px); }
-    .campaign-card .card-sparkle { position: absolute; top: 14px; right: 18px; color: var(--copper); font-size: 13px; opacity: 0.55; line-height: 1; pointer-events: none; }
-    .campaign-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 0.75rem; color: var(--ink); }
-    .campaign-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 2rem; flex: 1; }
-    .campaign-card .btn { width: 100%; text-align: center; justify-content: center; }
-    .campaign-card-wide { grid-column: 1 / -1; }
-    .campaign-card-wide .btn { width: auto; align-self: center; padding-left: 2.5rem; padding-right: 2.5rem; }
+    .support-cta { max-width: 640px; margin: 0 auto; text-align: center; }
+    .support-cta-heading { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 40px); font-weight: 500; color: var(--ink); margin-bottom: 1.25rem; }
+    .support-cta-body { font-size: 16px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 2.25rem; }
+    .support-cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
     .join-section { background: var(--ink); color: var(--cream); border-bottom: none; position: relative; overflow: hidden; }
     .join-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; padding: 6rem 2.5rem; text-align: center; }
     .join-inner h2 { font-family: var(--script); font-size: clamp(44px, 5.5vw, 72px); font-weight: 400; line-height: 1.15; margin-bottom: 1rem; }
@@ -192,9 +181,7 @@
       nav { padding: 0 1.25rem; }
       .nav-links, .nav-cta, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-left { padding: 3rem 1.25rem; border-right: none; border-bottom: 1px solid var(--rule); }
-      .hero-right { padding: 2.5rem 1.25rem; min-height: 240px; }
+      .hero { min-height: auto; padding: 3rem 1.25rem; }
       .section-inner { padding: 3rem 1.25rem; }
       .pillars { grid-template-columns: 1fr; }
       .pillar { border-right: none; border-bottom: 1px solid var(--rule); padding: 0 0 2rem 0 !important; }
@@ -217,11 +204,11 @@
   <nav>
     <a href="/" class="nav-logo">Folklore Society</a>
     <ul class="nav-links">
-      <li><a href="/#what-we-do">Our work</a></li>
+      <li><a href="/programs">Programs</a></li>
       <li><a href="/events">Events</a></li>
-      <li><a href="/shelf-life">Shelf Life</a></li>
       <li><a href="/about">About</a></li>
-      <li><a href="/#join">Stay in touch</a></li>
+      <li><a href="/support">Support</a></li>
+      <li><a href="#join">Newsletter</a></li>
     </ul>
     <div class="nav-right">
       <div class="nav-social">
@@ -229,7 +216,6 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
         </a>
       </div>
-      <a href="/support" class="nav-cta">Support us</a>
     </div>
     <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -237,17 +223,15 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/#what-we-do">Our work</a>
+    <a href="/programs">Programs</a>
     <a href="/events">Events</a>
-    <a href="/shelf-life">Shelf Life</a>
     <a href="/about">About</a>
-    <a href="/#join">Stay in touch</a>
-    <a href="/support">Support us</a>
-    <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a>
+    <a href="/support">Support</a>
+    <a href="#join">Newsletter</a>
   </div>
 
   <section class="hero">
-    <div class="hero-left">
+    <div class="hero-inner">
       <p class="hero-eyebrow">Tri-Cities, Washington</p>
       <a class="hero-announce" href="/bookstore-romance-day/"><span class="ha-arrow" aria-hidden="true">&#8594;</span><span class="ha-label">Next event:</span> Bookstore Romance Day &middot; August 15</a>
       <h1 class="hero-title">A reading life,<br><em>closer to home.</em></h1>
@@ -256,21 +240,6 @@
         <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Support the Author Fund</a>
         <a href="#about" class="btn">Our mission</a>
       </div>
-    </div>
-    <div class="hero-right">
-      <svg class="hero-deco" viewBox="0 0 400 400" preserveAspectRatio="xMaxYMin slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-        <path d="M350 90 A 52 52 0 1 1 298 38 A 40 40 0 0 0 350 90 Z" fill="#c17b4a" opacity="0.13"/>
-        <g fill="#c17b4a">
-          <circle class="star-twinkle" cx="95" cy="58" r="1.6" opacity="0.5"/>
-          <circle cx="160" cy="118" r="1" opacity="0.35"/>
-          <circle class="star-twinkle delayed" cx="232" cy="42" r="1.9" opacity="0.45"/>
-          <circle cx="72" cy="200" r="1.2" opacity="0.3"/>
-          <circle cx="182" cy="268" r="0.9" opacity="0.3"/>
-          <circle cx="348" cy="198" r="1.3" opacity="0.35"/>
-          <circle cx="265" cy="148" r="0.8" opacity="0.25"/>
-        </g>
-      </svg>
-      <p class="hero-pull">Reading is a solitary act. A reading life is a shared one.</p>
       <p class="hero-meta">A 501(c)(3) literary nonprofit &nbsp;·&nbsp; Est. 2026</p>
     </div>
   </section>
@@ -301,30 +270,12 @@
   <section id="support">
     <div class="section-inner">
       <p class="section-label">Support our work<span class="section-star" aria-hidden="true">&#10022;</span></p>
-      <div class="campaigns-grid">
-        <div class="campaign-card fade-up">
-          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
-          <h3>Shelf Life</h3>
-          <p>Every quarter, readers vote on a book by a local or regional author. We buy the winner from a Tri-Cities indie bookstore and place copies in free libraries across the metro. When the next vote opens, we'll make sure you hear about it.</p>
-          <a href="/shelf-life" class="btn btn-copper">How Shelf Life works</a>
-        </div>
-        <div class="campaign-card fade-up" style="transition-delay:0.1s;">
-          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
-          <h3>Round Table</h3>
-          <p>When a Tri-Cities book club picks a regional author's book, we buy the copies from a local indie bookstore. How much of this we can do depends on funding, so giving where it's needed most is what keeps the table set for the next club.</p>
-          <a href="/round-table" class="btn btn-copper">How Round Table works</a>
-        </div>
-        <div class="campaign-card fade-up" style="transition-delay:0.2s;">
-          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
-          <h3>Give where it's needed most</h3>
-          <p>We also run on the less-visible work: licensing fees, insurance, venue rentals, and the dozen small things that keep events going. A gift here lets us put your support wherever it's most useful at the moment.</p>
-          <a href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" class="btn btn-copper" target="_blank" rel="noopener">Give to general operations</a>
-        </div>
-        <div class="campaign-card fade-up" style="transition-delay:0.3s;">
-          <span class="card-sparkle" aria-hidden="true">&#10022;</span>
-          <h3>Author Fund</h3>
-          <p>Your gift underwrites author visits to the Tri-Cities: honoraria, travel, lodging, and the small things that make a good author experience into a great one. Gifts of any size add up here, from a warm welcome for a visiting writer to bringing a debut novelist out to read.</p>
-          <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund</a>
+      <div class="support-cta fade-up">
+        <h2 class="support-cta-heading">Where your support goes.</h2>
+        <p class="support-cta-body">Everything we raise goes back into the Tri-Cities reading life, through our programs and the general fund that keeps them running. See how each one works, or jump straight in.</p>
+        <div class="support-cta-actions">
+          <a href="/programs" class="btn">See our programs</a>
+          <a href="/support" class="btn btn-copper">Support our work</a>
         </div>
       </div>
     </div>
