@@ -1,0 +1,84 @@
+/*
+ * transitions.css — Folklore Society section seams.
+ *
+ * Softens the transitions between sections: dark bands fade in from the
+ * section above and out into the one below, the event details strip melts
+ * into cream, and the hard hairline rules between light sections become a
+ * feathered line that fades out at both ends.
+ *
+ * Pure CSS. Linked AFTER each page's inline <style>, so equal-specificity
+ * rules win by cascade order. All fades are drawn as *backgrounds* (behind
+ * content), so text and buttons are never dimmed.
+ */
+
+:root { --seam-fade: 40px; }
+
+/* ---------- Dark bands: gradient fade instead of a hard colour switch ---------- */
+
+/* Base: fade in from cream at the top, stay ink to the bottom.
+   (Correct when the band is followed by more ink — e.g. the event footer.) */
+.copy-section.dark {
+  background: linear-gradient(to bottom,
+    var(--cream) 0, var(--ink) var(--seam-fade), var(--ink) 100%);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* When a light section follows, also fade the bottom back out to cream. */
+.copy-section.dark:has(+ :not(.dark):not(.event-footer)) {
+  background: linear-gradient(to bottom,
+    var(--cream) 0, var(--ink) var(--seam-fade),
+    var(--ink) calc(100% - var(--seam-fade)), var(--cream) 100%);
+}
+
+/* Newsletter band: cream on both sides. */
+.join-section {
+  background: linear-gradient(to bottom,
+    var(--cream) 0, var(--ink) var(--seam-fade),
+    var(--ink) calc(100% - var(--seam-fade)), var(--cream) 100%);
+}
+
+/* Cycle banner: warm header above, cream section below. */
+.cycle-banner {
+  background: linear-gradient(to bottom,
+    var(--warm) 0, var(--ink) var(--seam-fade),
+    var(--ink) calc(100% - var(--seam-fade)), var(--cream) 100%);
+  border-bottom-color: transparent;
+}
+
+/* ---------- Event details strip: melt its lower edge into cream ---------- */
+/* Layered background so the CTA buttons on top are never washed out. */
+.event-details {
+  background:
+    linear-gradient(to bottom, transparent calc(100% - var(--seam-fade) * 1.6), var(--cream)),
+    linear-gradient(135deg, var(--copper-lt) 0%, var(--warm) 50%, var(--cream) 100%);
+}
+
+/* ---------- Light seams: feather the hairline between stacked light sections ---------- */
+
+/* Drop the hard rules (kept as 1px transparent so layout is unchanged). */
+section { border-bottom-color: transparent; }
+.hero, .page-header { border-bottom-color: transparent; }
+
+/* A feathered line, fading out at both ends, after each light section that is
+   followed by another light section. Excludes dark/newsletter bands and the
+   event hero/details strip, and skips the seam just before a dark band (the
+   fade handles that one). */
+.hero:has(+ section),
+.page-header:has(+ section),
+section:not(.dark):not(.join-section):not(.event-hero):not(.event-details):not(.hero):has(+ section:not(.dark):not(.join-section)) {
+  position: relative;
+}
+.hero:has(+ section)::after,
+.page-header:has(+ section)::after,
+section:not(.dark):not(.join-section):not(.event-hero):not(.event-details):not(.hero):has(+ section:not(.dark):not(.join-section))::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(to right, transparent,
+    rgba(42, 31, 61, 0.12) 22%, rgba(42, 31, 61, 0.12) 78%, transparent);
+  pointer-events: none;
+}
