@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programs · Folklore Society</title>
-  <meta name="description" content="Folklore Society's programs for the Tri-Cities reading life: the Author Fund, Shelf Life, Round Table, and Dedication." />
+  <meta name="description" content="Folklore Society's programs for the Tri-Cities reading life: the Author Fund, Shelf Life, Round Table, and Dedication. What each one does and how to take part." />
   <meta property="og:title" content="Programs · Folklore Society" />
   <meta property="og:description" content="Folklore Society's programs for the Tri-Cities reading life: the Author Fund, Shelf Life, Round Table, and Dedication." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://folkloresocietywa.org/programs" />
+  <link rel="canonical" href="https://folkloresocietywa.org/programs" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -72,9 +73,7 @@
     .btn-copper { background: var(--copper); color: #fff; border-color: var(--copper); }
     .btn-copper:hover { background: var(--copper-dk); border-color: var(--copper-dk); }
     section { border-bottom: 1px solid var(--rule); }
-    .section-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
-    .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
-    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 4rem 2.5rem; }
     .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
 
@@ -85,14 +84,23 @@
     .page-header h1 { font-family: var(--script); font-size: clamp(44px, 6vw, 80px); font-weight: 400; line-height: 1.12; margin-bottom: 1.25rem; }
     .page-header .lead { font-size: 17px; color: var(--ink-soft); max-width: 600px; line-height: 1.75; }
 
-    /* --- Give / Program Cards --- */
-    .give-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .give-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; transition: border-color 0.18s; }
-    .give-card:hover { border-color: var(--copper); }
-    .give-card-eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); margin-bottom: 0.75rem; }
-    .give-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 0.75rem; }
-    .give-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1.75rem; flex: 1; }
-    .give-card .btn { align-self: flex-start; }
+    /* --- Jump nav --- */
+    .jump-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; }
+    .jump-nav a { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 100px; padding: 7px 15px; background: var(--cream); transition: border-color 0.18s, color 0.18s; }
+    .jump-nav a:hover { color: var(--copper); border-color: var(--copper); }
+
+    /* --- Program block --- */
+    .program { scroll-margin-top: 80px; }
+    .program-eyebrow { display: flex; align-items: baseline; gap: 0.9rem; flex-wrap: wrap; margin-bottom: 0.9rem; }
+    .program-name { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); }
+    .program-status { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); border: 1px solid var(--rule); border-radius: 100px; padding: 3px 10px; }
+    .program h2 { font-family: var(--serif); font-size: clamp(26px, 3.4vw, 36px); font-weight: 500; line-height: 1.15; margin-bottom: 1rem; }
+    .program-lead { font-size: 16px; color: var(--ink-soft); line-height: 1.8; max-width: 700px; margin-bottom: 1.5rem; }
+    .program-detail { max-width: 700px; }
+    .program-detail p { font-size: 14px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1rem; }
+    .program-detail p:last-child { margin-bottom: 0; }
+    .program-detail strong { color: var(--ink); font-weight: 600; }
+    .program-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
 
     /* --- Footer (shared) --- */
     footer { background: var(--cream); border-top: 1px solid var(--rule); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
@@ -105,16 +113,12 @@
     .footer-legal { width: 100%; font-size: 11px; color: var(--ink-mute); border-top: 0.5px solid var(--rule); padding-top: 1rem; margin-top: 0.25rem; }
 
     /* --- Responsive --- */
-    @media (max-width: 1000px) {
-      .give-grid { grid-template-columns: repeat(2, 1fr); }
-    }
     @media (max-width: 768px) {
       nav { padding: 0 1.25rem; }
       .nav-links, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
       .page-header { padding: 3rem 1.25rem 2.5rem; }
       .section-inner { padding: 3rem 1.25rem; }
-      .give-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -157,43 +161,83 @@
       <p class="hero-eyebrow">What we do</p>
       <h1>Programs</h1>
       <p class="lead">Each of our programs puts money behind a different corner of the Tri-Cities reading life. Here's what they do and how to be part of them.</p>
+      <nav class="jump-nav" aria-label="Jump to a program">
+        <a href="#author-fund">Author Fund</a>
+        <a href="#shelf-life">Shelf Life</a>
+        <a href="#round-table">Round Table</a>
+        <a href="#dedication">Dedication</a>
+      </nav>
     </div>
   </div>
 
-  <!-- Programs -->
-  <section>
-    <div class="section-inner">
-      <p class="section-label">The programs</p>
-      <div class="give-grid">
+  <!-- Author Fund -->
+  <section class="program" id="author-fund">
+    <div class="section-inner fade-up">
+      <div class="program-eyebrow">
+        <span class="program-name">Author Fund</span>
+      </div>
+      <h2>Bring writers to readers.</h2>
+      <p class="program-lead">Your gift underwrites author visits to the Tri-Cities: honoraria, travel, lodging, and the small things that make a good author experience into a great one. Gifts of any size add up here, from a warm welcome for a visiting writer to bringing a debut novelist out to read.</p>
+      <div class="program-detail">
+        <p><strong>How it works.</strong> This is our central fundraising vehicle, and it's what pays for the events that put readers and writers in the same room. Every gift is tied to a real cost, from a $25 welcome for a visiting author to $500 to bring a debut novelist out to read.</p>
+      </div>
+      <div class="program-actions">
+        <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="give-card fade-up">
-          <p class="give-card-eyebrow">Author Fund</p>
-          <h3>Bring writers to readers.</h3>
-          <p>Your gift underwrites author visits to the Tri-Cities: honoraria, travel, lodging, and the small things that make a good author experience into a great one. Gifts of any size add up here, from a warm welcome for a visiting writer to bringing a debut novelist out to read.</p>
-          <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund</a>
-        </div>
+  <!-- Shelf Life -->
+  <section class="program" id="shelf-life">
+    <div class="section-inner fade-up">
+      <div class="program-eyebrow">
+        <span class="program-name">Shelf Life</span>
+        <span class="program-status">Now open · Summer 2026</span>
+      </div>
+      <h2>Put books on shelves.</h2>
+      <p class="program-lead">Every quarter, readers vote on a book by a local or regional author. We buy the winner from a Tri-Cities indie bookstore and place copies in free libraries across the metro.</p>
+      <div class="program-detail">
+        <p><strong>How it works.</strong> Each quarter we draw a shortlist from the submission pool. Readers vote, and every $5 vote is a donation that goes straight to buying the winning book from a local indie bookstore. Each copy gets a Folklore bookplate and lands in a free library around the Tri-Cities.</p>
+        <p><strong>Who's eligible.</strong> Books published in the last five years by an author in Washington, Oregon, or Idaho, orderable through a Tri-Cities indie bookstore, written for young adult or adult readers. Current bookstore partners: BAGG Books, Wildflower Fiction, Ink Drinkers Bookshop, and Adventures Underground.</p>
+      </div>
+      <div class="program-actions">
+        <a href="https://instagram.com/folkloresocietywa" class="btn btn-copper" target="_blank" rel="noopener">Follow for vote updates</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScvKRbByInG4v9SRceTuX-i6qTIMiazQVw4VTdPOFgh_w6u5g/viewform" class="btn" target="_blank" rel="noopener">Submit your book</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqby95sDzXG-Ogc1LdWKGiBjb1EPm87g_KZWt1OWo5BwJTsg/viewform" class="btn" target="_blank" rel="noopener">Nominate a book</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdn68IQN444hocdfKRgeY0D7A-MiAKWhg-YBxxpOBQgo-fvtg/viewform" class="btn" target="_blank" rel="noopener">Volunteer your library</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="give-card fade-up" style="transition-delay:0.08s;">
-          <p class="give-card-eyebrow">Shelf Life</p>
-          <h3>Put books on shelves.</h3>
-          <p>Every quarter, readers vote on a book by a local or regional author. We buy the winner from a Tri-Cities indie bookstore and place copies in free libraries across the metro. When the next vote opens, we'll make sure you hear about it.</p>
-          <a href="/shelf-life" class="btn">How Shelf Life works</a>
-        </div>
+  <!-- Round Table -->
+  <section class="program" id="round-table">
+    <div class="section-inner fade-up">
+      <div class="program-eyebrow">
+        <span class="program-name">Round Table</span>
+        <span class="program-status">Opening fall 2026</span>
+      </div>
+      <h2>Take care of book club night.</h2>
+      <p class="program-lead">When a Tri-Cities book club is reading a regional author's book, we buy the copies from a local indie bookstore of your choice. Vendor-direct, so no money touches the club.</p>
+      <div class="program-detail">
+        <p><strong>How it works.</strong> Tell us about your club and the book you're reading. We confirm eligibility against published criteria, pay the bookstore directly at full retail, and your copies are ready for pickup.</p>
+        <p><strong>Who's eligible.</strong> Local, open, free book clubs reading a Pacific Northwest author's book published in the last five years, for young adult or adult readers, available through a Tri-Cities indie bookstore. In year one we're supporting up to four Round Tables, with up to 12 copies each.</p>
+      </div>
+      <div class="program-actions">
+        <a href="https://forms.gle/KfT5FLGfCoNuhYnQ6" class="btn btn-copper" target="_blank" rel="noopener">Apply for your book club</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="give-card fade-up" style="transition-delay:0.16s;">
-          <p class="give-card-eyebrow">Round Table</p>
-          <h3>Take care of book club night.</h3>
-          <p>When a Tri-Cities book club picks a regional author's book, we buy the copies from a local indie bookstore. How much of this we can do depends on funding, so giving where it's needed most is what keeps the table set for the next club.</p>
-          <a href="/round-table" class="btn">How Round Table works</a>
-        </div>
-
-        <div class="give-card fade-up" style="transition-delay:0.24s;">
-          <p class="give-card-eyebrow">Dedication</p>
-          <h3>Sponsor a bottle.</h3>
-          <p>For $25, we'll label a bottle with your name and a dedication to whoever you're thinking of: a grandmother who read to you, a partner, a friend. It joins the bar lineup at our next event, and afterward the bottle is yours to keep if you want it.</p>
-          <a href="https://www.zeffy.com/en-US/donation-form/dedication" class="btn btn-copper" target="_blank" rel="noopener">Dedicate a bottle</a>
-        </div>
-
+  <!-- Dedication -->
+  <section class="program" id="dedication">
+    <div class="section-inner fade-up">
+      <div class="program-eyebrow">
+        <span class="program-name">Dedication</span>
+      </div>
+      <h2>Sponsor a bottle.</h2>
+      <p class="program-lead">For $25, we'll label a bottle with your name and a dedication to whoever you're thinking of: a grandmother who read to you, a partner, a friend. It joins the bar lineup at our next event, and afterward the bottle is yours to keep if you want it.</p>
+      <div class="program-actions">
+        <a href="https://www.zeffy.com/en-US/donation-form/dedication" class="btn btn-copper" target="_blank" rel="noopener">Dedicate a bottle</a>
       </div>
     </div>
   </section>
@@ -203,7 +247,7 @@
     <ul class="footer-links">
       <li><a href="/#what-we-do">Our work</a></li>
       <li><a href="/events">Events</a></li>
-      <li><a href="/shelf-life">Shelf Life</a></li>
+      <li><a href="/programs">Programs</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/support">Support</a></li>
       <li><a href="/general-fund">General Fund</a></li>
