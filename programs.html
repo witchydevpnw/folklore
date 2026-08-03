@@ -84,7 +84,8 @@
     .page-intro { font-size: 17px; color: var(--ink-soft); max-width: 560px; line-height: 1.75; }
 
     /* --- Jump nav --- */
-    .jump-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; }
+    /* Resets inherited from the bare `nav` rule above, which also matches this element. */
+    .jump-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; position: static; z-index: auto; height: auto; padding: 0; background: none; border-bottom: none; justify-content: flex-start; align-items: center; }
     .jump-nav a { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 100px; padding: 7px 15px; background: var(--cream); transition: border-color 0.18s, color 0.18s; }
     .jump-nav a:hover { color: var(--copper); border-color: var(--copper); }
 
