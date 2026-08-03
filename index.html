@@ -9,7 +9,7 @@
   <meta property="og:description" content="A reading life, closer to home. A literary nonprofit for the Tri-Cities." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://folkloresocietywa.org" />
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -60,8 +60,6 @@
     .nav-social { display: flex; gap: 0.75rem; align-items: center; }
     .nav-social a { color: var(--ink-mute); display: flex; align-items: center; transition: color 0.18s; }
     .nav-social a:hover { color: var(--copper); }
-    .nav-cta { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 18px; border: 1px solid var(--ink); border-radius: 2px; transition: background 0.18s, color 0.18s; }
-    .nav-cta:hover { background: var(--ink); color: var(--cream); }
     .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
     .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.25s; }
     .nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
@@ -103,36 +101,6 @@
     .pillar-num { font-family: var(--serif); font-size: 48px; font-weight: 400; color: rgba(193,123,74,0.22); line-height: 1; margin-bottom: 1rem; }
     .pillar h3 { font-family: var(--serif); font-size: 22px; font-weight: 500; margin-bottom: 0.75rem; }
     .pillar p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; }
-    .events-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start; }
-    .event-list { display: flex; flex-direction: column; }
-    .event-item { border-bottom: 1px solid var(--rule); }
-    .event-item:first-child { border-top: 1px solid var(--rule); }
-    .event-header { display: grid; grid-template-columns: 60px 1fr auto; gap: 1.5rem; padding: 1.75rem 0; align-items: center; cursor: pointer; user-select: none; }
-    .event-header:hover .event-title { color: var(--copper); }
-    .event-date { text-align: center; }
-    .event-date .mo { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); display: block; }
-    .event-date .dy { font-family: var(--serif); font-size: 32px; font-weight: 500; line-height: 1; display: block; }
-    .event-title { font-family: var(--serif); font-size: 20px; font-weight: 500; transition: color 0.18s; }
-    .event-chevron { width: 18px; height: 18px; color: var(--ink-mute); transition: transform 0.3s ease; flex-shrink: 0; }
-    .event-item.open .event-chevron { transform: rotate(180deg); }
-    .event-item.open .event-title { color: var(--copper); }
-    .event-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.35s ease; }
-    .event-item.open .event-body { grid-template-rows: 1fr; }
-    .event-body-inner { overflow: hidden; padding: 0 0 0 76px; }
-    .event-body-content { padding-bottom: 1.75rem; }
-    .event-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1rem; }
-    .event-details { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 13px; color: var(--ink-soft); margin-bottom: 1.25rem; }
-    .event-details span { display: flex; align-items: center; gap: 6px; }
-    .event-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.25rem; }
-    .tag { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border: 1px solid var(--rule); border-radius: 2px; color: var(--ink-soft); }
-    .event-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .events-aside { position: sticky; top: 80px; }
-    .aside-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 2px; padding: 2rem; margin-bottom: 1.5rem; }
-    .aside-card h3 { font-family: var(--serif); font-size: 20px; font-weight: 500; margin-bottom: 0.75rem; }
-    .aside-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 1.5rem; }
-    .aside-social { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .aside-social a { display: flex; align-items: center; gap: 6px; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); padding: 7px 14px; border: 1px solid var(--rule); border-radius: 2px; transition: border-color 0.18s, color 0.18s; }
-    .aside-social a:hover { color: var(--copper); border-color: var(--copper); }
     .mission-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
     .mission-quote { font-family: var(--serif); font-size: clamp(24px, 3vw, 38px); font-weight: 400; font-style: italic; line-height: 1.3; color: var(--ink); }
     .mission-body p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
@@ -176,22 +144,18 @@
     .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
     @media (max-width: 900px) {
-      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-links, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
-      .events-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-      .events-aside { position: static; }
     }
     @media (max-width: 768px) {
       nav { padding: 0 1.25rem; }
-      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-links, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
       .hero { min-height: auto; padding: 3rem 1.25rem; }
       .section-inner { padding: 3rem 1.25rem; }
       .pillars { grid-template-columns: 1fr; }
       .pillar { border-right: none; border-bottom: 1px solid var(--rule); padding: 0 0 2rem 0 !important; }
       .pillar:last-child { border-bottom: none; padding-bottom: 0 !important; }
-      .event-header { grid-template-columns: 52px 1fr auto; gap: 1rem; }
-      .event-body-inner { padding-left: 0; }
       .mission-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
       .campaigns-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; align-items: flex-start; }
@@ -309,7 +273,7 @@
   </section>
 
   <footer>
-    <span class="footer-logo">Folklore Society</span>
+    <a href="/" class="footer-logo">Folklore Society</a>
     <ul class="footer-links">
       <li><a href="/#what-we-do">Our work</a></li>
       <li><a href="/events">Events</a></li>
@@ -333,20 +297,6 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-
-    document.querySelectorAll('.event-header').forEach(header => {
-      function toggle() {
-        const item = header.closest('.event-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.event-item.open').forEach(el => {
-          el.classList.remove('open');
-          el.querySelector('.event-header').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) { item.classList.add('open'); header.setAttribute('aria-expanded', 'true'); }
-      }
-      header.addEventListener('click', toggle);
-      header.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
-    });
 
     const burger = document.querySelector('.nav-hamburger');
     const menu = document.getElementById('mobileMenu');

@@ -78,11 +78,10 @@
     .fade-up.visible { opacity: 1; transform: translateY(0); }
 
     /* --- Page Header --- */
-    .page-header { background: var(--warm); border-bottom: 1px solid var(--rule); padding: 4rem 2.5rem 3.5rem; }
-    .page-header-inner { max-width: 1100px; margin: 0 auto; }
-    .page-header .hero-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.25rem; }
-    .page-header h1 { font-family: var(--script); font-size: clamp(44px, 6vw, 80px); font-weight: 400; line-height: 1.12; margin-bottom: 1.25rem; }
-    .page-header .lead { font-size: 17px; color: var(--ink-soft); max-width: 600px; line-height: 1.75; }
+    .page-header { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem 2rem; }
+    .page-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.25rem; }
+    .page-title { font-family: var(--script); font-size: clamp(48px, 7vw, 92px); font-weight: 400; line-height: 1.1; margin-bottom: 1.5rem; }
+    .page-intro { font-size: 17px; color: var(--ink-soft); max-width: 560px; line-height: 1.75; }
 
     /* --- Jump nav --- */
     .jump-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; }
@@ -122,7 +121,7 @@
       nav { padding: 0 1.25rem; }
       .nav-links, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
-      .page-header { padding: 3rem 1.25rem 2.5rem; }
+      .page-header { padding: 3rem 1.25rem 1.5rem; }
       .section-inner { padding: 3rem 1.25rem; }
       footer { flex-direction: column; align-items: flex-start; }
     }
@@ -146,6 +145,9 @@
         <a href="https://instagram.com/folkloresocietywa" aria-label="Instagram" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
         </a>
+        <a href="https://facebook.com/folkloresocietywa" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
       </div>
     </div>
     <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
@@ -163,19 +165,17 @@
   </div>
 
   <!-- Page Header -->
-  <div class="page-header">
-    <div class="page-header-inner">
-      <p class="hero-eyebrow">What we do</p>
-      <h1>Programs</h1>
-      <p class="lead">Each of our programs puts money behind a different corner of the Tri-Cities reading life. Here's what they do and how to be part of them.</p>
-      <nav class="jump-nav" aria-label="Jump to a program">
-        <a href="#author-fund">Author Fund</a>
-        <a href="#shelf-life">Shelf Life</a>
-        <a href="#round-table">Round Table</a>
-        <a href="#general-fund">General Fund</a>
-      </nav>
-    </div>
-  </div>
+  <header class="page-header">
+    <p class="page-eyebrow">What we do</p>
+    <h1 class="page-title">Programs</h1>
+    <p class="page-intro">Each of our programs puts money behind a different corner of the Tri-Cities reading life. Here's what they do and how to be part of them.</p>
+    <nav class="jump-nav" aria-label="Jump to a program">
+      <a href="#author-fund">Author Fund</a>
+      <a href="#shelf-life">Shelf Life</a>
+      <a href="#round-table">Round Table</a>
+      <a href="#general-fund">General Fund</a>
+    </nav>
+  </header>
 
   <!-- Author Fund -->
   <section class="program" id="author-fund">
@@ -184,7 +184,7 @@
         <span class="program-name">Author Fund</span>
       </div>
       <h2>Bring writers to readers.</h2>
-      <p class="program-lead">Your gift underwrites author visits to the Tri-Cities: honoraria, travel, lodging, and the small things that make a good author experience into a great one. Gifts of any size add up here, from a warm welcome for a visiting writer to bringing a debut novelist out to read.</p>
+      <p class="program-lead">Your gift pays for author visits to the Tri-Cities: honoraria, travel, lodging, and the small things that make a good author experience into a great one. Gifts of any size add up here, from a warm welcome for a visiting writer to bringing a debut novelist out to read.</p>
       <div class="program-detail">
         <p><strong>How it works.</strong> This is our central fundraising vehicle, and it's what pays for the events that put readers and writers in the same room. Every gift is tied to a real cost, from a $25 welcome for a visiting author to $500 to bring a debut novelist out to read.</p>
       </div>
@@ -227,7 +227,7 @@
       <p class="program-lead">When a Tri-Cities book club is reading a regional author's book, we buy the copies from a local indie bookstore of your choice. Vendor-direct, so no money touches the club.</p>
       <div class="program-detail">
         <p><strong>How it works.</strong> Tell us about your club and the book you're reading. We confirm eligibility against published criteria, pay the bookstore directly at full retail, and your copies are ready for pickup.</p>
-        <p><strong>Who's eligible.</strong> Local, open, free book clubs reading a Pacific Northwest author's book published in the last five years, for young adult or adult readers, available through a Tri-Cities indie bookstore. In year one we're supporting up to four Round Tables, with up to 12 copies each.</p>
+        <p><strong>Who's eligible.</strong> Local, open, free book clubs reading a Pacific Northwest author's book published in the last five years, for young adult or adult readers, available through a Tri-Cities indie bookstore. We can cover up to 12 copies per club, depending on fund availability.</p>
       </div>
       <div class="program-actions">
         <a href="https://forms.gle/KfT5FLGfCoNuhYnQ6" class="btn btn-copper" target="_blank" rel="noopener">Apply for your book club</a>
