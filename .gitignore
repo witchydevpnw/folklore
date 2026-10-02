@@ -5,6 +5,7 @@
 !images/freedom-to-read-flyer.png
 !images/bookstore-romance-day-flyer.png
 !images/midnight-margaritas-flyer.png
+!images/booked-for-the-holidays-flyer.png
 # Social graphics: tracked so they follow between machines, but kept off the
 # public site via .assetsignore.
 !social-media/**/*.png
