@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Folklore Society · Tri-Cities, WA</title>
-  <meta name="description" content="Folklore Society is a literary nonprofit for the Tri-Cities, Washington. We back the local reading scene and fundraise so author events and bookish gatherings don't mean a drive over the mountains." />
+  <meta name="description" content="The Tri-Cities is full of readers. Folklore Society raises money so the authors and indie bookstores who already serve them can bring more of that life here." />
   <meta property="og:title" content="Folklore Society" />
-  <meta property="og:description" content="A reading life, closer to home. A literary nonprofit for the Tri-Cities." />
+  <meta property="og:description" content="The Tri-Cities is full of readers. Folklore Society raises money so the authors and indie bookstores who already serve them can bring more of that life here." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://folkloresocietywa.org" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
@@ -94,13 +94,8 @@
     .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
     .section-label::after { content: ''; order: 1; flex: 1; height: 1px; background: var(--rule); }
     .section-star { order: 2; color: var(--copper); opacity: 0.6; font-size: 14px; letter-spacing: 0; line-height: 1; }
-    .pillars { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); }
-    .pillar { padding: 2.5rem 2rem 2.5rem 0; border-right: 1px solid var(--rule); }
-    .pillar:last-child { border-right: none; padding-right: 0; }
-    .pillar:not(:first-child) { padding-left: 2rem; }
-    .pillar-num { font-family: var(--serif); font-size: 48px; font-weight: 400; color: rgba(193,123,74,0.22); line-height: 1; margin-bottom: 1rem; }
-    .pillar h3 { font-family: var(--serif); font-size: 22px; font-weight: 500; margin-bottom: 0.75rem; }
-    .pillar p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; }
+    .work-copy { max-width: 40rem; margin: 0 auto; }
+    .work-copy p { font-size: 17px; color: var(--ink-soft); line-height: 1.85; }
     .mission-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
     .mission-quote { font-family: var(--serif); font-size: clamp(24px, 3vw, 38px); font-weight: 400; font-style: italic; line-height: 1.3; color: var(--ink); }
     .mission-body p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
@@ -153,9 +148,6 @@
       .nav-hamburger { display: flex; }
       .hero { min-height: auto; padding: 3rem 1.25rem; }
       .section-inner { padding: 3rem 1.25rem; }
-      .pillars { grid-template-columns: 1fr; }
-      .pillar { border-right: none; border-bottom: 1px solid var(--rule); padding: 0 0 2rem 0 !important; }
-      .pillar:last-child { border-bottom: none; padding-bottom: 0 !important; }
       .mission-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
       .campaigns-grid { grid-template-columns: 1fr; }
       footer { flex-direction: column; align-items: flex-start; }
@@ -208,7 +200,7 @@
       </div>
       <div class="hero-mid">
         <h1 class="hero-title">A reading life,<br>closer to <em>home</em>.</h1>
-        <p class="hero-body">The Tri-Cities is full of readers. We're a literary nonprofit supporting the local authors and indie bookstores who serve them, and we raise money to help bring bigger literary events out this way. The goal is a place with a real literary life of its own, where seeing an author on tour or going to a bookish ball or convention doesn't mean a drive over the mountains.</p>
+        <p class="hero-body">The Tri-Cities is full of readers. Folklore Society raises money so the authors and indie bookstores who already serve them can bring more of that life here, from an author evening downtown to the quieter underwriting that lets book clubs keep filling rooms they built themselves. The hope is simple enough to say out loud. Seeing a writer on tour should feel like something that happens in this valley, not only after a drive over the mountains.</p>
         <div class="hero-actions">
           <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Support the Author Fund</a>
           <a href="#about" class="btn">Our mission</a>
@@ -221,22 +213,8 @@
   <section id="what-we-do">
     <div class="section-inner">
       <p class="section-label">Our work<span class="section-star" aria-hidden="true">&#10022;</span></p>
-      <div class="pillars">
-        <div class="pillar fade-up">
-          <div class="pillar-num">01</div>
-          <h3>Bringing writers to readers.</h3>
-          <p>We fundraise to bring authors out to the Tri-Cities, for evenings of readings and conversation with the people who love their work. Some are names you'll recognize, and some are writers who live an hour down the road and deserve a proper room. Your donations help us cover what it takes to get them here.</p>
-        </div>
-        <div class="pillar fade-up" style="transition-delay:0.12s;">
-          <div class="pillar-num">02</div>
-          <h3>Championing local.</h3>
-          <p>What we raise stays east of the Cascades, with the independent bookstores and regional writers who give this side of the state its literary life. We buy from local shelves at full retail, and when there's a stage to fill, we look close to home first.</p>
-        </div>
-        <div class="pillar fade-up" style="transition-delay:0.24s;">
-          <div class="pillar-num">03</div>
-          <h3>Backing the people already doing the work.</h3>
-          <p>The Tri-Cities was building its literary community long before we arrived, in book clubs and reading series that fill rooms on their own. Our part is a quiet one. We underwrite the work and partner where we're invited, so the people who built this can keep leading it.</p>
-        </div>
+      <div class="work-copy fade-up">
+        <p>What we raise stays east of the Cascades. We buy from Tri-Cities shelves when we're part of an event, and when there's a stage to fill we look down the road before we look toward Seattle or Portland. Author visits are one of the clearest places a gift lands, because travel and lodging and a proper welcome are what turn a reading into a night people remember. Book clubs and reading series were already packing rooms before Folklore existed, and our part is to put money underneath that work when we're invited in, so the people who built it can keep leading it.</p>
       </div>
     </div>
   </section>
