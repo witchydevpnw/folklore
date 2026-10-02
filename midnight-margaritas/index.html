@@ -27,7 +27,7 @@
     "name": "Pajamas & Midnight Margaritas Party",
     "startDate": "2026-08-20T19:00:00-07:00",
     "endDate": "2026-08-20T23:00:00-07:00",
-    "eventStatus": "https://schema.org/EventScheduled",
+    "eventStatus": "https://schema.org/EventCompleted",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "typicalAgeRange": "13+",
     "location": {
@@ -53,7 +53,7 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
+      "availability": "https://schema.org/SoldOut",
       "validFrom": "2026-07-26T00:00:00-07:00",
       "url": "https://www.obsidianbookcollective.com/store/p/practical-magic-watch-party"
     }
@@ -106,6 +106,9 @@
 
     a { color: inherit; }
     img { display: block; max-width: 100%; height: auto; }
+
+    .past-event-banner { background: var(--copper-lt); color: var(--ink); padding: 0.85rem 2rem; text-align: center; border-bottom: 1px solid var(--rule); }
+    .past-event-line { margin: 0; font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--ink-soft); }
 
     /* Top nav */
     .event-nav {
@@ -398,6 +401,10 @@
 </head>
 <body>
 
+  <div class="past-event-banner" role="note">
+    <p class="past-event-line">This event took place on August 20, 2026. Thanks to everyone who came out.</p>
+  </div>
+
   <nav class="event-nav">
     <a href="/" class="back-link">Folklore Society</a>
     <span class="event-eyebrow">Event</span>
@@ -428,8 +435,7 @@
     </div>
     <p class="details-note">Ages 13 and up welcome · 21+ to enjoy the bar (ID required)</p>
     <div class="event-ctas center">
-      <a href="https://www.obsidianbookcollective.com/store/p/practical-magic-watch-party" class="btn btn-copper" target="_blank" rel="noopener">Reserve your free ticket</a>
-      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Pajamas+%26+Midnight+Margaritas+Party&amp;dates=20260820T190000/20260820T230000&amp;ctz=America/Los_Angeles&amp;location=Vision+Venue,+114+W+Kennewick+Ave,+Kennewick,+WA+99336&amp;details=A+Practical+Magic+pajama+watch+party.+Doors+at+7,+film+at+8,+with+midnight+margaritas+and+other+beverages+crafted+by+Folklore+Society.+Reserve+a+free+ticket:+https://www.obsidianbookcollective.com/store/p/practical-magic-watch-party" class="btn btn-outline" target="_blank" rel="noopener">Add to calendar</a>
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Pajamas+%26+Midnight+Margaritas+Party&amp;dates=20260820T190000/20260820T230000&amp;ctz=America/Los_Angeles&amp;location=Vision+Venue,+114+W+Kennewick+Ave,+Kennewick,+WA+99336&amp;details=A+Practical+Magic+pajama+watch+party.+Doors+at+7,+film+at+8,+with+midnight+margaritas+and+other+beverages+crafted+by+Folklore+Society." class="btn btn-copper" target="_blank" rel="noopener">Add to calendar</a>
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Vision+Venue,+114+W+Kennewick+Ave,+Kennewick,+WA+99336" class="btn btn-outline" target="_blank" rel="noopener">Get directions</a>
     </div>
   </section>
@@ -437,13 +443,13 @@
   <section class="copy-section">
     <div class="section-inner">
       <p class="section-label">What's happening<span class="section-star" aria-hidden="true">&#10022;</span></p>
-      <p class="lede">There's a certain hour — long after the popcorn's popped and the first margarita's poured — when the ordinary starts to shimmer. Come as your coziest self, bring the ones who'd stir up a little midnight mischief with you, and settle in. The rest, as any good witch knows, tends to sort itself out by candlelight.</p>
+      <p class="lede">There's a certain hour — long after the popcorn's popped and the first margarita's poured — when the ordinary starts to shimmer. People came as their coziest selves, with the ones who'd stir up a little midnight mischief, and settled in. The rest, as any good witch knows, sorted itself out by candlelight.</p>
       <ul class="event-list">
         <li><strong>Practical Magic on the big screen:</strong> the cult favorite, exactly as the season calls for it</li>
         <li><strong>Midnight margaritas &amp; more:</strong> cocktails, mocktails, and other beverages crafted by Folklore Society</li>
         <li><strong>Pajamas encouraged:</strong> come cozy — the comfier the better</li>
         <li><strong>Popcorn &amp; movie snacks:</strong> settle in with the good stuff and a room full of fellow book witches</li>
-        <li><strong>Shop the goodies:</strong> Earth Spirit and BAGG Books will have merch and treasures to browse and take home</li>
+        <li><strong>Shop the goodies:</strong> Earth Spirit and BAGG Books had merch and treasures to browse and take home</li>
       </ul>
     </div>
   </section>
@@ -452,8 +458,8 @@
     <div class="section-inner">
       <p class="section-label">Folklore on the bar<span class="section-star" aria-hidden="true">&#10022;</span></p>
       <div class="body-copy">
-        <p>The margaritas are ours. Folklore Society is mixing the midnight margaritas and every other pour of the night, and every dollar from the bar goes back into our general fund — the pool that keeps us pouring at events like this one and Round Table, and covers the quiet costs that make them happen.</p>
-        <p>Want your gift to go to a specific fund instead? Look for the QR code at the event — scan it and you can send your support exactly where you'd like it to land.</p>
+        <p>The margaritas were ours. Folklore Society mixed the midnight margaritas and every other pour of the night, and every dollar from the bar went back into our general fund — the pool that keeps us pouring at events like this one and Round Table, and covers the quiet costs that make them happen.</p>
+        <p>Want a gift to go to a specific fund instead? The Author Fund and the general fund are both still open.</p>
       </div>
       <div class="event-ctas">
         <a href="/#support" class="btn btn-copper">Support our work</a>
@@ -479,7 +485,7 @@
           <p class="partner-name">Obsidian Book Collective</p>
           <div class="partner-links">
             <a class="partner-link" href="https://www.obsidianbookcollective.com/" target="_blank" rel="noopener">obsidianbookcollective.com</a>
-            <a class="partner-link partner-event" href="https://www.obsidianbookcollective.com/store/p/practical-magic-watch-party" target="_blank" rel="noopener">Get tickets</a>
+            <a class="partner-link partner-event" href="https://www.obsidianbookcollective.com/store/p/practical-magic-watch-party" target="_blank" rel="noopener">Event page</a>
           </div>
         </div>
         <div class="partner-card">
@@ -497,9 +503,9 @@
   <section class="copy-section dark" data-night-sky>
     <div class="section-inner" style="text-align: center;">
       <p class="section-label" style="justify-content: center;">Be there<span class="section-star" aria-hidden="true">&#10022;</span></p>
-      <p class="lede" style="margin-bottom: 2.25rem;">Grab your pajamas, round up your coven, and reserve a free ticket while there's room. Thursday, August 20 at Vision Venue — doors at 7, film at 8, margaritas till late. We'll leave the porch light on.</p>
+      <p class="lede" style="margin-bottom: 2.25rem;">Pajamas, a coven, and midnight margaritas at Vision Venue. Thursday, August 20 — doors at 7, film at 8. Thanks for coming out.</p>
       <div class="event-ctas center">
-        <a href="https://www.obsidianbookcollective.com/store/p/practical-magic-watch-party" class="btn btn-copper" target="_blank" rel="noopener">Reserve your free ticket</a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Pajamas+%26+Midnight+Margaritas+Party&amp;dates=20260820T190000/20260820T230000&amp;ctz=America/Los_Angeles&amp;location=Vision+Venue,+114+W+Kennewick+Ave,+Kennewick,+WA+99336&amp;details=A+Practical+Magic+pajama+watch+party.+Doors+at+7,+film+at+8,+with+midnight+margaritas+and+other+beverages+crafted+by+Folklore+Society." class="btn btn-copper" target="_blank" rel="noopener">Add to calendar</a>
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Vision+Venue,+114+W+Kennewick+Ave,+Kennewick,+WA+99336" class="btn btn-ghost" target="_blank" rel="noopener">Get directions</a>
       </div>
     </div>
