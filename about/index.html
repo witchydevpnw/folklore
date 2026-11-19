@@ -152,6 +152,10 @@
     .footer-social a:hover { color: var(--copper); }
     .footer-legal { width: 100%; font-size: 11px; color: var(--ink-mute); border-top: 0.5px solid var(--rule); padding-top: 1rem; margin-top: 0.25rem; }
 
+    .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem 3rem; }
+    .pillar h3 { font-family: var(--serif); font-size: 22px; font-weight: 500; line-height: 1.25; margin-bottom: 0.85rem; }
+    .pillar p { font-size: 15px; color: var(--ink-soft); line-height: 1.85; }
+    .pillar p a { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
     .details-intro a, .details-list a { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
     .details-intro { max-width: 660px; font-size: 16px; color: var(--ink-soft); line-height: 1.85; margin-bottom: 2.5rem; }
     .details-list { display: grid; grid-template-columns: 200px 1fr; gap: 0.9rem 2rem; max-width: 760px; }
@@ -170,6 +174,7 @@
       .nav-hamburger { display: flex; }
       .page-header { padding: 3rem 1.25rem 2.5rem; }
       .section-inner { padding: 3rem 1.25rem; }
+      .pillars-grid { grid-template-columns: 1fr; gap: 2.25rem; }
       footer { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -243,6 +248,26 @@
           <p class="letter-title">Board of Directors, Folklore Society</p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <p class="section-label">What we do</p>
+      <div class="pillars-grid fade-up">
+        <div class="pillar">
+          <h3>Bringing writers to readers</h3>
+          <p>We fundraise to bring authors out to the Tri-Cities for events like readings, signings and conversations, and the <a href="/programs#author-fund">Author Fund</a> is where that money goes. Right now it supports costs like author table fees, so author tables at our events can stay free, and your gifts make that possible. As the fund grows, we hope it can help with more of what it takes to get an author here.</p>
+        </div>
+        <div class="pillar">
+          <h3>Championing local</h3>
+          <p>Our money stays east of the Cascades, with the independent bookstores and regional writers who give this side of the state its literary life. When we buy books for events and clubs, we buy them from local, independent bookstores or directly from local authors, and when there's a stage to fill, we look close to home first.</p>
+        </div>
+        <div class="pillar">
+          <h3>Backing the people already doing the work</h3>
+          <p>The book clubs and reading nights here were going long before Folklore existed, and we'd rather put money behind them than take them over. Through <a href="/programs#round-table">Round Table</a>, we buy books for local book clubs reading regional authors and support the small businesses that host them. We also buy books from independent authors and local bookstores to stock free libraries, so more people can get their hands on local literature and the authors still get paid for their work.</p>
+        </div>
       </div>
     </div>
   </section>
