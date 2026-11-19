@@ -6,8 +6,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "folklore",
   "compatibility_date": "2026-06-16",
+  // Canonical-host redirects, then static assets.
+  "main": "src/worker.js",
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
   "observability": {
     "enabled": true
