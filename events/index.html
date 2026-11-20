@@ -255,6 +255,7 @@
 
     .events-wrap { max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem 5rem; }
     .events-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .events-wrap > .events-cards { align-items: start; }
     .event-card { background: var(--cream); border: 1px solid rgba(42,31,61,0.10); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 1px 2px rgba(42,31,61,0.04), 0 10px 28px -10px rgba(42,31,61,0.12); transition: box-shadow 0.25s ease, transform 0.25s ease; }
     .event-card:hover { box-shadow: 0 2px 4px rgba(42,31,61,0.05), 0 18px 36px -12px rgba(42,31,61,0.16); transform: translateY(-3px); }
     .event-card-media { display: block; background: #fff; border-bottom: 1px solid var(--rule); }
@@ -279,6 +280,12 @@
     .btn:hover { background: var(--ink); color: var(--cream); }
     .btn-copper { background: var(--copper); color: #fff; border-color: var(--copper); }
     .btn-copper:hover { background: var(--copper-dk); border-color: var(--copper-dk); }
+
+    .events-role { max-width: 1100px; margin: 0 auto; padding: 0 2.5rem 4rem; }
+    .events-role-inner { max-width: 680px; border-top: 1px solid var(--rule); padding-top: 2.75rem; }
+    .events-role h2 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 1rem; }
+    .events-role p { font-size: 15px; color: var(--ink-soft); line-height: 1.85; margin-bottom: 1.25rem; }
+    .events-role p a { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
 
     .events-note { max-width: 1100px; margin: 0 auto; padding: 0 2.5rem 5rem; }
     .events-note-inner { background: var(--warm); border: 1px solid var(--rule); border-radius: 14px; padding: 2.5rem; text-align: center; }
@@ -305,6 +312,7 @@
       .page-header { padding: 3rem 1.25rem 1.5rem; }
       .events-wrap { padding: 1.5rem 1.25rem 3rem; }
       .events-cards { grid-template-columns: 1fr; }
+      .events-role { padding: 0 1.25rem 3rem; }
       .events-note { padding: 0 1.25rem 3rem; }
       footer { flex-direction: column; align-items: flex-start; }
     }
@@ -384,6 +392,18 @@
         </div>
       </article>
 
+      <article class="event-card">
+        <div class="event-card-body">
+          <p class="event-card-date">Saturday, May 15, 2027 · Hours coming soon</p>
+          <h2 class="event-card-title">Sagebrush and Spines</h2>
+          <p class="event-card-meta">Gesa Carousel of Dreams · Kennewick · Free to the public</p>
+          <p class="event-card-desc">Our inaugural spring book fair brings Pacific Northwest authors together with independent bookstores, bookish vendors and a silent auction, and it's free to the public. Our fundraising helps keep the cost for authors as low as possible, so more of them, especially newer authors, have the chance to take part.</p>
+          <div class="event-card-actions">
+            <a href="https://sagebrushandspines.com/" class="btn btn-copper" target="_blank" rel="noopener">View details</a>
+          </div>
+        </div>
+      </article>
+
     </div>
 
     <div class="events-past">
@@ -440,6 +460,15 @@
     </div>
   </section>
 
+  <section class="events-role">
+    <div class="events-role-inner">
+      <h2>How we show up at events</h2>
+      <p>Most of the events on this page belong to the bookstores and collectives who dream them up, and our part is the support underneath, which usually means sponsoring and raising money so the day can happen the way its organizers picture it.</p>
+      <p>When we host something ourselves, like Sagebrush and Spines, the <a href="/programs#author-fund">Author Fund</a> is for covering author table fees. That way, author tables at our events can stay free, and your gifts make that possible.</p>
+      <p>If you're planning a literary event in the Tri-Cities and think we might be a good partner or sponsor, write to us at <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a>.</p>
+    </div>
+  </section>
+
   <section class="events-note">
     <div class="events-note-inner">
       <h2>More on the way</h2>
@@ -490,7 +519,8 @@
       </a>
     </div>
     <p class="footer-legal" style="font-family:var(--serif,Georgia,serif);font-style:italic;margin-bottom:0.4rem;">For the reading life, Folklore Society.</p>
-    <p class="footer-legal">© 2026 Folklore Society · A Washington 501(c)(3) nonprofit · Tri-Cities, WA</p>
+    <p class="footer-legal">&copy; 2026 Folklore Society &middot; A Washington 501(c)(3) nonprofit &middot; EIN 42-1823147</p>
+    <p class="footer-legal footer-contact" style="border-top:none;padding-top:0;margin-top:0;">5405 Warbler Ln, West Richland, WA 99353 &middot; <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a></p>
   </footer>
 
   <script>
