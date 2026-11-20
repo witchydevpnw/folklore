@@ -120,6 +120,13 @@
     .support-cta-heading { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 40px); font-weight: 500; color: var(--ink); margin-bottom: 1.25rem; }
     .support-cta-body { font-size: 16px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 2.25rem; }
     .support-cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .latest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .latest-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 8px; padding: 1.75rem; display: flex; flex-direction: column; }
+    .latest-date { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); margin-bottom: 0.7rem; }
+    .latest-card h2 { font-family: var(--serif); font-size: 24px; font-weight: 500; line-height: 1.25; margin-bottom: 0.75rem; }
+    .latest-card p { font-size: 15px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1.25rem; flex: 1; }
+    .latest-card a { color: var(--copper-dk); border-bottom: 1px solid currentColor; align-self: flex-start; }
+    @media (max-width: 800px) { .latest-grid { grid-template-columns: 1fr; } }
     .join-section { background: var(--ink); color: var(--cream); border-bottom: none; position: relative; overflow: hidden; }
     .join-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; padding: 6rem 2.5rem; text-align: center; }
     .join-inner h2 { font-family: var(--script); font-size: clamp(44px, 5.5vw, 72px); font-weight: 400; line-height: 1.15; margin-bottom: 1rem; }
@@ -172,6 +179,7 @@
       <li><a href="/" class="active" aria-current="page">Home</a></li>
       <li><a href="/programs">Programs</a></li>
       <li><a href="/events/">Events</a></li>
+      <li><a href="/updates/">Updates</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/support">Support</a></li>
     </ul>
@@ -195,6 +203,7 @@
     <a href="/" class="active" aria-current="page">Home</a>
     <a href="/programs">Programs</a>
     <a href="/events/">Events</a>
+    <a href="/updates/">Updates</a>
     <a href="/about/">About</a>
     <a href="/support">Support</a>
   </div>
@@ -239,6 +248,32 @@
           <a href="/sagebrush-and-spines/" class="btn btn-copper">About the fair</a>
           <a href="/events/" class="btn">See all events</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="latest-updates">
+    <div class="section-inner">
+      <p class="section-label">Latest updates<span class="section-star" aria-hidden="true">&#10022;</span></p>
+      <div class="latest-grid">
+        <article class="latest-card">
+          <p class="latest-date">November 2026</p>
+          <h2>Sagebrush and Spines is coming</h2>
+          <p>Our inaugural spring book fair is May 15, 2027, at the Gesa Carousel of Dreams in Kennewick. It is free to the public, and hours are coming soon.</p>
+          <a href="/updates/#sagebrush-and-spines">Read the update</a>
+        </article>
+        <article class="latest-card">
+          <p class="latest-date">November 2026</p>
+          <h2>Giving Tuesday is December 1</h2>
+          <p>A gift that day can go to the Author Fund, which covers author table fees so author tables at our events can stay free.</p>
+          <a href="/updates/#giving-tuesday">Read the update</a>
+        </article>
+        <article class="latest-card">
+          <p class="latest-date">November 2026</p>
+          <h2>See you at Booked for the Holidays</h2>
+          <p>On December 5, BAGG Books and Obsidian Book Collective host the wandering winter book market. Folklore Society is sponsoring the outdoor beer garden out front of BAGG Books.</p>
+          <a href="/updates/#booked-for-the-holidays">Read the update</a>
+        </article>
       </div>
     </div>
   </section>
@@ -288,6 +323,7 @@
       <li><a href="/support">Support</a></li>
       <li><a href="/general-fund">General Fund</a></li>
       <li><a href="/endpapers">Membership</a></li>
+      <li><a href="/financials/">Financials</a></li>
       <li><a href="/privacy/">Privacy</a></li>
       <li><a href="mailto:hello@folkloresocietywa.org">Contact</a></li>
     </ul>

@@ -1,0 +1,103 @@
+[
+  {
+    "slug": "sagebrush-and-spines",
+    "date": "2026-11-18",
+    "dateLabel": "November 2026",
+    "title": "Sagebrush and Spines is coming",
+    "href": "/sagebrush-and-spines/",
+    "linkLabel": "Read about the fair",
+    "image": null,
+    "body": [
+      "Sagebrush and Spines is Folklore Society's inaugural spring book fair, and it is the first book fair of its kind in the Tri-Cities. The fair is on May 15, 2027, at the Gesa Carousel of Dreams in Kennewick. It is free to the public, and hours are coming soon.",
+      "The day brings together adult and new adult authors, bookish vendors, book clubs, and independent bookstores. The books are adult, new adult, and upper YA for readers 16 and up, so this is not a fair for children's books. A silent auction will be part of the day.",
+      "Fundraising at the fair supports the Author Fund, which covers author table fees. That way, author tables at our events can stay free, and your gifts make that possible. Authors and makers who would like a table can find the interest form at sagebrushandspines.com."
+    ]
+  },
+  {
+    "slug": "giving-tuesday",
+    "date": "2026-11-17",
+    "dateLabel": "November 2026",
+    "title": "Giving Tuesday is December 1",
+    "href": "/support",
+    "linkLabel": "See ways to give",
+    "image": null,
+    "body": [
+      "Giving Tuesday is December 1, and it is a good day to put a gift toward the reading life here in the Tri-Cities. Folklore Society is in its first year, and a gift helps us keep doing the work already in front of us.",
+      "The Author Fund covers author table fees. That way, author tables at our events can stay free, and your gifts make that possible. You can give to the Author Fund, or give to the general fund if you would rather we put the gift where it is needed. Both choices are on our Support page.",
+      "Gifts are processed through Zeffy, so we do not see or store your card number. If you have a question before you give, write to hello@folkloresocietywa.org and we will write back."
+    ]
+  },
+  {
+    "slug": "booked-for-the-holidays",
+    "date": "2026-11-16",
+    "dateLabel": "November 2026",
+    "title": "See you at Booked for the Holidays",
+    "href": "https://bookedfortheholidaystc.com/",
+    "linkLabel": "Visit the market site",
+    "external": true,
+    "image": {
+      "src": "/images/booked-for-the-holidays-flyer.webp",
+      "width": 960,
+      "height": 1200,
+      "alt": "Booked for the Holidays. A wandering winter market in Downtown Kennewick. Saturday, December 5, 2026."
+    },
+    "body": [
+      "We hope to see you on December 5, 2026, at Booked for the Holidays. It is the wandering winter book market hosted by BAGG Books and Obsidian Book Collective, with local authors and bookish vendors set up inside downtown Kennewick shops. The market runs from 11 in the morning until 4 in the afternoon. It is free, and no ticket is needed.",
+      "Folklore Society is sponsoring the outdoor beer garden out front of BAGG Books, so come say hello while you wander between the shops. If you would like to guest bartend with us that day, send a direct message on Instagram at @folkloresocietywa. Details for the market itself are on the Booked for the Holidays site."
+    ]
+  },
+  {
+    "slug": "midnight-margaritas",
+    "date": "2026-08-20",
+    "dateLabel": "August 20, 2026",
+    "title": "A pajama watch party at Vision Venue",
+    "href": "/midnight-margaritas/",
+    "linkLabel": "Look back at the night",
+    "image": {
+      "src": "/images/midnight-margaritas-flyer.webp",
+      "width": 1000,
+      "height": 562,
+      "alt": "Pajamas and Midnight Margaritas Party, a Practical Magic watch party at Vision Venue in downtown Kennewick."
+    },
+    "body": [
+      "On August 20, 2026, readers came in pajamas to Vision Venue in downtown Kennewick for a Practical Magic watch party. Doors were at 7 and the film was at 8. Earth Spirit Mystical Boutique and Obsidian Book Collective presented the night, and Folklore Society poured the drinks. Ages 13 and up were welcome. The night was free, and it was ticketed.",
+      "It was a reader event, a room of people watching a film together. The page for the night is still up, including the address at 114 W Kennewick Ave, if you want the longer version of what the evening held."
+    ]
+  },
+  {
+    "slug": "bookstore-romance-day",
+    "date": "2026-08-15",
+    "dateLabel": "August 15, 2026",
+    "title": "Romance readers at BAGG Books",
+    "href": "/bookstore-romance-day/",
+    "linkLabel": "Look back at the day",
+    "image": {
+      "src": "/images/bookstore-romance-day-flyer.webp",
+      "width": 1000,
+      "height": 562,
+      "alt": "Bookstore Romance Day at BAGG Books in Kennewick."
+    },
+    "body": [
+      "Bookstore Romance Day was August 15, 2026, at BAGG Books in downtown Kennewick. The day ran from 11 in the morning until 6 in the evening. It marked the national Bookstore Romance Day, and it was free and open to everyone.",
+      "Carly Joy offered flash tattoos, and Blake Gallows was there for a book signing and a meet and greet. It was a day for romance readers, hosted by the bookshop. The longer page is still up, with the shop at 318 W Kennewick Ave, if you want to look back."
+    ]
+  },
+  {
+    "slug": "freedom-to-read",
+    "date": "2026-07-04",
+    "dateLabel": "July 4, 2026",
+    "title": "The Freedom to Read at BAGG Books",
+    "href": "/freedom-to-read/",
+    "linkLabel": "Look back at the afternoon",
+    "image": {
+      "src": "/images/freedom-to-read-flyer.webp",
+      "width": 1000,
+      "height": 562,
+      "alt": "The Freedom to Read at BAGG Books in Kennewick."
+    },
+    "body": [
+      "The Freedom to Read was July 4, 2026, at BAGG Books in downtown Kennewick, from 11 in the morning until 4 in the afternoon. Obsidian Book Collective presented the day, and BAGG Books hosted it. It was free and open to everyone.",
+      "Readers brought books to swap, looked through banned romance from the shop's shelves, and tried bookish crafts and temporary tattoos. It was one afternoon for a stubborn idea, that you should get to read whatever you want. The page is still up if you would like the longer version."
+    ]
+  }
+]
