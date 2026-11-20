@@ -1,5 +1,37 @@
 [
   {
+    "slug": "little-free-libraries",
+    "date": "2026-11-20",
+    "dateLabel": "November 2026",
+    "title": "New books by local authors in Little Free Libraries",
+    "href": null,
+    "linkLabel": null,
+    "image": {
+      "src": "/images/photos/lfl-spellborn.webp",
+      "width": 675,
+      "height": 900,
+      "alt": "A copy of Spellborn by Taylor Rogers held up in front of a gray Little Free Library."
+    },
+    "photos": [
+      {
+        "src": "/images/photos/lfl-for-our-next-song-pink.webp",
+        "width": 675,
+        "height": 900,
+        "caption": "For Our Next Song by Jessica James"
+      },
+      {
+        "src": "/images/photos/lfl-for-our-next-song-red.webp",
+        "width": 675,
+        "height": 900,
+        "caption": "Another copy, in another library"
+      }
+    ],
+    "body": [
+      "Brand-new books by local authors have been finding their way into Little Free Libraries around the Tri-Cities. These copies were donated, and they're waiting for whoever opens the little door next.",
+      "So far that includes Spellborn by Taylor Rogers and For Our Next Song by Jessica James. If you spot one on your walk, take it home, and pass it along when you're done."
+    ]
+  },
+  {
     "slug": "sagebrush-and-spines",
     "date": "2026-11-18",
     "dateLabel": "November 2026",
@@ -80,6 +112,20 @@
     "body": [
       "Bookstore Romance Day was August 15, 2026, at BAGG Books in downtown Kennewick. The day ran from 11 in the morning until 6 in the evening. It marked the national Bookstore Romance Day, and it was free and open to everyone.",
       "Carly Joy offered flash tattoos, and Blake Gallows was there for a book signing and a meet and greet. Folklore Society ran the beer garden out back, and we were glad to be part of the day."
+    ],
+    "photos": [
+      {
+        "src": "/images/photos/popup-bar-front.webp",
+        "width": 900,
+        "height": 675,
+        "caption": "The pop-up bar and its Romantical Drink Menu"
+      },
+      {
+        "src": "/images/photos/popup-bar-candace.webp",
+        "width": 675,
+        "height": 900,
+        "caption": "Candace Delany behind the bar"
+      }
     ]
   },
   {
