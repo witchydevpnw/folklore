@@ -291,8 +291,8 @@
     .update-photos figcaption { font-size: 13px; color: var(--ink-soft); line-height: 1.5; margin-top: 0.4rem; }
     .update a.more { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
     @media (max-width: 700px) {
-      .update { grid-template-columns: 1fr; }
-      .update img { max-width: 320px; }
+      .update:has(img) { grid-template-columns: 1fr; }
+      .update > img { max-width: 320px; }
     }
   </style>
   <link rel="stylesheet" href="/transitions.css" />
@@ -353,10 +353,12 @@
         <h2>New books by local authors in Little Free Libraries</h2>
       <p>Brand-new books by local authors have been finding their way into Little Free Libraries around the Tri-Cities. These copies were donated, and they&#x27;re waiting for whoever opens the little door next.</p>
       <p>So far that includes Spellborn by Taylor Rogers and For Our Next Song by Jessica James. If you spot one on your walk, take it home, and pass it along when you&#x27;re done.</p>
+      <p>Our Shelf Life program is designed to buy books like these from local, independent bookstores or directly from local authors and put them in free libraries, and we&#x27;re fundraising for it now. If you&#x27;d like to help, you can give on our Support page.</p>
         <div class="update-photos">
           <figure><img src="/images/photos/lfl-for-our-next-song-pink.webp" alt="For Our Next Song by Jessica James held up in front of a pink Little Free Library." width="675" height="900" loading="lazy" decoding="async" /><figcaption>For Our Next Song by Jessica James</figcaption></figure>
           <figure><img src="/images/photos/lfl-for-our-next-song-red.webp" alt="For Our Next Song by Jessica James held up in front of a red Little Free Library." width="675" height="900" loading="lazy" decoding="async" /><figcaption>Another copy, in another library</figcaption></figure>
         </div>
+        <p><a class="more" href="/support">See ways to give</a></p>
       </div>
     </article>
     <article class="update" id="sagebrush-and-spines">
