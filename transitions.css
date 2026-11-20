@@ -82,3 +82,81 @@ section:not(.dark):not(.join-section):not(.event-hero):not(.event-details):not(.
     rgba(42, 31, 61, 0.12) 22%, rgba(42, 31, 61, 0.12) 78%, transparent);
   pointer-events: none;
 }
+
+/* ---------- Ways to help: shared calls to action ---------- */
+.ways-help { background: transparent; }
+.ways-help .section-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
+.ways-help-heading {
+  font-family: var(--serif);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+.ways-help-intro {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.8;
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+.ways-help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.ways-help-item {
+  background: var(--warm);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+.ways-help-item:not(:has(p)) { justify-content: center; }
+.ways-help-item:not(:has(p)) .btn { margin-top: 0; }
+.ways-help-item p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  margin: 0;
+  flex: 1;
+}
+.ways-help .btn {
+  display: inline-block;
+  margin-top: auto;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 2px;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+}
+.ways-help .btn:hover { background: var(--ink); color: var(--cream); }
+.ways-help .btn-copper {
+  background: var(--copper);
+  color: #fff;
+  border-color: var(--copper);
+}
+.ways-help .btn-copper:hover {
+  background: color-mix(in srgb, var(--copper) 82%, #000);
+  border-color: color-mix(in srgb, var(--copper) 82%, #000);
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .ways-help .section-inner { padding: 3rem 1.25rem; }
+  .ways-help-grid { grid-template-columns: 1fr; }
+}
