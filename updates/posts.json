@@ -146,5 +146,43 @@
       "The Freedom to Read was July 4, 2026, at BAGG Books in downtown Kennewick, from 11 in the morning until 4 in the afternoon. Obsidian Book Collective presented the day, and BAGG Books hosted it. It was free and open to everyone.",
       "Readers brought books to swap, looked through banned romance from the shop's shelves, and tried bookish crafts and temporary tattoos. It was one afternoon for a stubborn idea, that you should get to read whatever you want. Take a look at the event page for the full picture."
     ]
+  },
+  {
+    "slug": "harvest-season-release-party",
+    "date": "2026-06",
+    "dateLabel": "June 2026",
+    "title": "Our first event, the Harvest Season release party",
+    "href": null,
+    "linkLabel": null,
+    "image": {
+      "src": "/images/photos/harvest-group.webp",
+      "width": 675,
+      "height": 900,
+      "alt": "Readers gathered around long tables inside BAGG Books at the Harvest Season release party."
+    },
+    "photos": [
+      {
+        "src": "/images/photos/harvest-cookies.webp",
+        "width": 675,
+        "height": 900,
+        "caption": "Cookies and a centerpiece"
+      },
+      {
+        "src": "/images/photos/harvest-bar-candace.webp",
+        "width": 675,
+        "height": 900,
+        "caption": "Candace Delany behind the bar"
+      },
+      {
+        "src": "/images/photos/harvest-bar-pouring.webp",
+        "width": 675,
+        "height": 900,
+        "caption": "Pouring for the first guests"
+      }
+    ],
+    "body": [
+      "Folklore Society's first event was the release party for Brynne Weaver's Harvest Season at BAGG Books in downtown Kennewick in June 2026. Readers filled the room around long tables set with black candles, a skull centerpiece, and wrapped cookies.",
+      "We poured from a Harvest Season drink menu with two cocktails, Maya's Magical Gimlet and Harper's Moka Martini, and what the bar brought in went back into our programs. It's where Folklore got its start, and we're grateful to everyone who came out that night."
+    ]
   }
 ]
