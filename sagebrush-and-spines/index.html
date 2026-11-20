@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagebrush and Spines · A spring book fair · May 15, 2027 · Kennewick, WA</title>
+  <meta name="description" content="Sagebrush and Spines is Folklore Society's inaugural spring book fair, the first of its kind in the Tri-Cities. May 15, 2027, at the Gesa Carousel of Dreams in Kennewick, WA. Free to the public." />
+  <meta property="og:title" content="Sagebrush and Spines · Folklore Society" />
+  <meta property="og:description" content="Folklore Society's inaugural spring book fair. May 15, 2027, at the Gesa Carousel of Dreams in Kennewick, WA. Free to the public." />
+  <meta property="og:type" content="event" />
+  <meta property="og:url" content="https://folkloresocietywa.org/sagebrush-and-spines/" />
+  <link rel="canonical" href="https://folkloresocietywa.org/sagebrush-and-spines/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Sagebrush and Spines",
+    "description": "Folklore Society's inaugural spring book fair, the first book fair of its kind in the Tri-Cities. Adult and new adult authors, bookish vendors, book clubs and independent bookstores, with a silent auction. Free to the public.",
+    "startDate": "2027-05-15",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "url": "https://folkloresocietywa.org/sagebrush-and-spines/",
+    "location": {
+      "@type": "Place",
+      "name": "Gesa Carousel of Dreams",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kennewick",
+        "addressRegion": "WA",
+        "addressCountry": "US"
+      }
+    },
+    "organizer": { "@type": "Organization", "name": "Folklore Society", "url": "https://folkloresocietywa.org/" },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://folkloresocietywa.org/sagebrush-and-spines/"
+    }
+  }
+  </script>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    @font-face {
+      font-family: 'Take Me To Tuscany';
+      src: url('/fonts/takemetotuscany-regular-webfont.woff2') format('woff2'),
+           url('/fonts/takemetotuscany-regular-webfont.woff') format('woff');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Take Me To Tuscany';
+      src: url('/fonts/takemetotuscany-weight1-webfont.woff2') format('woff2'),
+           url('/fonts/takemetotuscany-weight1-webfont.woff') format('woff');
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+    :root {
+      --ink:       #2a1f3d;
+      --ink-soft:  #5a4f6e;
+      --ink-mute:  #6d637e;
+      --cream:     #faf8f5;
+      --warm:      #ede8f0;
+      --copper:    #c17b4a;
+      --copper-dk: #965c32;
+      --copper-lt: #f5ebe0;
+      --rule:      rgba(42,31,61,0.12);
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'Jost', system-ui, sans-serif;
+      --script:    'Take Me To Tuscany', 'Cormorant Garamond', cursive;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); font-weight: 400; background: var(--cream); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+
+    /* --- Nav (shared) --- */
+    nav { position: sticky; top: 0; z-index: 100; background: var(--cream); border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; height: 64px; }
+    .nav-logo { font-family: var(--script); font-size: 34px; font-weight: 400; color: var(--ink); line-height: 1; padding: 4px 0 0; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links a.active { color: var(--copper); }
+    .nav-right { display: flex; align-items: center; gap: 1.25rem; }
+    .nav-social { display: flex; gap: 0.75rem; align-items: center; }
+    .nav-social a { color: var(--ink-mute); display: flex; align-items: center; transition: color 0.18s; }
+    .nav-social a:hover { color: var(--copper); }
+    .nav-cta { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 18px; border: 1px solid var(--ink); border-radius: 2px; transition: background 0.18s, color 0.18s; }
+    .nav-cta:hover { background: var(--ink); color: var(--cream); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.25s; }
+    .nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+    .mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; background: var(--cream); border-bottom: 1px solid var(--rule); padding: 1.5rem 2rem 2rem; z-index: 99; flex-direction: column; gap: 1.25rem; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); border-bottom: 0.5px solid var(--rule); padding-bottom: 1.25rem; }
+    .mobile-menu a:last-child { border-bottom: none; padding-bottom: 0; }
+    .mobile-menu a:hover { color: var(--copper); }
+
+    /* --- Shared --- */
+    .btn { display: inline-block; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; padding: 12px 24px; border-radius: 2px; border: 1px solid var(--ink); transition: background 0.18s, color 0.18s; cursor: pointer; }
+    .btn:hover { background: var(--ink); color: var(--cream); }
+    .btn-copper { background: var(--copper); color: #fff; border-color: var(--copper); }
+    .btn-copper:hover { background: var(--copper-dk); border-color: var(--copper-dk); }
+    section { border-bottom: 1px solid var(--rule); }
+    section.alt { background: var(--warm); }
+    .section-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
+    .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* --- Page Header --- */
+    .page-header { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem 2rem; }
+    .page-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin-bottom: 1.25rem; }
+    .page-title { font-family: var(--script); font-size: clamp(48px, 7vw, 92px); font-weight: 400; line-height: 1.1; margin-bottom: 1.5rem; }
+    .page-intro { font-size: 17px; color: var(--ink-soft); max-width: 560px; line-height: 1.75; }
+
+    /* --- Give Cards --- */
+    .give-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .give-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; transition: border-color 0.18s; }
+    .give-card:hover { border-color: var(--copper); }
+    .give-card-eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); margin-bottom: 0.75rem; }
+    .give-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; margin-bottom: 0.75rem; }
+    .give-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1.75rem; flex: 1; }
+    .give-card .btn { align-self: flex-start; }
+
+    /* --- Tax Note --- */
+    .tax-note { max-width: 700px; }
+    .tax-note p { font-size: 14px; color: var(--ink-soft); line-height: 1.8; }
+    .tax-note a { color: var(--copper); border-bottom: 1px solid currentColor; }
+
+    /* --- Join (shared) --- */
+    .join-section { background: var(--ink); color: var(--cream); border-bottom: none; }
+    .join-inner { max-width: 700px; margin: 0 auto; padding: 6rem 2.5rem; text-align: center; }
+    .join-inner h2 { font-family: var(--script); font-size: clamp(44px, 5.5vw, 72px); font-weight: 400; line-height: 1.15; margin-bottom: 1rem; }
+    .join-inner p { font-size: 15px; color: rgba(250,248,245,0.6); margin-bottom: 2.5rem; line-height: 1.75; }
+    .signup-row { display: flex; max-width: 440px; margin: 0 auto; border: 1px solid rgba(250,248,245,0.2); border-radius: 2px; overflow: hidden; }
+    .signup-row input { flex: 1; min-width: 0; padding: 14px 18px; background: transparent; border: none; color: var(--cream); font-family: var(--sans); font-size: 14px; outline: none; }
+    .signup-row input::placeholder { color: rgba(250,248,245,0.35); }
+    .signup-row button { background: var(--copper); color: #fff; border: none; padding: 14px 22px; font-family: var(--sans); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: background 0.18s; white-space: nowrap; }
+    .signup-row button:hover { background: var(--copper-dk); }
+    .join-note { font-size: 12px; color: rgba(250,248,245,0.3); margin-top: 1rem; }
+
+    /* --- Footer (shared) --- */
+    footer { background: var(--cream); border-top: 1px solid var(--rule); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: var(--script); font-size: 28px; font-weight: 400; color: var(--ink); line-height: 1; }
+    .footer-links { display: flex; gap: 1.5rem; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-mute); list-style: none; flex-wrap: wrap; }
+    .footer-links a:hover { color: var(--ink); }
+    .footer-social { display: flex; gap: 1rem; align-items: center; }
+    .footer-social a { color: var(--ink-mute); display: flex; align-items: center; transition: color 0.18s; }
+    .footer-social a:hover { color: var(--copper); }
+    .footer-legal { width: 100%; font-size: 11px; color: var(--ink-mute); border-top: 0.5px solid var(--rule); padding-top: 1rem; margin-top: 0.25rem; }
+
+    /* --- Responsive --- */
+    @media (max-width: 1000px) {
+      .give-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-hamburger { display: flex; }
+      .page-header { padding: 3rem 1.25rem 1.5rem; }
+      .section-inner { padding: 3rem 1.25rem; }
+      .give-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 400px) {
+      .signup-row { flex-direction: column; }
+      .signup-row input { border-bottom: 1px solid rgba(250,248,245,0.2); }
+    }
+
+    /* --- Page sections --- */
+    .prose { max-width: 680px; }
+    .prose h2 { font-family: var(--serif); font-size: clamp(26px, 3vw, 34px); font-weight: 500; line-height: 1.2; margin-bottom: 1rem; }
+    .prose p { font-size: 16px; color: var(--ink-soft); line-height: 1.85; margin-bottom: 1.25rem; }
+    .prose p:last-child { margin-bottom: 0; }
+    .prose a { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
+    .prose .btn { border-bottom: 1px solid var(--ink); color: var(--ink); }
+    .prose .btn-copper { color: #fff; border-color: var(--copper); }
+    .prose-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.75rem; }
+    .event-facts { display: grid; grid-template-columns: 180px 1fr; gap: 0.9rem 2rem; max-width: 760px; }
+    .event-facts dt { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); padding-top: 0.3rem; }
+    .event-facts dd { font-family: var(--serif); font-size: 19px; color: var(--ink); line-height: 1.5; }
+    .page-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    @media (max-width: 600px) {
+      .event-facts { grid-template-columns: 1fr; gap: 0.2rem; }
+      .event-facts dd { margin-bottom: 0.9rem; }
+    }
+  </style>
+  <link rel="stylesheet" href="/transitions.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Folklore Society</a>
+    <ul class="nav-links">
+      <li><a href="/programs">Programs</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/support">Support</a></li>
+      <li><a href="/endpapers">Membership</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://instagram.com/folkloresocietywa" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://facebook.com/folkloresocietywa" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/programs">Programs</a>
+    <a href="/events/">Events</a>
+    <a href="/about/">About</a>
+    <a href="/support">Support</a>
+    <a href="/endpapers">Membership</a>
+  </div>
+
+  <main>
+
+  <header class="page-header">
+    <p class="page-eyebrow">Our next event</p>
+    <h1 class="page-title">Sagebrush and Spines</h1>
+    <p class="page-intro">Sagebrush and Spines is Folklore Society's inaugural spring book fair, and it's the first book fair of its kind in the Tri-Cities. It's free to the public, and we'd love for you to come spend the day with us.</p>
+    <div class="page-actions">
+      <a href="https://sagebrushandspines.com/" class="btn btn-copper" target="_blank" rel="noopener">Visit sagebrushandspines.com</a>
+      <a href="https://airtable.com/appE34HHTOXPgs2Cj/pagCXAQkLCiFCLg8Z/form" class="btn" target="_blank" rel="noopener">Stay in touch</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-inner">
+      <p class="section-label">The details</p>
+      <dl class="event-facts fade-up">
+        <dt>Date</dt><dd>May 15, 2027</dd>
+        <dt>Hours</dt><dd>Hours coming soon.</dd>
+        <dt>Where</dt><dd>Gesa Carousel of Dreams, Kennewick, WA</dd>
+        <dt>Cost</dt><dd>Free to the public</dd>
+        <dt>Books</dt><dd>Adult, new adult and upper YA (16+)</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <p class="section-label">What to expect</p>
+      <div class="prose fade-up">
+        <p>The fair brings together adult and new adult authors, bookish vendors, book clubs and independent bookstores, so you can meet the people writing the books, browse the shelves of local shops, and find out about book clubs near you, all in one day. The vendor tables are for makers whose work is bookish.</p>
+        <p>The focus is on adult, new adult and upper YA books for readers 16 and up, so this isn't a fair for children's books. A silent auction will be part of the day as well.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="section-inner">
+      <p class="section-label">Where the money goes</p>
+      <div class="prose fade-up">
+        <p>Fundraising at Sagebrush and Spines supports the <a href="/programs#author-fund">Author Fund</a>, which covers author table fees. That way, author tables at our events can stay free, and your gifts make that possible.</p>
+        <p>If you'd like to give before the fair, you can give to Folklore any time through Zeffy, and it all stays east of the Cascades.</p>
+        <div class="prose-actions">
+          <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <p class="section-label">Why we're doing this</p>
+      <div class="prose fade-up">
+        <p>There are a lot of readers on this side of the state, and we'd like more of the reading life to happen close to home. We hope Sagebrush and Spines is the start of more reader events east of the Cascades, and that it's only the first of many days like it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <p class="section-label">Authors and vendors</p>
+      <div class="prose fade-up">
+        <p>If you're an author, or a maker whose work is bookish, and you'd like a table at the fair, the details and the author and vendor interest form are on the Sagebrush and Spines website. We'd be glad to have you there.</p>
+        <div class="prose-actions">
+          <a href="https://sagebrushandspines.com/" class="btn btn-copper" target="_blank" rel="noopener">Author and vendor interest form</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ways-help" id="ways-to-help">
+    <div class="section-inner">
+      <h2 class="ways-help-heading">Ways to help</h2>
+      <p class="ways-help-intro">There are a few ways to be part of this, and every one of them helps bring more authors and readers together east of the Cascades.</p>
+      <div class="ways-help-grid">
+        <div class="ways-help-item">
+          <a class="btn btn-copper" href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" target="_blank" rel="noopener">Give</a>
+        </div>
+        <div class="ways-help-item">
+          <p>Tell us what you'd like to hear about, from event updates to membership once it opens.</p>
+          <a class="btn" href="https://airtable.com/appE34HHTOXPgs2Cj/pagCXAQkLCiFCLg8Z/form" target="_blank" rel="noopener">Stay in touch</a>
+        </div>
+        <div class="ways-help-item">
+          <p>We're a small volunteer board, and we always welcome extra hands at events.</p>
+          <a class="btn" href="/support#volunteer">Volunteer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <a href="/" class="footer-logo">Folklore Society</a>
+    <ul class="footer-links">
+      <li><a href="/#what-we-do">Our work</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/programs">Programs</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/support">Support</a></li>
+      <li><a href="/general-fund">General Fund</a></li>
+      <li><a href="/endpapers">Membership</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="mailto:hello@folkloresocietywa.org">Contact</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://instagram.com/folkloresocietywa" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://facebook.com/folkloresocietywa" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+    </div>
+    <p class="footer-legal" style="font-family:var(--serif,Georgia,serif);font-style:italic;margin-bottom:0.4rem;">For the reading life, Folklore Society.</p>
+    <p class="footer-legal">&copy; 2026 Folklore Society &middot; A Washington 501(c)(3) nonprofit &middot; EIN 42-1823147</p>
+    <p class="footer-legal footer-contact" style="border-top:none;padding-top:0;margin-top:0;">5405 Warbler Ln, West Richland, WA 99353 &middot; <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a></p>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+    const burger = document.querySelector('.nav-hamburger');
+    const menu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false');
+    }));
+
+  </script>
+</body>
+</html>
