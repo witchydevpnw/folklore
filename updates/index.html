@@ -286,10 +286,13 @@
     .update time { display: block; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); margin-bottom: 0.55rem; }
     .update h2 { font-family: var(--serif); font-size: clamp(26px, 3vw, 34px); font-weight: 500; line-height: 1.2; margin-bottom: 0.85rem; }
     .update p { font-size: 16px; color: var(--ink-soft); line-height: 1.85; margin-bottom: 1rem; }
+    .update-photos { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.5rem 0 1.25rem; }
+    .update-photos figure { flex: 1 1 160px; max-width: 240px; margin: 0; }
+    .update-photos figcaption { font-size: 13px; color: var(--ink-soft); line-height: 1.5; margin-top: 0.4rem; }
     .update a.more { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
     @media (max-width: 700px) {
-      .update { grid-template-columns: 1fr; }
-      .update img { max-width: 320px; }
+      .update:has(img) { grid-template-columns: 1fr; }
+      .update > img { max-width: 320px; }
     }
   </style>
   <link rel="stylesheet" href="/transitions.css" />
@@ -343,6 +346,21 @@
     <div class="section-inner">
       <!-- Newest first. To add an update, add an article here and a matching object at the top of updates/posts.json. -->
       <div class="updates">
+    <article class="update" id="little-free-libraries">
+      <img src="/images/photos/lfl-spellborn.webp" alt="A copy of Spellborn by Taylor Rogers held up in front of a gray Little Free Library." width="675" height="900" loading="lazy" decoding="async" />
+      <div>
+        <time datetime="2026-11-20">November 2026</time>
+        <h2>New books by local authors in Little Free Libraries</h2>
+      <p>Brand-new books by local authors have been finding their way into Little Free Libraries around the Tri-Cities. These copies were donated, and they&#x27;re waiting for whoever opens the little door next.</p>
+      <p>So far that includes Spellborn by Taylor Rogers and For Our Next Song by Jessica James. If you spot one on your walk, take it home, and pass it along when you&#x27;re done.</p>
+      <p>Our Shelf Life program is designed to buy books like these from local, independent bookstores or directly from local authors and put them in free libraries, and we&#x27;re fundraising for it now. If you&#x27;d like to help, you can give on our Support page.</p>
+        <div class="update-photos">
+          <figure><img src="/images/photos/lfl-for-our-next-song-pink.webp" alt="For Our Next Song by Jessica James held up in front of a pink Little Free Library." width="675" height="900" loading="lazy" decoding="async" /><figcaption>For Our Next Song by Jessica James</figcaption></figure>
+          <figure><img src="/images/photos/lfl-for-our-next-song-red.webp" alt="For Our Next Song by Jessica James held up in front of a red Little Free Library." width="675" height="900" loading="lazy" decoding="async" /><figcaption>Another copy, in another library</figcaption></figure>
+        </div>
+        <p><a class="more" href="/support">See ways to give</a></p>
+      </div>
+    </article>
     <article class="update" id="sagebrush-and-spines">
       <div></div>
       <div>
@@ -392,6 +410,10 @@
         <h2>Romance readers at BAGG Books</h2>
       <p>Bookstore Romance Day was August 15, 2026, at BAGG Books in downtown Kennewick. The day ran from 11 in the morning until 6 in the evening. It marked the national Bookstore Romance Day, and it was free and open to everyone.</p>
       <p>Carly Joy offered flash tattoos, and Blake Gallows was there for a book signing and a meet and greet. Folklore Society ran the beer garden out back, and we were glad to be part of the day.</p>
+        <div class="update-photos">
+          <figure><img src="/images/photos/popup-bar-front.webp" alt="The Folklore Society pop-up bar trimmed in purple flowers, with a Romantical Drink Menu sign on the front." width="900" height="675" loading="lazy" decoding="async" /><figcaption>The pop-up bar and its Romantical Drink Menu</figcaption></figure>
+          <figure><img src="/images/photos/popup-bar-candace.webp" alt="Candace Delany, Folklore Society director, inside the pop-up bar." width="675" height="900" loading="lazy" decoding="async" /><figcaption>Candace Delany behind the bar</figcaption></figure>
+        </div>
         <p><a class="more" href="/bookstore-romance-day/">Look back at the day</a></p>
       </div>
     </article>
