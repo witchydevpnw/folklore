@@ -177,6 +177,11 @@ section:not(.dark):not(.join-section):not(.event-hero):not(.event-details):not(.
   white-space: nowrap;
 }
 .nav-cta:hover { background: var(--copper-dk, #965c32); border-color: var(--copper-dk, #965c32); color: #fff; }
+.nav-links a[aria-current="page"],
+.mobile-menu a[aria-current="page"] { color: var(--copper); }
+@media (max-width: 1180px) {
+  .nav-links { gap: 1.15rem; }
+}
 @media (max-width: 900px) {
   .nav-cta { display: inline-block; padding: 7px 12px; font-size: 12px; }
 }
