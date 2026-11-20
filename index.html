@@ -11,9 +11,12 @@
   <meta property="og:url" content="https://folkloresocietywa.org" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="preload" href="/fonts/takemetotuscany-regular-webfont.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/takemetotuscany-weight1-webfont.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" /></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     @font-face {
@@ -166,11 +169,11 @@
   <nav>
     <a href="/" class="nav-logo">Folklore Society</a>
     <ul class="nav-links">
+      <li><a href="/" class="active" aria-current="page">Home</a></li>
       <li><a href="/programs">Programs</a></li>
       <li><a href="/events/">Events</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/support">Support</a></li>
-      <li><a href="/endpapers">Membership</a></li>
     </ul>
     <div class="nav-right">
       <div class="nav-social">
@@ -182,17 +185,18 @@
         </a>
       </div>
     </div>
+    <a class="nav-cta" href="/support">Give</a>
     <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
+    <a href="/" class="active" aria-current="page">Home</a>
     <a href="/programs">Programs</a>
     <a href="/events/">Events</a>
     <a href="/about/">About</a>
     <a href="/support">Support</a>
-    <a href="/endpapers">Membership</a>
   </div>
 
   <main>
@@ -219,7 +223,7 @@
     <div class="section-inner">
       <p class="section-label">Our work<span class="section-star" aria-hidden="true">&#10022;</span></p>
       <div class="work-copy fade-up">
-        <p>What we raise stays east of the Cascades. When we buy books for events and clubs, we buy them from local, independent bookstores or directly from local authors, and when there's a stage to fill we look close to home first. The Author Fund is for covering author table fees. That way, author tables at our events can stay free, and your gifts make that possible. Book clubs and reading series were packing rooms long before Folklore existed, and when we're invited in we put money behind that work and let the people who built it keep leading.</p>
+        <p>We support local readers and authors in the Tri-Cities. When we buy books for events and clubs, we buy them from local, independent bookstores or directly from local authors, and when there's a stage to fill we look close to home first. The Author Fund covers author table fees. That way, author tables at our events can stay free, and your gifts make that possible. Book clubs and reading series were packing rooms long before Folklore existed, and when we're invited in we put money behind that work and let the people who built it keep leading.</p>
       </div>
     </div>
   </section>
@@ -244,7 +248,7 @@
       <p class="section-label">Support our work<span class="section-star" aria-hidden="true">&#10022;</span></p>
       <div class="support-cta fade-up">
         <h2 class="support-cta-heading">Where your support goes.</h2>
-        <p class="support-cta-body">Every dollar goes back into the Tri-Cities reading life, through our programs and the general fund that keeps them running. Have a look at how each one works, and give wherever it feels right to you.</p>
+        <p class="support-cta-body">Gifts go back into our programs and the general fund that keeps them running. Have a look at how each one works, and give wherever it feels right to you.</p>
         <div class="support-cta-actions">
           <a href="/programs" class="btn">Meet our programs</a>
           <a href="/support" class="btn btn-copper">Give a gift</a>
@@ -256,7 +260,7 @@
     <section class="ways-help" id="ways-to-help">
     <div class="section-inner">
       <h2 class="ways-help-heading">Ways to help</h2>
-      <p class="ways-help-intro">There are a few ways to be part of this, and every one of them helps bring more authors and readers together east of the Cascades.</p>
+      <p class="ways-help-intro">There are a few ways to be part of this, and every one of them helps bring more authors and readers together here in the Tri-Cities.</p>
       <div class="ways-help-grid">
         <div class="ways-help-item">
           <a class="btn btn-copper" href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" target="_blank" rel="noopener">Give</a>

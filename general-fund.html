@@ -11,9 +11,12 @@
   <meta property="og:url" content="https://folkloresocietywa.org/general-fund" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="preload" href="/fonts/takemetotuscany-regular-webfont.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/takemetotuscany-weight1-webfont.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" /></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     @font-face {
@@ -155,7 +158,7 @@
 
     /* --- Responsive --- */
     @media (max-width: 900px) {
-      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-links, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
       .steps { grid-template-columns: repeat(2, 1fr); }
       .step { border-bottom: 1px solid var(--rule); }
@@ -166,7 +169,7 @@
     }
     @media (max-width: 768px) {
       nav { padding: 0 1.25rem; }
-      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-links, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
       .page-header { padding: 3rem 1.25rem 1.5rem; }
       .section-inner { padding: 3rem 1.25rem; }
@@ -189,11 +192,11 @@
   <nav>
     <a href="/" class="nav-logo">Folklore Society</a>
     <ul class="nav-links">
+      <li><a href="/">Home</a></li>
       <li><a href="/programs">Programs</a></li>
       <li><a href="/events/">Events</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/support">Support</a></li>
-      <li><a href="/endpapers">Membership</a></li>
     </ul>
     <div class="nav-right">
       <div class="nav-social">
@@ -205,17 +208,18 @@
         </a>
       </div>
     </div>
+    <a class="nav-cta" href="/support">Give</a>
     <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
     <a href="/programs">Programs</a>
     <a href="/events/">Events</a>
     <a href="/about/">About</a>
     <a href="/support">Support</a>
-    <a href="/endpapers">Membership</a>
   </div>
 
   <main>
