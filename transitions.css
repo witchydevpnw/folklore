@@ -160,3 +160,23 @@ section:not(.dark):not(.join-section):not(.event-hero):not(.event-details):not(.
   .ways-help .section-inner { padding: 3rem 1.25rem; }
   .ways-help-grid { grid-template-columns: 1fr; }
 }
+
+/* Give stays in the header on small screens, next to the menu button. */
+.nav-cta {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 2px;
+  border: 1px solid var(--copper);
+  background: var(--copper);
+  color: #fff;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.nav-cta:hover { background: var(--copper-dk, #965c32); border-color: var(--copper-dk, #965c32); color: #fff; }
+@media (max-width: 900px) {
+  .nav-cta { display: inline-block; padding: 7px 12px; font-size: 12px; }
+}

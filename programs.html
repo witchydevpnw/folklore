@@ -12,9 +12,12 @@
   <link rel="canonical" href="https://folkloresocietywa.org/programs" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="preload" href="/fonts/takemetotuscany-regular-webfont.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/takemetotuscany-weight1-webfont.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" /></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     @font-face {
@@ -116,7 +119,7 @@
 
     /* --- Responsive --- */
     @media (max-width: 900px) {
-      .nav-links, .nav-cta, .nav-social { display: none; }
+      .nav-links, .nav-social { display: none; }
       .nav-hamburger { display: flex; }
     }
     @media (max-width: 768px) {
@@ -139,7 +142,6 @@
       <li><a href="/events/">Events</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/support">Support</a></li>
-      <li><a href="/endpapers">Membership</a></li>
     </ul>
     <div class="nav-right">
       <div class="nav-social">
@@ -151,6 +153,7 @@
         </a>
       </div>
     </div>
+    <a class="nav-cta" href="/support">Give</a>
     <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -161,7 +164,6 @@
     <a href="/events/">Events</a>
     <a href="/about/">About</a>
     <a href="/support">Support</a>
-    <a href="/endpapers">Membership</a>
   </div>
 
   <main>
@@ -185,20 +187,13 @@
         <span class="program-name">Author Fund</span>
       </div>
       <h2>Bring writers to readers.</h2>
-      <p class="program-lead">Dear reader, authors come for the readers, so we'd like the table fee to be our problem instead of theirs. The Author Fund is for covering author table fees. That way, author tables at our events can stay free, and your gifts make that possible.</p>
+      <p class="program-lead">Dear reader, authors come for the readers, so we'd like the table fee to be our problem instead of theirs. The Author Fund covers author table fees. That way, author tables at our events can stay free, and your gifts make that possible.</p>
       <div class="program-detail">
         <p><strong>How it works.</strong> This is the fundraising that puts readers and writers in the same room, and every gift adds up, so give whatever feels right.</p>
       </div>
       <div class="program-actions">
         <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund</a>
       </div>
-    </div>
-  </section>
-
-  <!-- More on this soon (Shelf Life paused) -->
-  <section class="program" id="more-soon">
-    <div class="section-inner fade-up">
-      <p class="program-lead">More on this soon.</p>
     </div>
   </section>
 
