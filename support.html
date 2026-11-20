@@ -97,6 +97,18 @@
     .give-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1.75rem; flex: 1; }
     .give-card .btn { align-self: flex-start; }
 
+    /* --- Volunteer --- */
+    .volunteer-intro { max-width: 680px; margin-bottom: 2.5rem; }
+    .volunteer-intro h2 { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 40px); font-weight: 500; line-height: 1.2; margin-bottom: 1rem; }
+    .volunteer-intro p { font-size: 16px; color: var(--ink-soft); line-height: 1.85; }
+    .volunteer-signup { margin-top: 3rem; max-width: 760px; }
+    .volunteer-signup h3 { font-family: var(--serif); font-size: 26px; font-weight: 500; margin-bottom: 0.75rem; }
+    .volunteer-signup p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
+    .volunteer-signup p a { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
+    .volunteer-form { display: block; width: 100%; height: 640px; border: 1px solid var(--rule); border-radius: 8px; background: var(--cream); }
+    .volunteer-form-slot { border: 1px dashed var(--rule); border-radius: 8px; padding: 2rem; text-align: center; background: var(--warm); }
+    .volunteer-form-slot.loaded { border: none; padding: 0; background: none; }
+
     /* --- Tax Note --- */
     .tax-note { max-width: 700px; }
     .tax-note p { font-size: 14px; color: var(--ink-soft); line-height: 1.8; }
@@ -214,7 +226,7 @@
         <div class="give-card fade-up" style="transition-delay:0.24s;">
           <p class="give-card-eyebrow">Author Fund</p>
           <h3>Bring writers to readers.</h3>
-          <p>An author evening in Kennewick or Richland costs real money before anyone opens a book, and the Author Fund is how we plan to keep the table fee off the author's plate. The Author Fund is for covering author table fees. That way, author tables at our events can stay free, and your gifts make that possible. Someday we hope it grows into travel and lodging help when it applies and funds allow.</p>
+          <p>An author evening in Kennewick or Richland costs real money before anyone opens a book, and the Author Fund is how we plan to keep the table fee off the author's plate. The Author Fund is for covering author table fees. That way, author tables at our events can stay free, and your gifts make that possible.</p>
           <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund (and keep an author's table on us)</a>
         </div>
 
@@ -233,6 +245,48 @@
     </div>
   </section>
 
+  <section id="volunteer">
+    <div class="section-inner">
+      <p class="section-label">Volunteer</p>
+      <div class="volunteer-intro fade-up">
+        <h2>Lend a hand.</h2>
+        <p>A lot of what Folklore does happens because people pitch in alongside us. Here are the ways people help right now, and the sign-up below is the easiest way to tell us you're interested.</p>
+      </div>
+      <div class="give-grid">
+
+        <div class="give-card fade-up" style="transition-delay:0.08s;">
+          <p class="give-card-eyebrow">Beer gardens</p>
+          <h3>Guest bartend with us.</h3>
+          <p>When Folklore sponsors a beer garden, like the outdoor beer garden out front of BAGG Books at Booked for the Holidays on December 5, we welcome guest bartenders. To sign up, send us a direct message on Instagram at @folkloresocietywa and we'll write back with the details.</p>
+          <a href="https://instagram.com/folkloresocietywa" class="btn" target="_blank" rel="noopener">Message us on Instagram</a>
+        </div>
+
+        <div class="give-card fade-up" style="transition-delay:0.16s;">
+          <p class="give-card-eyebrow">Events</p>
+          <h3>Help on the day.</h3>
+          <p>We welcome extra hands at events like Sagebrush and Spines and Booked for the Holidays. Let us know through the sign-up form below, or write to us, and we'll be in touch as each event gets closer.</p>
+          <a href="#volunteer-signup" class="btn">Go to the sign-up</a>
+        </div>
+
+        <div class="give-card fade-up" style="transition-delay:0.24s;">
+          <p class="give-card-eyebrow">Partners</p>
+          <h3>Partner or sponsor.</h3>
+          <p>If you run a business or an organization and you'd like to partner with us or sponsor an event, we'd be glad to hear from you. Write to us and tell us a little about what you have in mind.</p>
+          <a href="mailto:hello@folkloresocietywa.org" class="btn">Email hello@folkloresocietywa.org</a>
+        </div>
+
+      </div>
+
+      <div class="volunteer-signup fade-up" id="volunteer-signup">
+        <h3>Sign up to help</h3>
+        <p>Our sign-up form is the quickest way to tell us you'd like to volunteer and what you'd like to hear about. You can show it right here on this page, <a href="https://airtable.com/appE34HHTOXPgs2Cj/pagCXAQkLCiFCLg8Z/form" target="_blank" rel="noopener">open it in a new tab</a>, or write to us at <a href="mailto:hello@folkloresocietywa.org">hello@folkloresocietywa.org</a> instead.</p>
+        <div class="volunteer-form-slot" id="volunteerFormSlot">
+          <button type="button" class="btn btn-copper" id="loadVolunteerForm" data-src="https://airtable.com/embed/appE34HHTOXPgs2Cj/pagCXAQkLCiFCLg8Z/form">Show the sign-up form here</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="ways-help" id="ways-to-help">
     <div class="section-inner">
       <h2 class="ways-help-heading">Ways to help</h2>
@@ -247,7 +301,7 @@
         </div>
         <div class="ways-help-item">
           <p>We're a small volunteer board, and we always welcome extra hands at events.</p>
-          <a class="btn" href="https://airtable.com/appE34HHTOXPgs2Cj/pagCXAQkLCiFCLg8Z/form" target="_blank" rel="noopener">Volunteer</a>
+          <a class="btn" href="/support#volunteer">Volunteer</a>
         </div>
       </div>
     </div>
@@ -264,6 +318,7 @@
       <li><a href="/support">Support</a></li>
       <li><a href="/general-fund">General Fund</a></li>
       <li><a href="/endpapers">Membership</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
       <li><a href="mailto:hello@folkloresocietywa.org">Contact</a></li>
     </ul>
     <div class="footer-social">
@@ -295,6 +350,21 @@
     menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
       menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false');
     }));
+
+    // The Airtable embed is several megabytes and sets third-party cookies, so it loads only on request.
+    const formBtn = document.getElementById('loadVolunteerForm');
+    formBtn.addEventListener('click', () => {
+      const frame = document.createElement('iframe');
+      frame.className = 'volunteer-form';
+      frame.src = formBtn.dataset.src;
+      frame.title = 'Folklore Society volunteer and stay in touch form';
+      frame.width = '100%';
+      frame.height = '640';
+      const slot = document.getElementById('volunteerFormSlot');
+      slot.classList.add('loaded');
+      slot.replaceChildren(frame);
+      frame.focus();
+    });
 
   </script>
 </body>
