@@ -10,6 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://folkloresocietywa.org/endpapers" />
   <link rel="canonical" href="https://folkloresocietywa.org/endpapers" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +32,7 @@
     :root {
       --ink:       #2a1f3d;
       --ink-soft:  #5a4f6e;
-      --ink-mute:  #9a90aa;
+      --ink-mute:  #6d637e;
       --cream:     #faf8f5;
       --warm:      #ede8f0;
       --copper:    #c17b4a;
@@ -148,11 +149,10 @@
     <a href="/" class="nav-logo">Folklore Society</a>
     <ul class="nav-links">
       <li><a href="/programs">Programs</a></li>
-      <li><a href="/events">Events</a></li>
-      <li><a href="/about">About</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/about/">About</a></li>
       <li><a href="/support">Support</a></li>
       <li><a href="/endpapers" class="active">Membership</a></li>
-      <li><a href="#join">Newsletter</a></li>
     </ul>
     <div class="nav-right">
       <div class="nav-social">
@@ -171,12 +171,13 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="/programs">Programs</a>
-    <a href="/events">Events</a>
-    <a href="/about">About</a>
+    <a href="/events/">Events</a>
+    <a href="/about/">About</a>
     <a href="/support">Support</a>
     <a href="/endpapers">Membership</a>
-    <a href="#join">Newsletter</a>
   </div>
+
+  <main>
 
   <!-- Page Header -->
   <header class="page-header">
@@ -225,26 +226,34 @@
     </div>
   </section>
 
-  <!-- Newsletter -->
-  <section class="join-section" id="join" data-night-sky>
-    <div class="join-inner">
-      <h2>Hear it first.</h2>
-      <p>Endpapers opens once the welcome gift is settled and we've picked a month. Leave your email and we'll write to you before it goes out anywhere else.</p>
-      <div class="signup-row">
-        <input type="email" placeholder="your@email.com" aria-label="Email address" id="emailInput" />
-        <button type="button" id="signupBtn">Sign up</button>
+  <section class="ways-help" id="ways-to-help">
+    <div class="section-inner">
+      <h2 class="ways-help-heading">Ways to help</h2>
+      <p class="ways-help-intro">There are a few ways to be part of this, and every one of them helps bring more authors and readers together east of the Cascades.</p>
+      <div class="ways-help-grid">
+        <div class="ways-help-item">
+          <a class="btn btn-copper" href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" target="_blank" rel="noopener">Give</a>
+        </div>
+        <div class="ways-help-item">
+          <p>Tell us what you'd like to hear about, from event updates to membership once it opens.</p>
+          <a class="btn" href="https://airtable.com/appE34HHTOXPgs2Cj/pagCXAQkLCiFCLg8Z/form" target="_blank" rel="noopener">Stay in touch</a>
+        </div>
+        <div class="ways-help-item">
+          <p>We're a small volunteer board, and we always welcome extra hands at events.</p>
+          <a class="btn" href="https://airtable.com/appE34HHTOXPgs2Cj/pagCXAQkLCiFCLg8Z/form" target="_blank" rel="noopener">Volunteer</a>
+        </div>
       </div>
-      <p class="join-note">No spam. Just events and updates.</p>
     </div>
   </section>
+  </main>
 
   <footer>
     <a href="/" class="footer-logo">Folklore Society</a>
     <ul class="footer-links">
       <li><a href="/#what-we-do">Our work</a></li>
-      <li><a href="/events">Events</a></li>
+      <li><a href="/events/">Events</a></li>
       <li><a href="/programs">Programs</a></li>
-      <li><a href="/about">About</a></li>
+      <li><a href="/about/">About</a></li>
       <li><a href="/support">Support</a></li>
       <li><a href="/general-fund">General Fund</a></li>
       <li><a href="/endpapers">Membership</a></li>
@@ -282,29 +291,6 @@
       menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false');
     }));
 
-    // Signup
-    document.getElementById('signupBtn').addEventListener('click', function() {
-      const input = document.getElementById('emailInput');
-      const email = input.value.trim();
-      if (!email || !email.includes('@')) return;
-      const btn = this;
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      fetch('https://a052d22f.sibforms.com/serve/MUIFAFxrLg9QDgAOPv6tvI8ZbXBAUNCkd9JgWNodRL0KPzu9YsclbTMaKB_zQC4zUU4ZQyFl38u62vRP8IeMRq01dMHtrNsEvUH94gIiH03gNsxlOxCzgcJyqeTvBkAOZ2eOe_p8zxDbCEWB9SSNGmAw3LMue2wi3WwbwJi43ZNPPxcvbMvDh8C_T0sFPgru5ngDleFYqzw0yy_UVA==', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'EMAIL=' + encodeURIComponent(email) + '&email_address_check=&locale=en'
-      }).then(function() {
-        input.value = '';
-        input.placeholder = 'Check your inbox to confirm.';
-        btn.textContent = 'Done';
-        btn.style.background = '#4a7a3a';
-      }).catch(function() {
-        btn.textContent = 'Sign up';
-        btn.disabled = false;
-      });
-    });
   </script>
-  <script src="/night-sky.js" defer></script>
 </body>
 </html>
