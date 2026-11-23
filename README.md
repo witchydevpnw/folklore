@@ -14,7 +14,7 @@ each page is a self-contained `.html` file with inline `<style>`. Hosted on
 ```
 index.html              Homepage
 about/                  About page
-shelf-life.html         Shelf Life program
+programs.html           Programs (Author Fund, Round Table, general fund)
 support.html            Support / donate
 general-fund.html       General fund
 events/                 Events hub (lists all events)
@@ -24,7 +24,8 @@ fonts/                  Take Me To Tuscany webfonts (self-hosted, licensed)
 images/                 Logos, favicon, event flyers
 sitemap.xml, robots.txt SEO
 wrangler.jsonc          Cloudflare Workers config (serves repo root as static)
-.assetsignore           Files kept OUT of the public site (*.md, config)
+.assetsignore           Files kept OUT of the public site (*.md, config, .git)
+src/worker.js           Canonical-host and moved-page 301 redirects
 .gitignore              Note: ignores all *.png except an allow-list
 ```
 
@@ -50,7 +51,7 @@ python3 -m http.server 8000
 ```
 
 Then open <http://localhost:8000>. Note: Cloudflare's clean-URL rewrites
-(`/shelf-life` → `shelf-life.html`, `/events/` → `events/index.html`) won't be
+(`/programs` → `programs.html`, `/events/` → `events/index.html`) won't be
 fully reproduced locally, so use the actual file paths when testing directly.
 
 ## Conventions worth knowing
