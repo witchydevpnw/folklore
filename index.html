@@ -99,8 +99,11 @@
     .section-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
     .section-label::after { content: ''; order: 1; flex: 1; height: 1px; background: var(--rule); }
     .section-star { order: 2; color: var(--copper); opacity: 0.6; font-size: 14px; letter-spacing: 0; line-height: 1; }
-    .work-copy { max-width: 40rem; margin: 0 auto; }
-    .work-copy p { font-size: 17px; color: var(--ink-soft); line-height: 1.85; }
+    .hero:has(+ #what-we-do)::after { content: none; }
+    .work-list { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 52rem; margin: 0 auto; }
+    .work-card { background: var(--warm); border: 1px solid var(--rule); border-radius: 8px; padding: 1.75rem; font-size: 16px; color: var(--ink-soft); line-height: 1.75; position: relative; padding-top: 3rem; }
+    .work-card::before { content: '\2726'; position: absolute; top: 1.25rem; left: 1.75rem; color: var(--copper); opacity: 0.7; font-size: 14px; line-height: 1; }
+    @media (max-width: 700px) { .work-list { grid-template-columns: 1fr; } }
     .mission-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
     .mission-quote { font-family: var(--serif); font-size: clamp(24px, 3vw, 38px); font-weight: 400; font-style: italic; line-height: 1.3; color: var(--ink); }
     .mission-body p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
@@ -231,9 +234,12 @@
   <section id="what-we-do">
     <div class="section-inner">
       <p class="section-label">Our work<span class="section-star" aria-hidden="true">&#10022;</span></p>
-      <div class="work-copy fade-up">
-        <p>We support local readers and authors in the Tri-Cities. When we buy books for events and clubs, we buy them from local, independent bookstores or directly from local authors, and when there's a stage to fill we look close to home first. The Author Fund covers author table fees. That way, author tables at our events can stay free, and your gifts make that possible. Book clubs and reading series were packing rooms long before Folklore existed, and when we're invited in we put money behind that work and let the people who built it keep leading.</p>
-      </div>
+      <ul class="work-list fade-up">
+        <li class="work-card">We buy books for events and book clubs from local bookstores or directly from local authors.</li>
+        <li class="work-card">We invite local authors to join our events first, before we reach out to national ones.</li>
+        <li class="work-card">Our Author Fund covers table fees and other event costs for authors, so they spend less out of pocket to be here.</li>
+        <li class="work-card">We buy new books from local bookstores for free little libraries, so everyone in the Tri-Cities has access to brand-new books, even if they can't afford to buy them.</li>
+      </ul>
     </div>
   </section>
 
