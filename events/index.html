@@ -356,6 +356,10 @@
     .event-card-meta { font-size: 13px; color: var(--ink-mute); margin-bottom: 1.25rem; }
     .event-card-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 1.75rem; flex: 1; }
     .event-card-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .event-card-find { font-size: 14px; color: var(--ink); font-weight: 500; margin: -0.5rem 0 1rem; }
+    .event-card-more { font-size: 13px; margin-top: 1rem; }
+    .event-card-more a { color: var(--copper-dk); border-bottom: 1px solid currentColor; }
+    #booked-for-the-holidays { scroll-margin-top: 80px; }
     .event-card-badge { align-self: flex-start; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); background: var(--copper-lt); border: 1px solid var(--rule); border-radius: 100px; padding: 4px 12px; margin-bottom: 1rem; }
     .event-card-title a:hover { color: var(--copper-dk); }
     .event-card.is-featured { border-color: rgba(193,123,74,0.45); }
@@ -481,7 +485,7 @@
   <section class="events-wrap">
     <div class="events-cards">
 
-      <article class="event-card">
+      <article class="event-card" id="booked-for-the-holidays">
         <a class="event-card-media" href="https://bookedfortheholidaystc.com/" target="_blank" rel="noopener" aria-label="Booked for the Holidays event details">
           <img src="/images/booked-for-the-holidays-flyer.webp" alt="Booked for the Holidays. A wandering winter market in Downtown Kennewick. Saturday, December 5, 2026." width="960" height="1200" fetchpriority="high" loading="eager" />
         </a>
@@ -489,10 +493,14 @@
           <p class="event-card-date">Saturday, December 5, 2026 · 11 AM – 4 PM</p>
           <h2 class="event-card-title">Booked for the Holidays</h2>
           <p class="event-card-meta">Downtown Kennewick · Free · All ages</p>
-          <p class="event-card-desc">The wandering winter book market hosted by BAGG Books and Obsidian Book Collective, with local authors and bookish vendors set up inside downtown Kennewick shops. Folklore Society will be collecting donations, plus new and like-new books for our new free library project. Free, and no ticket needed. If you'd like to help at an event like this one, our <a href="/support#volunteer">volunteer sign-up</a> is on the Support page.</p>
+          <p class="event-card-find">Find us at BAGG Books, 318 W Kennewick Ave, 11 AM to 4 PM.</p>
+          <p class="event-card-desc">The wandering winter book market hosted by BAGG Books and Obsidian Book Collective, with local authors and bookish vendors set up inside downtown Kennewick shops. Folklore Society will be collecting donations, plus new and like-new books for our new free library project. If you can't make it, you can give online to our Author Fund or our general fund. Free, and no ticket needed. If you'd like to help at an event like this one, our <a href="/support#volunteer">volunteer sign-up</a> is on the Support page.</p>
           <div class="event-card-actions">
-            <a href="https://bookedfortheholidaystc.com/" class="btn btn-copper" target="_blank" rel="noopener">View details</a>
+            <a href="https://www.zeffy.com/en-US/donation-form/support-literacy-events" class="btn btn-copper" target="_blank" rel="noopener">Give to the Author Fund</a>
+            <a href="https://www.zeffy.com/en-US/donation-form/give-where-its-needed-most" class="btn" target="_blank" rel="noopener">Give where it's needed most</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=BAGG+Books%2C+318+W+Kennewick+Ave%2C+Kennewick%2C+WA+99336" class="btn" target="_blank" rel="noopener">Get directions</a>
           </div>
+          <p class="event-card-more"><a href="https://bookedfortheholidaystc.com/" target="_blank" rel="noopener">Market details at bookedfortheholidaystc.com</a></p>
         </div>
       </article>
 
